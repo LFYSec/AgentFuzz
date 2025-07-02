@@ -19,3 +19,6 @@ def connect_with_auth(payload):
         context.close()
         browser.close()
 
+
+if __name__ == "__main__":
+    connect_with_auth("Hello!")

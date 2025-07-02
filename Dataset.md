@@ -1,6 +1,6 @@
 # Datasets
 
-## Repo
+
 
 | Applications |                         repo                         |
 | :----------: | :--------------------------------------------------: |
@@ -25,7 +25,3 @@
 |  Agent-Zero  |         https://github.com/frdel/agent-zero          |
 |  OpenAgents  |        https://github.com/xlang-ai/OpenAgents        |
 
-
-## Version
-
-The latest version before 2025.01.

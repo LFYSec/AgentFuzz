@@ -2,14 +2,6 @@
 
 [TOC]
 
-## Description
-
-The source code of *Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents*
-
-```
-citation
-```
-
 ## Step 1. Static analysis
 
 ### Preparation
@@ -44,6 +36,7 @@ git clone https://github.com/microsoft/TaskWeaver.git
 ```shell
 cd TaskWeaver
 ```
+
 
 Create a CodeQL database:
 
@@ -83,9 +76,7 @@ You should start you target application manually.
 
 ### Execution
 
-Move `trace/cetracer.py` , `enter_hook.json`, `oracle.json`, `TaskWeaver-if.json` to where the application is running. 
-
-For example:
+Move `trace/cetracer.py` , `enter_hook.json`, `oracle.json`, `TaskWeaver-if.json` to where the application is running. For example:
 
 ```shell
 docker cp trace/cetracer.py taskweaver:/app/playground/UI/cetracer.py
@@ -121,55 +112,15 @@ Finally, restart the target application and **wait for 40 seconds**. (Because, t
 
 ## Step 3. Fuzzing
 
-### Preparation
-
-#### Prerequisites
+### Prerequisites
 
 - SMT-solver installed ([Z3](https://github.com/Z3Prover/z3)) 
 
-
-Environment for py-conbyte
-1. Exit the current virtual environment.
-    ```shell
-    conda deactivate
-    ```
-2. Creating a Python 3.7.3 Virtual Environment with Miniconda:
-    ```shell
-    conda create -n py373 python=3.7.3
-    ```
-3. Enter the virtual environment and obtain the Python address:
-    ```shell
-    conda activate py373
-    ```
-4. Install pipenv:
-    ```shell
-    pip install pipenv
-    ```
-5. Enter the py conbyte directory and install the required virtual environment
-    ```shell
-    cd py-conbyte
-    pipenv shell
-    ```
-6. Install required packages for this environment.
-    ```shell
-    conda activate py373
-    pipenv install
-    ```
-7. Leave this virtual environment.
-    ```shell
-    exit
-    conda deactivate
-    ```
-8. Enter the virtual environment for agentfuzz.
-    ```shell
-    conda activate py31012
-    ```
-
-#### LLM Configuration
+### LLM Configuration
 
 Fill in `OPENAI_API_BASE` and `OPENAI_API_KEY` in `./config/__init__.py`.
 
-#### Create a script
+### Create a script
 
 Create a script under `./poc` to tell us **how to send message** to target agent.
 
@@ -196,7 +147,7 @@ with sync_playwright() as playwright:
 
 It just open the browser, type in the message and click button to send to the agent.
 
-#### Fill in configuration
+### Fill in configuration
 
 Open `./poc/poc_factory.py` and add an entry to the dict `factory`. 
 
@@ -236,7 +187,7 @@ subprocess.run([PYTHON_EXECUTABLE, "main.py", "-app", "Taskweaver"], env={"CALLC
 
 This enables our tool to traverse all call chains, send the prompt to the target agent via `poc.TaskWeaver.CodeInterpreter.poc.connect_with_auth`, and detect potential vulnerabilities.
 
-### Execution
+### Run
 
 Just run:
 
@@ -245,8 +196,6 @@ python3 batchmain.py
 ```
 
 And results will be shown in command line and `./log`.
-
-### Result
 
 If you see the following output, it means we have triggered the callchain and it may be a vulnerability.
 

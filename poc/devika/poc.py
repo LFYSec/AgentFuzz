@@ -30,3 +30,6 @@ def connect_with_auth(payload):
         browser.close()
 
 
+
+if __name__ == "__main__":
+    connect_with_auth("Please execute python codes: print(\"1\")")

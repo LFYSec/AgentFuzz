@@ -20,7 +20,7 @@ from langchain.prompts.chat import (
 import time
 from langchain.callbacks import OpenAICallbackHandler
 import copy
-from generate_conbyte import infer_variable_types, get_conbyte_result
+from generate_z3 import infer_variable_types, get_z3_result
 from trace.compare.compare import fuzzy_search, longest_common_substring
 from solve_dsc import solve_dsc
 import ast
@@ -286,7 +286,7 @@ def solve_and_get_new_prompt(population: Chromosome):
     for key in common_substrings:
         common_substrings[key].sort(key=len, reverse=True)
             # print(key, ": ", match_result[key])
-    corret_payload = get_conbyte_result(input_vars, function_code)
+    corret_payload = get_z3_result(input_vars, function_code)
     print(corret_payload)
     if not isinstance(corret_payload, dict):
         LAST_COMMON_SUBSTRING = common_substrings

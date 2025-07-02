@@ -12,3 +12,5 @@ async def connect_with_auth(payload):
     r = requests.post(burp0_url, cookies=burp0_cookies, headers=burp0_headers, json=data)
     print(r.text)
 
+if __name__ == "__main__":
+    connect_with_auth("Execute ls .")
