@@ -1,0 +1,8 @@
+library: false
+warnOnImplicitThis: false
+name: py-qs
+version: 0.0.1
+dependencies:
+  codeql/python-all: "*"
+  codeql/suite-helpers: "*"
+  codeql/util: "*"

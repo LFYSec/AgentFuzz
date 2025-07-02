@@ -1,0 +1,102 @@
+[
+  {
+    "package_name": "*",
+    "module_name": "app",
+    "func_name": "is_link_clickable"
+  },
+  {
+    "package_name": "*",
+    "module_name": "app",
+    "func_name": "main"
+  },
+  {
+    "package_name": "*",
+    "module_name": "code_executor",
+    "func_name": "CodeExecutor.execute_code"
+  },
+  {
+    "package_name": "*",
+    "module_name": "code_interpreter",
+    "func_name": "CodeInterpreter.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "code_interpreter_cli_only",
+    "func_name": "CodeInterpreterCLIOnly.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "code_interpreter_plugin_only",
+    "func_name": "CodeInterpreterPluginOnly.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "evaluator",
+    "func_name": "Evaluator.score"
+  },
+  {
+    "package_name": "*",
+    "module_name": "evaluator",
+    "func_name": "Evaluator.evaluate"
+  },
+  {
+    "package_name": "*",
+    "module_name": "klarna_search",
+    "func_name": "KlarnaSearch.__call__"
+  },
+  {
+    "package_name": "*",
+    "module_name": "planner",
+    "func_name": "VisionPlanner.get_actions"
+  },
+  {
+    "package_name": "*",
+    "module_name": "planner",
+    "func_name": "VisionPlanner.get_objective_done"
+  },
+  {
+    "package_name": "*",
+    "module_name": "sub_proc",
+    "func_name": "SubProcessClient.execute_code"
+  },
+  {
+    "package_name": "*",
+    "module_name": "taskweaver_eval",
+    "func_name": "auto_evaluate_for_taskweaver"
+  },
+  {
+    "package_name": "*",
+    "module_name": "taskweaver_eval",
+    "func_name": "batch_auto_evaluate_for_taskweaver"
+  },
+  {
+    "package_name": "*",
+    "module_name": "utils",
+    "func_name": "make_api_call"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_explorer",
+    "func_name": "WebExplorer.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_search",
+    "func_name": "WebSearch.search_query"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_search",
+    "func_name": "WebSearch._search_google_custom_search"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_search",
+    "func_name": "WebSearch.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_search",
+    "func_name": "WebSearch._search_bing"
+  }
+]

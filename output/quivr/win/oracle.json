@@ -1,0 +1,1243 @@
+{
+    "NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "NotionConnector._read_pages_from_database -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 209,
+            "expr": "",
+            "caller": "NotionConnector._read_pages_from_database"
+        }
+    ],
+    "NotionConnector._read_page -> NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "NotionConnector._read_page -> NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "NotionConnector.get_all_pages -> NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "NotionConnector.load -> NotionConnector.get_all_pages -> NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "NotionConnector.load -> NotionConnector._read_page -> NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "NotionConnector.load -> NotionConnector._read_page -> NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "NotionConnector.poll -> NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "NotionConnector.poll -> NotionConnector._read_page -> NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "NotionConnector.poll -> NotionConnector._read_page -> NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "oauth2callback_azure -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/controller/azure_sync_routes.py",
+            "sink": "requests.get",
+            "line": 127,
+            "expr": "",
+            "caller": "oauth2callback_azure"
+        }
+    ],
+    "has_brain_authorization.wrapper -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "retrieve_brain_by_id -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "update_existing_brain -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainService.find_brain_from_question -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainService.delete_brain -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainService.get_brain_prompt_id -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "BrainUserService.get_user_default_brain -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainUserService.delete_brain_user -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "Brains.update_brain_last_update_time -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 49,
+            "expr": "",
+            "caller": "Brains.update_brain_last_update_time"
+        }
+    ],
+    "Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "Brains.delete_brain -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 68,
+            "expr": "",
+            "caller": "Brains.delete_brain"
+        }
+    ],
+    "Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "BrainsVectors.get_brain_size -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains_vectors.py",
+            "sink": "connection.execute",
+            "line": 68,
+            "expr": "",
+            "caller": "BrainsVectors.get_brain_size"
+        }
+    ],
+    "process_integration_brain_created_initial_load -> NotionConnector.load -> NotionConnector.get_all_pages -> NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "process_integration_brain_created_initial_load -> NotionConnector.load -> NotionConnector._read_page -> NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "process_integration_brain_created_initial_load -> NotionConnector.load -> NotionConnector._read_page -> NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "process_integration_brain_sync_user_brain -> NotionConnector.poll -> NotionConnector._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.post",
+            "line": 96,
+            "expr": "",
+            "caller": "NotionConnector._search_notion"
+        }
+    ],
+    "process_integration_brain_sync_user_brain -> NotionConnector.poll -> NotionConnector._read_page -> NotionConnector._fetch_page -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "NotionConnector._fetch_page"
+        }
+    ],
+    "process_integration_brain_sync_user_brain -> NotionConnector.poll -> NotionConnector._read_page -> NotionConnector._read_blocks -> NotionConnector._fetch_blocks -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/integrations/Notion/Notion_connector.py",
+            "sink": "requests.get",
+            "line": 113,
+            "expr": "",
+            "caller": "NotionConnector._fetch_blocks"
+        }
+    ],
+    "validate_authorization -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "create_question_handler -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "create_question_handler -> validate_authorization -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "create_stream_question_handler -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "create_stream_question_handler -> validate_authorization -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "crawl_endpoint -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "get_prompt_to_use -> get_prompt_to_use_id -> BrainService.get_brain_prompt_id -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "get_prompt_to_use_id -> BrainService.get_brain_prompt_id -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "oauth2callback_github -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/controller/github_sync_routes.py",
+            "sink": "requests.post",
+            "line": 106,
+            "expr": "",
+            "caller": "oauth2callback_github"
+        }
+    ],
+    "oauth2callback_github -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/controller/github_sync_routes.py",
+            "sink": "requests.get",
+            "line": 129,
+            "expr": "",
+            "caller": "oauth2callback_github"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/controller/github_sync_routes.py",
+            "sink": "requests.get",
+            "line": 139,
+            "expr": "",
+            "caller": "oauth2callback_github"
+        }
+    ],
+    "list_knowledge_in_brain_endpoint -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "generate_signed_url_endpoint -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "oauth2callback_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/controller/notion_sync_routes.py",
+            "sink": "requests.post",
+            "line": 126,
+            "expr": "",
+            "caller": "oauth2callback_notion"
+        }
+    ],
+    "resend_invitation_email -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "remove_user_subscription -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "remove_user_subscription -> BrainService.delete_brain -> BrainUserService.delete_brain_user -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "get_user_invitation -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "accept_invitation -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "update_brain_subscription -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "update_brain_subscription -> BrainUserService.delete_brain_user -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "subscribe_to_brain_handler -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "unsubscribe_from_brain_handler -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "unsubscribe_from_brain_handler -> BrainUserService.delete_brain_user -> BrainService.get_brain_by_id -> Brains.get_brain_by_id -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 97,
+            "expr": "",
+            "caller": "Brains.get_brain_by_id"
+        }
+    ],
+    "AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "AzureDriveSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "AzureDriveSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "AzureDriveSync.aget_files -> AzureDriveSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "AzureDriveSync.aget_files -> AzureDriveSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "AzureDriveSync.get_files_by_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 505,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files_by_id"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 509,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files_by_id"
+        }
+    ],
+    "AzureDriveSync.aget_files_by_id -> AzureDriveSync.get_files_by_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 505,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files_by_id"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 509,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files_by_id"
+        }
+    ],
+    "AzureDriveSync.download_file -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 556,
+            "expr": "",
+            "caller": "AzureDriveSync.download_file"
+        }
+    ],
+    "AzureDriveSync.adownload_file -> AzureDriveSync.download_file -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 556,
+            "expr": "",
+            "caller": "AzureDriveSync.download_file"
+        }
+    ],
+    "DropboxSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "DropboxSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "DropboxSync.aget_files -> DropboxSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "DropboxSync.aget_files -> DropboxSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.aget_files -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.aget_files -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "GitHubSync.aget_files -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.aget_files -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.aget_files -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.get_files_by_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1036,
+            "expr": "",
+            "caller": "GitHubSync.get_files_by_id"
+        }
+    ],
+    "GitHubSync.aget_files_by_id -> GitHubSync.get_files_by_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1036,
+            "expr": "",
+            "caller": "GitHubSync.get_files_by_id"
+        }
+    ],
+    "GitHubSync.download_file -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1077,
+            "expr": "",
+            "caller": "GitHubSync.download_file"
+        }
+    ],
+    "GitHubSync.adownload_file -> GitHubSync.download_file -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1077,
+            "expr": "",
+            "caller": "GitHubSync.download_file"
+        }
+    ],
+    "GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "get_files_folder_user_sync -> SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserService.get_files_folder_user_sync -> SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> AzureDriveSync.get_files -> DropboxSync.get_files -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_repos.fetch_repos -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1099,
+            "expr": "",
+            "caller": "GitHubSync.list_github_repos.fetch_repos"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> AzureDriveSync.get_files.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 375,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 381,
+            "expr": "",
+            "caller": "AzureDriveSync.get_files.fetch_files"
+        }
+    ],
+    "SyncUserRepository.get_files_folder_user_sync -> GitHubSync.get_files -> GitHubSync.list_github_repos -> GitHubSync.list_github_files_in_repo -> GitHubSync.list_github_files_in_repo.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/sync/utils/sync.py",
+            "sink": "requests.get",
+            "line": 1144,
+            "expr": "",
+            "caller": "GitHubSync.list_github_files_in_repo.fetch_files"
+        }
+    ],
+    "upload_file -> validate_brain_authorization -> BrainService.get_brain_details -> Brains.get_brain_details -> connection.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/brain/repository/brains.py",
+            "sink": "connection.execute",
+            "line": 59,
+            "expr": "",
+            "caller": "Brains.get_brain_details"
+        }
+    ],
+    "VectorRepository.get_vectors_by_knowledge_id -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/vector/repository/vectors_repository.py",
+            "sink": "Attribute.execute",
+            "line": 40,
+            "expr": "",
+            "caller": "VectorRepository.get_vectors_by_knowledge_id"
+        }
+    ],
+    "VectorRepository.similarity_search -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/vector/repository/vectors_repository.py",
+            "sink": "Attribute.execute",
+            "line": 103,
+            "expr": "",
+            "caller": "VectorRepository.similarity_search"
+        }
+    ],
+    "WebSearchTool._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/tools/web_search.py",
+            "sink": "requests.get",
+            "line": 47,
+            "expr": "",
+            "caller": "WebSearchTool._run"
+        }
+    ],
+    "WebSearchTool._arun -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/quivr/backend/api/quivr_api/modules/tools/web_search.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "",
+            "caller": "WebSearchTool._arun"
+        }
+    ]
+}

@@ -1,0 +1,764 @@
+{
+    "Agent.eval_agent_config -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent.py",
+        "sink": "eval",
+        "line": 116,
+        "expr": "eval(value)"
+    }],
+    "Agent.create_agent_with_marketplace_template_id -> AgentTemplate.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 140,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/template_details/\" + str(agent_template_id),            headers=headers, timeout=10)"
+    }],
+    "AgentExecutionConfiguration.eval_agent_config -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+        "sink": "eval",
+        "line": 110,
+        "expr": "eval(value)"
+    }],
+    "AgentExecutionConfiguration.build_agent_execution_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 133,
+            "expr": "eval(results_agent_dict['instruction'])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 136,
+            "expr": "eval(results_agent_dict['constraints'])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 123,
+            "expr": "eval(results_agent_dict['goal'])"
+        }
+    ],
+    "AgentExecutionConfiguration.build_scheduled_agent_execution_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 171,
+            "expr": "eval(results_agent_dict['instruction'])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 161,
+            "expr": "eval(results_agent_dict['goal'])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_execution_config.py",
+            "sink": "eval",
+            "line": 174,
+            "expr": "eval(results_agent_dict['constraints'])"
+        }
+    ],
+    "AgentTemplate.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 119,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/list?search=\" + search_str + \"&page=\" + str(page),            headers=headers, timeout=10)"
+    }],
+    "AgentTemplate.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 140,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/template_details/\" + str(agent_template_id),            headers=headers, timeout=10)"
+    }],
+    "AgentTemplate.clone_agent_template_from_marketplace -> AgentTemplate.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 140,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/template_details/\" + str(agent_template_id),            headers=headers, timeout=10)"
+    }],
+    "AgentTemplate.eval_agent_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 224,
+            "expr": "eval(value)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 226,
+            "expr": "eval(value)]"
+        }
+    ],
+    "get_agent_template -> AgentTemplate.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 140,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/template_details/\" + str(agent_template_id),            headers=headers, timeout=10)"
+    }],
+    "get_agent_template -> AgentTemplate.eval_agent_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 224,
+            "expr": "eval(value)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 226,
+            "expr": "eval(value)]"
+        }
+    ],
+    "save_agent_as_template -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/controllers/agent_template.py",
+        "sink": "eval",
+        "line": 251,
+        "expr": "eval(config.value)))"
+    }],
+    "list_agent_templates -> AgentTemplate.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 119,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/list?search=\" + search_str + \"&page=\" + str(page),            headers=headers, timeout=10)"
+    }],
+    "marketplace_template_detail -> AgentTemplate.eval_agent_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 224,
+            "expr": "eval(value)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 226,
+            "expr": "eval(value)]"
+        }
+    ],
+    "download_template -> AgentTemplate.clone_agent_template_from_marketplace -> AgentTemplate.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+        "sink": "get",
+        "line": 140,
+        "expr": "requests.get(            marketplace_url + \"agent_templates/marketplace/template_details/\" + str(agent_template_id),            headers=headers, timeout=10)"
+    }],
+    "fetch_agent_config_from_template -> AgentTemplate.eval_agent_config -> eval": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 224,
+            "expr": "eval(value)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/agent_template.py",
+            "sink": "eval",
+            "line": 226,
+            "expr": "eval(value)]"
+        }
+    ],
+    "publish_template -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/controllers/agent_template.py",
+        "sink": "eval",
+        "line": 466,
+        "expr": "eval(agent_execution_configuration.value)))"
+    }],
+    "AgentToolStepHandler.execute_step -> QueueStepHandler.execute_step -> QueueStepHandler._add_to_queue -> QueueStepHandler._process_reply -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/queue_step_handler.py",
+        "sink": "eval",
+        "line": 79,
+        "expr": "eval(assistant_reply)).flatten().tolist()"
+    }],
+    "ApolloSearchTool._execute -> ApolloSearchTool.apollo_search_results -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/apollo/apollo_search.py",
+        "sink": "post",
+        "line": 127,
+        "expr": "requests.post(url, headers=headers, data=json.dumps(data))"
+    }],
+    "ApolloSearchTool.apollo_search_results -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/apollo/apollo_search.py",
+        "sink": "post",
+        "line": 127,
+        "expr": "requests.post(url, headers=headers, data=json.dumps(data))"
+    }],
+    "run_npm_commands -> run": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/cli2.py",
+            "sink": "run",
+            "line": 20,
+            "expr": "subprocess.run([\"npm\", \"install\"], check=True, shell=shell)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/run_gui.py",
+            "sink": "run",
+            "line": 16,
+            "expr": "subprocess.run([\"npm\", \"install\"], check=True)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/ui.py",
+            "sink": "run",
+            "line": 18,
+            "expr": "subprocess.run([\"npm\", \"install\"], check=True,shell=shell)"
+        }
+    ],
+    "DalleImageGenTool._execute -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/image_generation/dalle_image_gen.py",
+        "sink": "get",
+        "line": 69,
+        "expr": "requests.get(response[i]['url']).content"
+    }],
+    "DuckDuckGoSearchTool._execute -> DuckDuckGoSearchTool.get_content_from_url -> WebpageExtractor.extract_with_bs4 -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webpage_extractor.py",
+        "sink": "get",
+        "line": 101,
+        "expr": "requests.get(url, headers=headers, timeout=10)"
+    }],
+    "DuckDuckGoSearchTool.get_content_from_url -> WebpageExtractor.extract_with_bs4 -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webpage_extractor.py",
+        "sink": "get",
+        "line": 101,
+        "expr": "requests.get(url, headers=headers, timeout=10)"
+    }],
+    "GithubHelper.check_repository_visibility -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 61,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.search_repo -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 88,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.sync_branch -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 109,
+        "expr": "requests.get(base_branch_url, headers=headers)"
+    }],
+    "GithubHelper.make_fork -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "post",
+        "line": 138,
+        "expr": "requests.post(fork_url, headers=headers)"
+    }],
+    "GithubHelper.make_fork -> GithubHelper.sync_branch -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 109,
+        "expr": "requests.get(base_branch_url, headers=headers)"
+    }],
+    "GithubHelper.create_branch -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 163,
+        "expr": "requests.get(                f'https://api.github.com/repos/{self.github_username}/{repository_name}/git/refs/heads/{base_branch}',                headers=headers)."
+    }],
+    "GithubHelper.create_branch -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "post",
+        "line": 167,
+        "expr": "requests.post(branch_url, json=branch_params, headers=headers)"
+    }],
+    "GithubHelper.delete_file -> GithubHelper.get_sha -> GithubHelper.search_repo -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 88,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.create_pull_request -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "post",
+        "line": 265,
+        "expr": "requests.post(pull_request_url, json=pull_request_params, headers=headers)"
+    }],
+    "GithubHelper.get_sha -> GithubHelper.search_repo -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 88,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.get_content_in_file -> GithubHelper.search_repo -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 88,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.get_pull_request_content -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 362,
+        "expr": "requests.get(pull_request_url, headers=headers)"
+    }],
+    "GithubHelper.get_latest_commit_id_of_pull_request -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 389,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "GithubHelper.add_line_comment_to_pull_request -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "post",
+        "line": 427,
+        "expr": "requests.post(comments_url, headers=headers, json=data)"
+    }],
+    "GithubHelper.get_pull_requests_created_in_last_x_seconds -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/github_helper.py",
+        "sink": "get",
+        "line": 462,
+        "expr": "requests.get(url, headers=headers)"
+    }],
+    "google_auth_calendar -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/controllers/google_oauth.py",
+        "sink": "post",
+        "line": 54,
+        "expr": "requests.post(token_uri, data=params)"
+    }],
+    "GoogleSearchWrap.search_run -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/google_search.py",
+        "sink": "get",
+        "line": 51,
+        "expr": "requests.get(url, params=params, timeout=100)"
+    }],
+    "GoogleSearchWrap.get_result -> GoogleSearchWrap.search_run -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/google_search.py",
+        "sink": "get",
+        "line": 51,
+        "expr": "requests.get(url, params=params, timeout=100)"
+    }],
+    "HuggingFace.verify_access_key -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/hugging_face.py",
+        "sink": "get",
+        "line": 63,
+        "expr": "requests.get(ACCOUNT_VERIFICATION_URL, headers=self.headers)"
+    }],
+    "HuggingFace.chat_completion -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/hugging_face.py",
+        "sink": "post",
+        "line": 94,
+        "expr": "requests.post(self.end_point, headers=self.headers, data=json.dumps(payload))"
+    }],
+    "HuggingFace.verify_end_point -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/hugging_face.py",
+        "sink": "post",
+        "line": 109,
+        "expr": "requests.post(self.end_point, headers=self.headers, data=data)"
+    }],
+    "InstagramTool._execute -> InstagramTool.get_req_insta_id -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "get",
+        "line": 177,
+        "expr": "requests.get(            url_to_get_acc_id        )"
+    }],
+    "InstagramTool._execute -> InstagramTool.post_media_container_id -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "post",
+        "line": 185,
+        "expr": "requests.post(                   url_to_create_media_container        )"
+    }],
+    "InstagramTool._execute -> InstagramTool.post_media -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "post",
+        "line": 193,
+        "expr": "requests.post(            url_to_post_media_container        )"
+    }],
+    "InstagramTool.get_req_insta_id -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "get",
+        "line": 177,
+        "expr": "requests.get(            url_to_get_acc_id        )"
+    }],
+    "InstagramTool.post_media_container_id -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "post",
+        "line": 185,
+        "expr": "requests.post(                   url_to_create_media_container        )"
+    }],
+    "InstagramTool.post_media -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/instagram_tool/instagram.py",
+        "sink": "post",
+        "line": 193,
+        "expr": "requests.post(            url_to_post_media_container        )"
+    }],
+    "KnowledgeConfigs.fetch_knowledge_config_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledge_configs.py",
+        "sink": "get",
+        "line": 36,
+        "expr": "requests.get(            marketplace_url + f\"/knowledge_configs/marketplace/details/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "Knowledges.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 48,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "Knowledges.fetch_knowledge_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 82,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/details/{knowledge_name}\",            headers=headers, timeout=10)"
+    }],
+    "get_knowledge_list -> Knowledges.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 48,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "get_knowledge_list -> MarketPlaceStats.get_knowledge_installation_number -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/marketplace_stats.py",
+        "sink": "get",
+        "line": 40,
+        "expr": "requests.get(            marketplace_url + f\"/marketplace/knowledge/downloads/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "get_user_knowledge_list -> Knowledges.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 48,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "get_knowledge_details -> KnowledgeConfigs.fetch_knowledge_config_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledge_configs.py",
+        "sink": "get",
+        "line": 36,
+        "expr": "requests.get(            marketplace_url + f\"/knowledge_configs/marketplace/details/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "get_knowledge_details -> Knowledges.fetch_knowledge_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 82,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/details/{knowledge_name}\",            headers=headers, timeout=10)"
+    }],
+    "get_knowledge_details -> MarketPlaceStats.get_knowledge_installation_number -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/marketplace_stats.py",
+        "sink": "get",
+        "line": 40,
+        "expr": "requests.get(            marketplace_url + f\"/marketplace/knowledge/downloads/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "install_selected_knowledge -> KnowledgeConfigs.fetch_knowledge_config_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledge_configs.py",
+        "sink": "get",
+        "line": 36,
+        "expr": "requests.get(            marketplace_url + f\"/knowledge_configs/marketplace/details/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "install_selected_knowledge -> Knowledges.fetch_knowledge_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 82,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/details/{knowledge_name}\",            headers=headers, timeout=10)"
+    }],
+    "install_selected_knowledge -> MarketPlaceStats.get_knowledge_installation_number -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/marketplace_stats.py",
+        "sink": "get",
+        "line": 40,
+        "expr": "requests.get(            marketplace_url + f\"/marketplace/knowledge/downloads/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "uninstall_selected_knowledge -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/controllers/knowledges.py",
+        "sink": "eval",
+        "line": 157,
+        "expr": "eval(knowledge_config[\"vector_ids\"])"
+    }],
+    "github_auth_handler -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/main.py",
+        "sink": "post",
+        "line": 294,
+        "expr": "requests.post(github_token_url, params=params, headers=headers)"
+    }],
+    "github_auth_handler -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/main.py",
+        "sink": "get",
+        "line": 302,
+        "expr": "requests.get(github_api_url, headers=headers)"
+    }],
+    "MarketPlaceStats.get_knowledge_installation_number -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/marketplace_stats.py",
+        "sink": "get",
+        "line": 40,
+        "expr": "requests.get(            marketplace_url + f\"/marketplace/knowledge/downloads/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "Models.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/models.py",
+        "sink": "get",
+        "line": 61,
+        "expr": "requests.get(            marketplace_url + f\"/models_controller/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "verify_end_point -> ModelsHelper.validate_end_point -> HuggingFace.verify_end_point -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/hugging_face.py",
+        "sink": "post",
+        "line": 109,
+        "expr": "requests.post(self.end_point, headers=self.headers, data=data)"
+    }],
+    "get_models_list -> Models.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/models.py",
+        "sink": "get",
+        "line": 61,
+        "expr": "requests.get(            marketplace_url + f\"/models_controller/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "get_models_details -> Models.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/models.py",
+        "sink": "get",
+        "line": 61,
+        "expr": "requests.get(            marketplace_url + f\"/models_controller/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "ModelsHelper.validate_end_point -> HuggingFace.verify_end_point -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/hugging_face.py",
+        "sink": "post",
+        "line": 109,
+        "expr": "requests.post(self.end_point, headers=self.headers, data=data)"
+    }],
+    "TaskOutputHandler.handle -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/output_handler.py",
+        "sink": "eval",
+        "line": 149,
+        "expr": "eval(assistant_reply)"
+    }],
+    "ReplaceTaskOutputHandler.handle -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/output_handler.py",
+        "sink": "eval",
+        "line": 180,
+        "expr": "eval(assistant_reply)"
+    }],
+    "QueueStepHandler.execute_step -> QueueStepHandler._add_to_queue -> QueueStepHandler._process_reply -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/queue_step_handler.py",
+        "sink": "eval",
+        "line": 79,
+        "expr": "eval(assistant_reply)).flatten().tolist()"
+    }],
+    "QueueStepHandler._add_to_queue -> QueueStepHandler._process_reply -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/queue_step_handler.py",
+        "sink": "eval",
+        "line": 79,
+        "expr": "eval(assistant_reply)).flatten().tolist()"
+    }],
+    "QueueStepHandler._process_reply -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/queue_step_handler.py",
+        "sink": "eval",
+        "line": 79,
+        "expr": "eval(assistant_reply)).flatten().tolist()"
+    }],
+    "Replicate.verify_access_key -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/llms/replicate.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(\"https://api.replicate.com/v1/collections\", headers=headers)"
+    }],
+    "run_server -> Popen": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/run_gui.py",
+            "sink": "Popen",
+            "line": 23,
+            "expr": "subprocess.Popen([\"uvicorn\", \"main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/run_gui.py",
+            "sink": "Popen",
+            "line": 25,
+            "expr": "subprocess.Popen([\"npm\", \"run\", \"dev\"])"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/ui.py",
+            "sink": "Popen",
+            "line": 26,
+            "expr": "subprocess.Popen([\"uvicorn\", \"main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"], shell=shell)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/ui.py",
+            "sink": "Popen",
+            "line": 28,
+            "expr": "subprocess.Popen([\"celery\", \"-A\", \"superagi.worker\", \"worker\", \"--loglevel=info\"], shell=shell)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/ui.py",
+            "sink": "Popen",
+            "line": 30,
+            "expr": "subprocess.Popen([\"npm\", \"run\", \"dev\"], shell=shell)"
+        }
+    ],
+    "StableDiffusionImageGenTool._execute -> StableDiffusionImageGenTool.call_stable_diffusion -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/image_generation/stable_diffusion_image_gen.py",
+        "sink": "post",
+        "line": 83,
+        "expr": "requests.post(            f\"https://api.stability.ai/v1/generation/{engine_id}/text-to-image\",            headers={                \"Content-Type\": \"application/json\",                \"Accept\": \"application/json\",                \"Authorization\": f\"Bearer {api_key}\"            },            json={                \"text_prompts\": [{\"text\": prompt}],                \"height\": height,                \"width\": width,                \"samples\": num,                \"steps\": steps,            },        )"
+    }],
+    "StableDiffusionImageGenTool.call_stable_diffusion -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tools/image_generation/stable_diffusion_image_gen.py",
+        "sink": "post",
+        "line": 83,
+        "expr": "requests.post(            f\"https://api.stability.ai/v1/generation/{engine_id}/text-to-image\",            headers={                \"Content-Type\": \"application/json\",                \"Accept\": \"application/json\",                \"Authorization\": f\"Bearer {api_key}\"            },            json={                \"text_prompts\": [{\"text\": prompt}],                \"height\": height,                \"width\": width,                \"samples\": num,                \"steps\": steps,            },        )"
+    }],
+    "TaskQueue.get_last_task_details -> eval": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/agent/task_queue.py",
+        "sink": "eval",
+        "line": 43,
+        "expr": "eval(response)"
+    }],
+    "download_tool -> get": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 34,
+            "expr": "requests.get(archive_url)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+            "sink": "get",
+            "line": 23,
+            "expr": "requests.get(archive_url)"
+        }
+    ],
+    "get_readme_content_from_code_link -> get": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 251,
+            "expr": "requests.get(readme_url)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 254,
+            "expr": "requests.get(readme_url)"
+        }
+    ],
+    "download_marketplace_tool -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+        "sink": "get",
+        "line": 57,
+        "expr": "requests.get(archive_url)"
+    }],
+    "get_marketplace_tool_links -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+        "sink": "get",
+        "line": 79,
+        "expr": "requests.get(api_url)"
+    }],
+    "load_marketplace_tools -> get_marketplace_tool_links -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+        "sink": "get",
+        "line": 79,
+        "expr": "requests.get(api_url)"
+    }],
+    "download_and_extract_tools -> download_tool -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+        "sink": "get",
+        "line": 23,
+        "expr": "requests.get(archive_url)"
+    }],
+    "download_and_extract_tools -> download_marketplace_tool -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/tool_manager.py",
+        "sink": "get",
+        "line": 57,
+        "expr": "requests.get(archive_url)"
+    }],
+    "Toolkit.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 93,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "Toolkit.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/{search_str}/{toolkit_name}\",            headers=headers, timeout=10)"
+    }],
+    "get_marketplace_toolkit_readme -> get_readme_content_from_code_link -> get": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 251,
+            "expr": "requests.get(readme_url)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 254,
+            "expr": "requests.get(readme_url)"
+        }
+    ],
+    "install_toolkit_from_marketplace -> Toolkit.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/{search_str}/{toolkit_name}\",            headers=headers, timeout=10)"
+    }],
+    "get_installed_toolkit_readme -> get_readme_content_from_code_link -> get": [{
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 251,
+            "expr": "requests.get(readme_url)"
+        },
+        {
+            "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/tool_helper.py",
+            "sink": "get",
+            "line": 254,
+            "expr": "requests.get(readme_url)"
+        }
+    ],
+    "handle_marketplace_operations -> Toolkit.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/{search_str}/{toolkit_name}\",            headers=headers, timeout=10)"
+    }],
+    "handle_marketplace_operations_list -> Toolkit.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 93,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/list/{str(page)}\",            headers=headers, timeout=10)"
+    }],
+    "check_toolkit_update -> Toolkit.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/{search_str}/{toolkit_name}\",            headers=headers, timeout=10)"
+    }],
+    "update_toolkit -> Toolkit.fetch_marketplace_detail -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/toolkit.py",
+        "sink": "get",
+        "line": 106,
+        "expr": "requests.get(            marketplace_url + f\"/toolkits/marketplace/{search_str}/{toolkit_name}\",            headers=headers, timeout=10)"
+    }],
+    "TwitterHelper.get_media_ids -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/twitter_helper.py",
+        "sink": "post",
+        "line": 29,
+        "expr": "requests.post(upload_endpoint, headers=headers,                                     data={'media_data': b64_image},                                     auth=oauth)"
+    }],
+    "get_marketplace_valid_indices -> KnowledgeConfigs.fetch_knowledge_config_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledge_configs.py",
+        "sink": "get",
+        "line": 36,
+        "expr": "requests.get(            marketplace_url + f\"/knowledge_configs/marketplace/details/{str(knowledge_id)}\",            headers=headers, timeout=10)"
+    }],
+    "get_marketplace_valid_indices -> Knowledges.fetch_knowledge_details_marketplace -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/knowledges.py",
+        "sink": "get",
+        "line": 82,
+        "expr": "requests.get(            marketplace_url + f\"/knowledges/marketplace/details/{knowledge_name}\",            headers=headers, timeout=10)"
+    }],
+    "get_vector_db_list -> Vectordbs.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/vector_dbs.py",
+        "sink": "get",
+        "line": 45,
+        "expr": "requests.get(            marketplace_url + f\"/vector_dbs/marketplace/list\",            headers=headers, timeout=10)"
+    }],
+    "Vectordbs.fetch_marketplace_list -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/models/vector_dbs.py",
+        "sink": "get",
+        "line": 45,
+        "expr": "requests.get(            marketplace_url + f\"/vector_dbs/marketplace/list\",            headers=headers, timeout=10)"
+    }],
+    "WebHookManager.agent_status_change_callback -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webhook_manager.py",
+        "sink": "post",
+        "line": 28,
+        "expr": "requests.post(webhook_obj.url.strip(), data=json.dumps(webhook_obj_body), headers=webhook_obj.headers)"
+    }],
+    "WebpageExtractor.extract_with_3k -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webpage_extractor.py",
+        "sink": "get",
+        "line": 50,
+        "expr": "requests.get(url)"
+    }],
+    "WebpageExtractor.extract_with_bs4 -> get": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webpage_extractor.py",
+        "sink": "get",
+        "line": 101,
+        "expr": "requests.get(url, headers=headers, timeout=10)"
+    }],
+    "webhook_callback -> WebHookManager.agent_status_change_callback -> post": [{
+        "file_path": "C:/Users/Luojq/Desktop/tmp/SuperAGI-main (1)/SuperAGI-main/superagi/helper/webhook_manager.py",
+        "sink": "post",
+        "line": 28,
+        "expr": "requests.post(webhook_obj.url.strip(), data=json.dumps(webhook_obj_body), headers=webhook_obj.headers)"
+    }]
+}

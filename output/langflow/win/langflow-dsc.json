@@ -1,0 +1,41 @@
+{
+    "CodeParser.parse_functions -> CodeParser.parse_callable_details -> eval": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_functions -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_callable_details -> eval": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_classes -> CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_classes -> CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_classes -> CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.parse_classes -> CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        "module.split(\" as \")"
+    ],
+    "CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        "module.split(\" as \")"
+    ]
+}

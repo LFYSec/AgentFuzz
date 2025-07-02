@@ -1,0 +1,3094 @@
+{
+  "_convert_config_to_py_and_run -> Popen": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app.py",
+      "module_name": "_app",
+      "func_name": "_convert_config_to_py_and_run",
+      "expr": "status == \"True\"",
+      "start_line": 628
+    }
+  ],
+  "get_user_status -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "module_name": "_app_online",
+      "func_name": "oauth_callback",
+      "expr": "not code",
+      "start_line": 204
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "module_name": "_app_online",
+      "func_name": "oauth_callback",
+      "expr": "not access_token or not user_status",
+      "start_line": 219
+    }
+  ],
+  "oauth_callback -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "module_name": "_app_online",
+      "func_name": "oauth_callback",
+      "expr": "not code",
+      "start_line": 204
+    }
+  ],
+  "oauth_callback -> get_user_status -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "module_name": "_app_online",
+      "func_name": "oauth_callback",
+      "expr": "not code",
+      "start_line": 204
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "module_name": "_app_online",
+      "func_name": "oauth_callback",
+      "expr": "not access_token or not user_status",
+      "start_line": 219
+    }
+  ],
+  "StudioClient.register_running_instance -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "disable_saving",
+      "start_line": 102
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "save_code",
+      "start_line": 120
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "save_code",
+      "start_line": 120
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "not disable_saving",
+      "start_line": 123
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "not disable_saving",
+      "start_line": 123
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "studio_url is not None",
+      "start_line": 144
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "studio_url is not None",
+      "start_line": 144
+    }
+  ],
+  "ASManager.initialize -> StudioClient.register_running_instance -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "disable_saving",
+      "start_line": 102
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "save_code",
+      "start_line": 120
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "save_code",
+      "start_line": 120
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "not disable_saving",
+      "start_line": 123
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "not disable_saving",
+      "start_line": 123
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "studio_url is not None",
+      "start_line": 144
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_manager.py",
+      "module_name": "_manager",
+      "func_name": "ASManager.initialize",
+      "expr": "studio_url is not None",
+      "start_line": 144
+    }
+  ],
+  "StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    }
+  ],
+  "AgentBase.speak -> log_msg -> log_stream_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    }
+  ],
+  "log_stream_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    }
+  ],
+  "log_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    }
+  ],
+  "UserAgent.reply -> UserAgent.speak -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    }
+  ],
+  "UserAgent.speak -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "last",
+      "start_line": 61
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_stream_msg",
+      "expr": "_studio_client.active",
+      "start_line": 73
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "not isinstance(msg, Msg)",
+      "start_line": 110
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/logging.py",
+      "module_name": "logging",
+      "func_name": "log_msg",
+      "expr": "_studio_client.active",
+      "start_line": 116
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 64
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "_studio_client.active",
+      "start_line": 67
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "required_keys is not None",
+      "start_line": 89
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "isinstance(required_keys, str)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.require_url",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "url == \"\"",
+      "start_line": 100
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.reply",
+      "expr": "self.memory",
+      "start_line": 115
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/user_agent.py",
+      "module_name": "user_agent",
+      "func_name": "UserAgent.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 135
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, str)",
+      "start_line": 325
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, Msg)",
+      "start_line": 333
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/agent.py",
+      "module_name": "agent",
+      "func_name": "AgentBase.speak",
+      "expr": "isinstance(content, GeneratorType)",
+      "start_line": 335
+    }
+  ],
+  "StudioClient.alloc_server -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "agent_id is not None",
+      "start_line": 69
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "self.port is None and _studio_client.active",
+      "start_line": 72
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "\"host\" in server",
+      "start_line": 74
+    }
+  ],
+  "RpcAgent.__init__ -> StudioClient.alloc_server -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "agent_id is not None",
+      "start_line": 69
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "self.port is None and _studio_client.active",
+      "start_line": 72
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/agents/rpc_agent.py",
+      "module_name": "rpc_agent",
+      "func_name": "RpcAgent.__init__",
+      "expr": "\"host\" in server",
+      "start_line": 74
+    }
+  ],
+  "requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    }
+  ],
+  "dblp_search_publications -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    }
+  ],
+  "dblp_search_authors -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    }
+  ],
+  "dblp_search_venues -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    }
+  ],
+  "bing_search -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    }
+  ],
+  "google_search -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_venues",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 301
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_publications",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 97
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "kwargs",
+      "start_line": 173
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "google_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 178
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/dblp.py",
+      "module_name": "dblp",
+      "func_name": "dblp_search_authors",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 208
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "kwargs",
+      "start_line": 83
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/search.py",
+      "module_name": "search",
+      "func_name": "bing_search",
+      "expr": "isinstance(search_results, str)",
+      "start_line": 94
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "module_name": "common",
+      "func_name": "requests_get",
+      "expr": "headers",
+      "start_line": 152
+    }
+  ],
+  "execute_shell_command -> run": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/execute_code/exec_shell.py",
+      "module_name": "exec_shell",
+      "func_name": "execute_shell_command",
+      "expr": "any(_ in command for _ in execute_shell_command.insecure_commands)",
+      "start_line": 33
+    }
+  ],
+  "_parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "module_name": "openai_services",
+      "func_name": "_parse_url",
+      "expr": "url.startswith((\"http://\", \"https://\"))",
+      "start_line": 90
+    }
+  ],
+  "openai_edit_image -> _parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "module_name": "openai_services",
+      "func_name": "_parse_url",
+      "expr": "url.startswith((\"http://\", \"https://\"))",
+      "start_line": 90
+    }
+  ],
+  "openai_create_image_variation -> _parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "module_name": "openai_services",
+      "func_name": "_parse_url",
+      "expr": "url.startswith((\"http://\", \"https://\"))",
+      "start_line": 90
+    }
+  ],
+  "PostAPIModelWrapperBase.__call__ -> post": [],
+  "AgentServerServicer.__init__ -> _register_server_to_studio -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/server/servicer.py",
+      "module_name": "servicer",
+      "func_name": "AgentServerServicer.__init__",
+      "expr": "studio_url is not None",
+      "start_line": 117
+    }
+  ],
+  "_register_server_to_studio -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/server/servicer.py",
+      "module_name": "servicer",
+      "func_name": "AgentServerServicer.__init__",
+      "expr": "studio_url is not None",
+      "start_line": 117
+    }
+  ],
+  "FileManager.save_image -> _download_file -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_file.py",
+      "module_name": "_file",
+      "func_name": "FileManager.save_image",
+      "expr": "filename is None",
+      "start_line": 209
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_file.py",
+      "module_name": "_file",
+      "func_name": "FileManager.save_image",
+      "expr": "isinstance(image, str)",
+      "start_line": 219
+    }
+  ],
+  "_download_file -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_file.py",
+      "module_name": "_file",
+      "func_name": "FileManager.save_image",
+      "expr": "filename is None",
+      "start_line": 209
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/manager/_file.py",
+      "module_name": "_file",
+      "func_name": "FileManager.save_image",
+      "expr": "isinstance(image, str)",
+      "start_line": 219
+    }
+  ],
+  "load_web -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "is_valid_url(web_text_or_url)",
+      "start_line": 235
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "html_selected_tags is None or len(html_selected_tags) == 0",
+      "start_line": 238
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "response.status == ServiceExecStatus.SUCCESS",
+      "start_line": 244
+    }
+  ],
+  "digest_webpage -> load_web -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "is_valid_url(web_text_or_url)",
+      "start_line": 235
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "html_selected_tags is None or len(html_selected_tags) == 0",
+      "start_line": 238
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "module_name": "web_digest",
+      "func_name": "digest_webpage",
+      "expr": "response.status == ServiceExecStatus.SUCCESS",
+      "start_line": 244
+    }
+  ],
+  "wikipedia_search_categories -> get": [],
+  "start_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    }
+  ],
+  "start_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "compile_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    }
+  ],
+  "compile_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "main -> compile_workflow -> start_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    }
+  ],
+  "main -> compile_workflow -> start_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    }
+  ],
+  "sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    }
+  ],
+  "build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    }
+  ],
+  "build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "ASDiGraph.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "MsgNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "DialogAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "UserAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "TextToImageAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "DictDialogAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "ReActAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "ForLoopPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "WhileLoopPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "SwitchPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "BingSearchServiceNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "GoogleSearchServiceNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    }
+  ],
+  "is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    }
+  ],
+  "kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "value == \"\"",
+      "start_line": 286
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "sanitize_node_data",
+      "expr": "is_callable_expression(value)",
+      "start_line": 289
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "kwarg_converter",
+      "expr": "is_callable_expression(value)",
+      "start_line": 21
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "cfg_path",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "not compiled_filename",
+      "start_line": 87
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "os.path.exists(compiled_filename)",
+      "start_line": 90
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"no\", \"n\", \"false\"]",
+      "start_line": 96
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow.py",
+      "module_name": "workflow",
+      "func_name": "main",
+      "expr": "user_input.lower() in [\"\", \"yes\", \"y\", \"true\"]",
+      "start_line": 99
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "module_name": "workflow_utils",
+      "func_name": "is_callable_expression",
+      "expr": "s in [\"input\", \"print\"]",
+      "start_line": 9
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "module_name": "workflow_dag",
+      "func_name": "build_dag",
+      "expr": "\"drawflow\" in config\n        and \"Home\" in config[\"drawflow\"]\n        and \"data\" in config[\"drawflow\"][\"Home\"]",
+      "start_line": 317
+    }
+  ]
+}

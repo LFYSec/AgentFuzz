@@ -1,0 +1,491 @@
+[{
+        "package_name": "*",
+        "module_name": "agent",
+        "func_name": "Agent.eval_agent_config"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent",
+        "func_name": "Agent.create_agent_with_marketplace_template_id"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "AgentTemplate.fetch_marketplace_detail"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_execution_config",
+        "func_name": "AgentExecutionConfiguration.eval_agent_config"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_execution_config",
+        "func_name": "AgentExecutionConfiguration.build_agent_execution_config"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_execution_config",
+        "func_name": "AgentExecutionConfiguration.build_scheduled_agent_execution_config"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "AgentTemplate.fetch_marketplace_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "AgentTemplate.clone_agent_template_from_marketplace"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "AgentTemplate.eval_agent_config"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "get_agent_template"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "save_agent_as_template"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "list_agent_templates"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "marketplace_template_detail"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "download_template"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "fetch_agent_config_from_template"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_template",
+        "func_name": "publish_template"
+    },
+    {
+        "package_name": "*",
+        "module_name": "agent_tool_step_handler",
+        "func_name": "AgentToolStepHandler.execute_step"
+    },
+    {
+        "package_name": "*",
+        "module_name": "queue_step_handler",
+        "func_name": "QueueStepHandler.execute_step"
+    },
+    {
+        "package_name": "*",
+        "module_name": "queue_step_handler",
+        "func_name": "QueueStepHandler._add_to_queue"
+    },
+    {
+        "package_name": "*",
+        "module_name": "queue_step_handler",
+        "func_name": "QueueStepHandler._process_reply"
+    },
+    {
+        "package_name": "*",
+        "module_name": "apollo_search",
+        "func_name": "ApolloSearchTool._execute"
+    },
+    {
+        "package_name": "*",
+        "module_name": "apollo_search",
+        "func_name": "ApolloSearchTool.apollo_search_results"
+    },
+    {
+        "package_name": "*",
+        "module_name": "cli2",
+        "func_name": "run_npm_commands"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dalle_image_gen",
+        "func_name": "DalleImageGenTool._execute"
+    },
+    {
+        "package_name": "*",
+        "module_name": "duck_duck_go_search",
+        "func_name": "DuckDuckGoSearchTool._execute"
+    },
+    {
+        "package_name": "*",
+        "module_name": "duck_duck_go_search",
+        "func_name": "DuckDuckGoSearchTool.get_content_from_url"
+    },
+    {
+        "package_name": "*",
+        "module_name": "webpage_extractor",
+        "func_name": "WebpageExtractor.extract_with_bs4"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.check_repository_visibility"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.search_repo"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.sync_branch"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.make_fork"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.create_branch"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.delete_file"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.get_sha"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.create_pull_request"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.get_content_in_file"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.get_pull_request_content"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.get_latest_commit_id_of_pull_request"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.add_line_comment_to_pull_request"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_helper",
+        "func_name": "GithubHelper.get_pull_requests_created_in_last_x_seconds"
+    },
+    {
+        "package_name": "*",
+        "module_name": "google_oauth",
+        "func_name": "google_auth_calendar"
+    },
+    {
+        "package_name": "*",
+        "module_name": "google_search",
+        "func_name": "GoogleSearchWrap.search_run"
+    },
+    {
+        "package_name": "*",
+        "module_name": "google_search",
+        "func_name": "GoogleSearchWrap.get_result"
+    },
+    {
+        "package_name": "*",
+        "module_name": "hugging_face",
+        "func_name": "HuggingFace.verify_access_key"
+    },
+    {
+        "package_name": "*",
+        "module_name": "hugging_face",
+        "func_name": "HuggingFace.chat_completion"
+    },
+    {
+        "package_name": "*",
+        "module_name": "hugging_face",
+        "func_name": "HuggingFace.verify_end_point"
+    },
+    {
+        "package_name": "*",
+        "module_name": "instagram",
+        "func_name": "InstagramTool._execute"
+    },
+    {
+        "package_name": "*",
+        "module_name": "instagram",
+        "func_name": "InstagramTool.get_req_insta_id"
+    },
+    {
+        "package_name": "*",
+        "module_name": "instagram",
+        "func_name": "InstagramTool.post_media_container_id"
+    },
+    {
+        "package_name": "*",
+        "module_name": "instagram",
+        "func_name": "InstagramTool.post_media"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledge_configs",
+        "func_name": "KnowledgeConfigs.fetch_knowledge_config_details_marketplace"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "Knowledges.fetch_marketplace_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "Knowledges.fetch_knowledge_details_marketplace"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "get_knowledge_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "get_user_knowledge_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "get_knowledge_details"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "install_selected_knowledge"
+    },
+    {
+        "package_name": "*",
+        "module_name": "knowledges",
+        "func_name": "uninstall_selected_knowledge"
+    },
+    {
+        "package_name": "*",
+        "module_name": "main",
+        "func_name": "github_auth_handler"
+    },
+    {
+        "package_name": "*",
+        "module_name": "marketplace_stats",
+        "func_name": "MarketPlaceStats.get_knowledge_installation_number"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models",
+        "func_name": "Models.fetch_marketplace_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models_controller",
+        "func_name": "verify_end_point"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models_helper",
+        "func_name": "ModelsHelper.validate_end_point"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models_controller",
+        "func_name": "get_models_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models_controller",
+        "func_name": "get_models_details"
+    },
+    {
+        "package_name": "*",
+        "module_name": "output_handler",
+        "func_name": "TaskOutputHandler.handle"
+    },
+    {
+        "package_name": "*",
+        "module_name": "output_handler",
+        "func_name": "ReplaceTaskOutputHandler.handle"
+    },
+    {
+        "package_name": "*",
+        "module_name": "replicate",
+        "func_name": "Replicate.verify_access_key"
+    },
+    {
+        "package_name": "*",
+        "module_name": "run_gui",
+        "func_name": "run_npm_commands"
+    },
+    {
+        "package_name": "*",
+        "module_name": "run_gui",
+        "func_name": "run_server"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stable_diffusion_image_gen",
+        "func_name": "StableDiffusionImageGenTool._execute"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stable_diffusion_image_gen",
+        "func_name": "StableDiffusionImageGenTool.call_stable_diffusion"
+    },
+    {
+        "package_name": "*",
+        "module_name": "task_queue",
+        "func_name": "TaskQueue.get_last_task_details"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_helper",
+        "func_name": "download_tool"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_helper",
+        "func_name": "get_readme_content_from_code_link"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_manager",
+        "func_name": "download_tool"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_manager",
+        "func_name": "download_marketplace_tool"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_manager",
+        "func_name": "get_marketplace_tool_links"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_manager",
+        "func_name": "load_marketplace_tools"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tool_manager",
+        "func_name": "download_and_extract_tools"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "Toolkit.fetch_marketplace_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "Toolkit.fetch_marketplace_detail"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "get_marketplace_toolkit_readme"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "install_toolkit_from_marketplace"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "get_installed_toolkit_readme"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "handle_marketplace_operations"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "handle_marketplace_operations_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "check_toolkit_update"
+    },
+    {
+        "package_name": "*",
+        "module_name": "toolkit",
+        "func_name": "update_toolkit"
+    },
+    {
+        "package_name": "*",
+        "module_name": "twitter_helper",
+        "func_name": "TwitterHelper.get_media_ids"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ui",
+        "func_name": "run_npm_commands"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ui",
+        "func_name": "run_server"
+    },
+    {
+        "package_name": "*",
+        "module_name": "vector_db_indices",
+        "func_name": "get_marketplace_valid_indices"
+    },
+    {
+        "package_name": "*",
+        "module_name": "vector_dbs",
+        "func_name": "get_vector_db_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "vector_dbs",
+        "func_name": "Vectordbs.fetch_marketplace_list"
+    },
+    {
+        "package_name": "*",
+        "module_name": "webhook_manager",
+        "func_name": "WebHookManager.agent_status_change_callback"
+    },
+    {
+        "package_name": "*",
+        "module_name": "webpage_extractor",
+        "func_name": "WebpageExtractor.extract_with_3k"
+    },
+    {
+        "package_name": "*",
+        "module_name": "worker",
+        "func_name": "webhook_callback"
+    }
+]

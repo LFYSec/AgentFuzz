@@ -1,0 +1,262 @@
+[
+  {
+    "package_name": "*",
+    "module_name": "_app",
+    "func_name": "_convert_config_to_py_and_run"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_app_online",
+    "func_name": "get_user_status"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_app_online",
+    "func_name": "oauth_callback"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_client",
+    "func_name": "StudioClient.register_running_instance"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_client",
+    "func_name": "StudioClient.push_message"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_client",
+    "func_name": "StudioClient.alloc_server"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_file",
+    "func_name": "FileManager.save_image"
+  },
+  {
+    "package_name": "*",
+    "module_name": "tools",
+    "func_name": "_download_file"
+  },
+  {
+    "package_name": "*",
+    "module_name": "_manager",
+    "func_name": "ASManager.initialize"
+  },
+  {
+    "package_name": "*",
+    "module_name": "agent",
+    "func_name": "AgentBase.speak"
+  },
+  {
+    "package_name": "*",
+    "module_name": "logging",
+    "func_name": "log_msg"
+  },
+  {
+    "package_name": "*",
+    "module_name": "logging",
+    "func_name": "log_stream_msg"
+  },
+  {
+    "package_name": "*",
+    "module_name": "common",
+    "func_name": "requests_get"
+  },
+  {
+    "package_name": "*",
+    "module_name": "dblp",
+    "func_name": "dblp_search_publications"
+  },
+  {
+    "package_name": "*",
+    "module_name": "dblp",
+    "func_name": "dblp_search_authors"
+  },
+  {
+    "package_name": "*",
+    "module_name": "dblp",
+    "func_name": "dblp_search_venues"
+  },
+  {
+    "package_name": "*",
+    "module_name": "exec_python",
+    "func_name": "_sys_execute"
+  },
+  {
+    "package_name": "*",
+    "module_name": "exec_shell",
+    "func_name": "execute_shell_command"
+  },
+  {
+    "package_name": "*",
+    "module_name": "openai_services",
+    "func_name": "_parse_url"
+  },
+  {
+    "package_name": "*",
+    "module_name": "openai_services",
+    "func_name": "openai_edit_image"
+  },
+  {
+    "package_name": "*",
+    "module_name": "openai_services",
+    "func_name": "openai_create_image_variation"
+  },
+  {
+    "package_name": "*",
+    "module_name": "post_model",
+    "func_name": "PostAPIModelWrapperBase.__call__"
+  },
+  {
+    "package_name": "*",
+    "module_name": "rpc_agent",
+    "func_name": "RpcAgent.__init__"
+  },
+  {
+    "package_name": "*",
+    "module_name": "search",
+    "func_name": "bing_search"
+  },
+  {
+    "package_name": "*",
+    "module_name": "search",
+    "func_name": "google_search"
+  },
+  {
+    "package_name": "*",
+    "module_name": "servicer",
+    "func_name": "AgentServerServicer.__init__"
+  },
+  {
+    "package_name": "*",
+    "module_name": "servicer",
+    "func_name": "_register_server_to_studio"
+  },
+  {
+    "package_name": "*",
+    "module_name": "user_agent",
+    "func_name": "UserAgent.reply"
+  },
+  {
+    "package_name": "*",
+    "module_name": "user_agent",
+    "func_name": "UserAgent.speak"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_digest",
+    "func_name": "load_web"
+  },
+  {
+    "package_name": "*",
+    "module_name": "web_digest",
+    "func_name": "digest_webpage"
+  },
+  {
+    "package_name": "*",
+    "module_name": "wikipedia",
+    "func_name": "wikipedia_search_categories"
+  },
+  {
+    "package_name": "*",
+    "module_name": "wikipedia",
+    "func_name": "wikipedia_search"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow",
+    "func_name": "start_workflow"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_dag",
+    "func_name": "build_dag"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_dag",
+    "func_name": "sanitize_node_data"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow",
+    "func_name": "compile_workflow"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow",
+    "func_name": "main"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_dag",
+    "func_name": "ASDiGraph.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_utils",
+    "func_name": "kwarg_converter"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_utils",
+    "func_name": "is_callable_expression"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "MsgNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "DialogAgentNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "UserAgentNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "TextToImageAgentNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "DictDialogAgentNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "ReActAgentNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "ForLoopPipelineNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "WhileLoopPipelineNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "SwitchPipelineNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "BingSearchServiceNode.compile"
+  },
+  {
+    "package_name": "*",
+    "module_name": "workflow_node",
+    "func_name": "GoogleSearchServiceNode.compile"
+  }
+]

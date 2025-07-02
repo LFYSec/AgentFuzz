@@ -1,0 +1,15 @@
+{
+    "chatHistory": [],
+    "flow_id": "f93f8739-7f4c-47f2-883d-c2ab75af5770",
+    "chat_id": "5cd59dfa9d42ed4396da9745136a6fd0",
+    "name": "Calculator Assistant",
+    "description": "Generate a brief description based on the text entered above.",
+    "inputs": {
+        "input": "hello",
+        "data": {
+            "id": "f93f8739-7f4c-47f2-883d-c2ab75af5770",
+            "chatId": "5cd59dfa9d42ed4396da9745136a6fd0",
+            "type": "assistant"
+        }
+    }
+}

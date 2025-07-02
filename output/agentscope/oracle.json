@@ -1,0 +1,502 @@
+{
+  "_convert_config_to_py_and_run -> Popen": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app.py",
+      "sink": "Popen",
+      "line": 637,
+      "expr": "subprocess.Popen(  # pylint: disable=R1732                    [\"python\", tmp.name],                )"
+    }
+  ],
+  "get_user_status -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "sink": "get",
+      "line": 174,
+      "expr": "requests.get(url, headers=headers)"
+    }
+  ],
+  "oauth_callback -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "sink": "post",
+      "line": 207,
+      "expr": "requests.post(        \"https://github.com/login/oauth/access_token\",        headers={\"Accept\": \"application/json\"},        data={            \"client_id\": CLIENT_ID,            \"client_secret\": CLIENT_SECRET,            \"code\": code,        },    )."
+    }
+  ],
+  "oauth_callback -> get_user_status -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_app_online.py",
+      "sink": "get",
+      "line": 174,
+      "expr": "requests.get(url, headers=headers)"
+    }
+  ],
+  "StudioClient.register_running_instance -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 117,
+      "expr": "requests.post(            url,            json={                \"run_id\": self.runtime_id,                \"project\": project,                \"name\": name,                \"timestamp\": timestamp,                \"run_dir\": run_dir,                \"pid\": pid,            },            timeout=10,        )"
+    }
+  ],
+  "StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "StudioClient.alloc_server -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "get",
+      "line": 220,
+      "expr": "requests.get(                send_url,                timeout=10,            )"
+    }
+  ],
+  "FileManager.save_image -> _download_file -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/tools.py",
+      "sink": "get",
+      "line": 208,
+      "expr": "requests.get(url, stream=True)"
+    }
+  ],
+  "ASManager.initialize -> StudioClient.register_running_instance -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 117,
+      "expr": "requests.post(            url,            json={                \"run_id\": self.runtime_id,                \"project\": project,                \"name\": name,                \"timestamp\": timestamp,                \"run_dir\": run_dir,                \"pid\": pid,            },            timeout=10,        )"
+    }
+  ],
+  "AgentBase.speak -> log_msg -> log_stream_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "dblp_search_publications -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "dblp_search_authors -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "dblp_search_venues -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "_sys_execute -> exec": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/execute_code/exec_python.py",
+      "sink": "exec",
+      "line": 160,
+      "expr": "exec(code)"
+    }
+  ],
+  "execute_shell_command -> run": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/execute_code/exec_shell.py",
+      "sink": "run",
+      "line": 46,
+      "expr": "subprocess.run(            command,            shell=True,            check=True,            stdout=subprocess.PIPE,            stderr=subprocess.PIPE,            text=True,        )"
+    }
+  ],
+  "log_stream_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "log_msg -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "_parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "sink": "get",
+      "line": 91,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "openai_edit_image -> _parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "sink": "get",
+      "line": 91,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "openai_create_image_variation -> _parse_url -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/multi_modality/openai_services.py",
+      "sink": "get",
+      "line": 91,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "PostAPIModelWrapperBase.__call__ -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/models/post_model.py",
+      "sink": "post",
+      "line": 141,
+      "expr": "requests.post(**request_kwargs)"
+    }
+  ],
+  "RpcAgent.__init__ -> StudioClient.alloc_server -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "get",
+      "line": 220,
+      "expr": "requests.get(                send_url,                timeout=10,            )"
+    }
+  ],
+  "bing_search -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "google_search -> requests_get -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 153,
+      "expr": "requests.get(url, params=params, headers=headers)"
+    },
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/common.py",
+      "sink": "get",
+      "line": 155,
+      "expr": "requests.get(url, params=params)"
+    }
+  ],
+  "AgentServerServicer.__init__ -> _register_server_to_studio -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/server/servicer.py",
+      "sink": "post",
+      "line": 55,
+      "expr": "requests.post(        url,        json={            \"server_id\": server_id,            \"host\": host,            \"port\": port,        },        timeout=10,  # todo: configurable timeout    )"
+    }
+  ],
+  "_register_server_to_studio -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/server/servicer.py",
+      "sink": "post",
+      "line": 55,
+      "expr": "requests.post(        url,        json={            \"server_id\": server_id,            \"host\": host,            \"port\": port,        },        timeout=10,  # todo: configurable timeout    )"
+    }
+  ],
+  "_download_file -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/utils/tools.py",
+      "sink": "get",
+      "line": 208,
+      "expr": "requests.get(url, stream=True)"
+    }
+  ],
+  "UserAgent.reply -> UserAgent.speak -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "UserAgent.speak -> StudioClient.push_message -> post": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/studio/_client.py",
+      "sink": "post",
+      "line": 152,
+      "expr": "requests.post(            send_url,            json={                \"run_id\": self.runtime_id,                \"id\": message.id,                \"name\": message.name,                \"role\": message.role,                \"content\": str(message.content),                \"timestamp\": message.timestamp,                \"metadata\": message.metadata,                \"url\": message.url,            },            timeout=10,        )"
+    }
+  ],
+  "load_web -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "sink": "get",
+      "line": 98,
+      "expr": "requests.get(url=url, headers=header, timeout=timeout)"
+    }
+  ],
+  "digest_webpage -> load_web -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/web_digest.py",
+      "sink": "get",
+      "line": 98,
+      "expr": "requests.get(url=url, headers=header, timeout=timeout)"
+    }
+  ],
+  "wikipedia_search_categories -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/wikipedia.py",
+      "sink": "get",
+      "line": 79,
+      "expr": "requests.get(url, params=params, timeout=20)"
+    }
+  ],
+  "wikipedia_search -> get": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/service/web/wikipedia.py",
+      "sink": "get",
+      "line": 136,
+      "expr": "requests.get(url, params=params, timeout=20)"
+    }
+  ],
+  "start_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "sink": "eval",
+      "line": 290,
+      "expr": "eval(value)"
+    }
+  ],
+  "start_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "compile_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "sink": "eval",
+      "line": 290,
+      "expr": "eval(value)"
+    }
+  ],
+  "compile_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "main -> compile_workflow -> start_workflow -> build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "sink": "eval",
+      "line": 290,
+      "expr": "eval(value)"
+    }
+  ],
+  "main -> compile_workflow -> start_workflow -> build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "ASDiGraph.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "sink": "eval",
+      "line": 290,
+      "expr": "eval(value)"
+    }
+  ],
+  "sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "build_dag -> sanitize_node_data -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_dag.py",
+      "sink": "eval",
+      "line": 290,
+      "expr": "eval(value)"
+    }
+  ],
+  "build_dag -> sanitize_node_data -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "MsgNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "DialogAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "UserAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "TextToImageAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "DictDialogAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "ReActAgentNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "ForLoopPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "WhileLoopPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "SwitchPipelineNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "BingSearchServiceNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "GoogleSearchServiceNode.compile -> kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ],
+  "kwarg_converter -> is_callable_expression -> eval": [
+    {
+      "file_path": "/home/ylt/agentscope/src/agentscope/web/workstation/workflow_utils.py",
+      "sink": "eval",
+      "line": 11,
+      "expr": "eval(s)"
+    }
+  ]
+}

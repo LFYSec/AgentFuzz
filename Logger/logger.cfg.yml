@@ -1,0 +1,29 @@
+---
+version: 1
+formatters:
+  console:
+    format: " [*] %(message)s"
+  logfile:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: console
+    stream: ext://sys.stdout
+  logfile:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: logfile
+    filename: "test.log"
+    mode: w
+    encoding: utf-8
+
+loggers:
+  AgentBeatsAgent:
+    level: DEBUG
+    handlers:
+      - console
+      - logfile
+    propagate: false

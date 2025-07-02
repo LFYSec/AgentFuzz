@@ -1,0 +1,750 @@
+{
+  "is_link_clickable -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "is_link_clickable",
+      "expr": "url",
+      "start_line": 118
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "len(artifact_paths) > 0",
+      "start_line": 420
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "\"://\" in file_path",
+      "start_line": 432
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "not is_link_clickable(file_path)",
+      "start_line": 433
+    }
+  ],
+  "main -> is_link_clickable -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "len(artifact_paths) > 0",
+      "start_line": 420
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "\"://\" in file_path",
+      "start_line": 432
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "main",
+      "expr": "not is_link_clickable(file_path)",
+      "start_line": 433
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "module_name": "app",
+      "func_name": "is_link_clickable",
+      "expr": "url",
+      "start_line": 118
+    }
+  ],
+  "CodeExecutor.execute_code -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_executor.py",
+      "module_name": "code_executor",
+      "func_name": "CodeExecutor.execute_code",
+      "expr": "not self.client_started",
+      "start_line": 69
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_executor.py",
+      "module_name": "code_executor",
+      "func_name": "CodeExecutor.execute_code",
+      "expr": "not self.plugin_loaded",
+      "start_line": 74
+    }
+  ],
+  "CodeInterpreter.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "module_name": "code_interpreter",
+      "func_name": "CodeInterpreter.reply",
+      "expr": "post_proxy.post.message is not None and post_proxy.post.message != \"\":  # type: ignore",
+      "start_line": 136
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "module_name": "code_interpreter",
+      "func_name": "CodeInterpreter.reply",
+      "expr": "code is None",
+      "start_line": 151
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "module_name": "code_interpreter",
+      "func_name": "CodeInterpreter.reply",
+      "expr": "code_verify_errors is None",
+      "start_line": 193
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "module_name": "code_interpreter",
+      "func_name": "CodeInterpreter.reply",
+      "expr": "len(code_verify_errors) > 0",
+      "start_line": 199
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "module_name": "code_interpreter",
+      "func_name": "CodeInterpreter.reply",
+      "expr": "len(code_verify_errors) == 0",
+      "start_line": 228
+    }
+  ],
+  "CodeInterpreterCLIOnly.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_cli_only/code_interpreter_cli_only.py",
+      "module_name": "code_interpreter_cli_only",
+      "func_name": "CodeInterpreterCLIOnly.reply",
+      "expr": "len(code) == 0",
+      "start_line": 58
+    }
+  ],
+  "CodeInterpreterPluginOnly.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_plugin_only/code_interpreter_plugin_only.py",
+      "module_name": "code_interpreter_plugin_only",
+      "func_name": "CodeInterpreterPluginOnly.reply",
+      "expr": "post_proxy.post.message is not None and post_proxy.post.message != \"\":  # type: ignore",
+      "start_line": 71
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_plugin_only/code_interpreter_plugin_only.py",
+      "module_name": "code_interpreter_plugin_only",
+      "func_name": "CodeInterpreterPluginOnly.reply",
+      "expr": "len(functions) > 0",
+      "start_line": 77
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_plugin_only/code_interpreter_plugin_only.py",
+      "module_name": "code_interpreter_plugin_only",
+      "func_name": "CodeInterpreterPluginOnly.reply",
+      "expr": "code_verify_errors",
+      "start_line": 106
+    }
+  ],
+  "Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(result_file_path)",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "flush_result_file",
+      "start_line": 91
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "eval_case_dir in evaluated_case_files",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "scoring_point.eval_code is not None",
+      "start_line": 171
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "cwd is not None",
+      "start_line": 184
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(os.path.join(eval_case_dir, data_file))",
+      "start_line": 58
+    }
+  ],
+  "Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(result_file_path)",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "flush_result_file",
+      "start_line": 91
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "eval_case_dir in evaluated_case_files",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(os.path.join(eval_case_dir, data_file))",
+      "start_line": 58
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "scoring_point.eval_code is not None",
+      "start_line": 171
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "cwd is not None",
+      "start_line": 184
+    }
+  ],
+  "auto_evaluate_for_taskweaver -> Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(os.path.join(eval_case_dir, data_file))",
+      "start_line": 58
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(result_file_path)",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "flush_result_file",
+      "start_line": 91
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "eval_case_dir in evaluated_case_files",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "scoring_point.eval_code is not None",
+      "start_line": 171
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "cwd is not None",
+      "start_line": 184
+    }
+  ],
+  "batch_auto_evaluate_for_taskweaver -> auto_evaluate_for_taskweaver -> Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(result_file_path)",
+      "start_line": 85
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "flush_result_file",
+      "start_line": 91
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "batch_auto_evaluate_for_taskweaver",
+      "expr": "eval_case_dir in evaluated_case_files",
+      "start_line": 98
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/taskweaver_eval.py",
+      "module_name": "taskweaver_eval",
+      "func_name": "auto_evaluate_for_taskweaver",
+      "expr": "not os.path.exists(os.path.join(eval_case_dir, data_file))",
+      "start_line": 58
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "scoring_point.eval_code is not None",
+      "start_line": 171
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "module_name": "evaluator",
+      "func_name": "Evaluator.score",
+      "expr": "cwd is not None",
+      "start_line": 184
+    }
+  ],
+  "KlarnaSearch.__call__ -> get": [],
+  "VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_actions",
+      "expr": "screenshot is not None",
+      "start_line": 58
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/web_explorer.py",
+      "module_name": "web_explorer",
+      "func_name": "WebExplorer.reply",
+      "expr": "self.vision_planner is None",
+      "start_line": 72
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "self.step == 0",
+      "start_line": 102
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "screenshot is None",
+      "start_line": 122
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 128
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 133
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "\"stop\" in action",
+      "start_line": 148
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "is_stop",
+      "start_line": 153
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "inner_step > 10",
+      "start_line": 163
+    }
+  ],
+  "VisionPlanner.get_objective_done -> VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "self.step == 0",
+      "start_line": 102
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "screenshot is None",
+      "start_line": 122
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 128
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 133
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "\"stop\" in action",
+      "start_line": 148
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "is_stop",
+      "start_line": 153
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "inner_step > 10",
+      "start_line": 163
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_actions",
+      "expr": "screenshot is not None",
+      "start_line": 58
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/web_explorer.py",
+      "module_name": "web_explorer",
+      "func_name": "WebExplorer.reply",
+      "expr": "self.vision_planner is None",
+      "start_line": 72
+    }
+  ],
+  "WebExplorer.reply -> VisionPlanner.get_objective_done -> VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/web_explorer.py",
+      "module_name": "web_explorer",
+      "func_name": "WebExplorer.reply",
+      "expr": "self.vision_planner is None",
+      "start_line": 72
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "self.step == 0",
+      "start_line": 102
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "screenshot is None",
+      "start_line": 122
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 128
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "save_screenshot",
+      "start_line": 133
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "\"stop\" in action",
+      "start_line": 148
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "is_stop",
+      "start_line": 153
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_objective_done",
+      "expr": "inner_step > 10",
+      "start_line": 163
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "module_name": "planner",
+      "func_name": "VisionPlanner.get_actions",
+      "expr": "screenshot is not None",
+      "start_line": 58
+    }
+  ],
+  "make_api_call -> request": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "not (isinstance(host, str) and isinstance(endpoint, str) and isinstance(method, str))",
+      "start_line": 22
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "method not in allowed_methods",
+      "start_line": 26
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "not query_params",
+      "start_line": 29
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "isinstance(query_params, str)",
+      "start_line": 31
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "not isinstance(query_params, dict)",
+      "start_line": 38
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "not host.startswith((\"http://\", \"https://\"))",
+      "start_line": 41
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "module_name": "utils",
+      "func_name": "make_api_call",
+      "expr": "method not in allowed_methods",
+      "start_line": 49
+    }
+  ],
+  "WebSearch.search_query -> WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_bing",
+      "expr": "cnt > 0",
+      "start_line": 220
+    }
+  ],
+  "WebSearch.search_query -> WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_bing",
+      "expr": "cnt > 0",
+      "start_line": 220
+    }
+  ],
+  "WebSearch.reply -> WebSearch.search_query -> WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_bing",
+      "expr": "cnt > 0",
+      "start_line": 220
+    }
+  ],
+  "WebSearch.reply -> WebSearch.search_query -> WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_bing",
+      "expr": "cnt > 0",
+      "start_line": 220
+    }
+  ],
+  "WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_google_custom_search",
+      "expr": "cnt > 0",
+      "start_line": 210
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    }
+  ],
+  "WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"google\"",
+      "start_line": 160
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.search_query",
+      "expr": "self.api_provider == \"bing\"",
+      "start_line": 162
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch._search_bing",
+      "expr": "cnt > 0",
+      "start_line": 220
+    },
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "module_name": "web_search",
+      "func_name": "WebSearch.reply",
+      "expr": "\"|\" in message",
+      "start_line": 179
+    }
+  ]
+}

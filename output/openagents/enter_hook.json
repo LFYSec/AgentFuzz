@@ -1,0 +1,2411 @@
+[{
+        "package_name": "*",
+        "module_name": "about_us",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "account_balance",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "account_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "action_get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "add_bibtex_to_zotero",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "aggs_ticker_forexTicker_range_multiplier_timespan_from_to",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "aggs_ticker_stocksTicker_range_multiplier_timespan_from_to",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ai_agent",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ai_plugin",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ai_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ai_tools_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "analyze_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "apex_map_prediction",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "art_collection",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "artist_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ascii_art",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ask_question",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "astrology_prediction",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "bank_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "bart_realtime",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "basketball_stats",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "bilibili_subtitle",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "bitcoin",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "bollinger_bands",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "business_categories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "business_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "call",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "car_park_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "career",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "categories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "category_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "celtic_cross_prompt",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chabad_center_events",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chabad_centers_by_zipcode",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chakra",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "charity_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "charity_list",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chat_plugin",
+        "func_name": "make_request"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chat_with_manual",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chatgpt_results",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_available_planned_tesla_vehicle_supercharger_stations",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_available_tesla_superchargers_exclusive_to_tesla_evs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_available_tesla_superchargers_open_to_non_tesla_evs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_domains",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_domains_availability",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_price",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "check_total_available_non_tesla_vehicle_supercharger_stats",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chord_diagram",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "chrome",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "cloud_plugin",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "coin_price",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "commands_post",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "communication_help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "company_data",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "configuration_link",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "content",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "context_get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "convert_currency",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "convert_files",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "converter_list",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_ads",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_creature",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_form",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_lesson",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_monster",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_qr",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_quest_from_prompt",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_resume",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "create_resume_link",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "crossref_items_to_dois",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "crypto_news",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "currency_converter",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "currency_exchange_chart",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "custom_index_screen",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "daily_deals",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "data",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "database_templates",
+        "func_name": "convert"
+    },
+    {
+        "package_name": "*",
+        "module_name": "datasets",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "department_contracts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "deploy",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "diagram_guidelines",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "did_description",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "display_map",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "domain_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "douyin_user_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "download_pdf",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "download_well_known",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "drawcard",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dream_interpreter",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dwn_delete_help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dwn_description",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dwn_read",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "dwn_write_help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "episodes_by_category",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "everything",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "exchanges",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "execute_formula",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "execution_log",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "experiential_route",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "explain_phrase",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "explain_task",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "exposed",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "favicon",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "feedback",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetchFilingHistory",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetchImage",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetchOfficers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_articles",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_ask_stories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_charges",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_company_data",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_insolvency",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_new_stories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fetch_paper",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "find_diverse_sources",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "find_freelancers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "find_murals",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "find_teachers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "find_writers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "flashcards_conversion",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fluctuation",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "forecast",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "forex_pairs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "freetext_to_bibtex",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "freetext_to_crossref_items",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "full_transcript",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fulltext",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "fundsdb_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "games",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_blog_post",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_crossword",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_diagram",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_form",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_image",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_map",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_meme",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_qr_code",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_scenarios",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generate_search_urls",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "generated_keyword_suggestion",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "getStore",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_DouyinVideos",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_activities",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_article_by_id",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_asset_by_id",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_asset_manifest",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_assets",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_assets_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_best_seller_product",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_booster",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_calendar_for_date_white_house_calendar__date__get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_cat_manual",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_center_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_champion_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_classes",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_coin_list",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_coin_news",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_coin_price",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_companies",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_context",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_coordinates",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_currencies",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_data",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_destination",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_episodes_by_podcast",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_errors",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_execution_status",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_ferries",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_file_content",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_full_transcript_youtube",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_full_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_fuzzy_card_name",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_hdb_carparks_availability",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_ielts_topic_pt1",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_ielts_topic_pt2",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_legal",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_logo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_message",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_metar",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_new_stories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_non_tesla_provider_charging_stations",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_nonprofit",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_nonprofits",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_optimized_ad_history",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_parks",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_playlists",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_podcasts_by_category",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_profile",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_queue_status",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_quotes",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_radar",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_readme_by_owner_and_repo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_repo_files",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_samples",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_scenarios",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_secret_words",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_show_details",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_show_streaming_info_by_country",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_status_messages",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_steps",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_summary",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_symbols",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_table_schema",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_tables",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_tesla_destination_charger_locations",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_top_stories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_transcript",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_trending_music_manifest",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_trends",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_trial",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_uploaded_resume",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_verified_facts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_video_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_video_summary_unknown",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_video_summary_youtube",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_volume",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_wayback_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_weather_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_weather_today",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "get_youtube_transcript",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "gift_interview",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_repo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_repos",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "github_user",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "hadiths",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "handle_pdf",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "healthCheck",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "healthcheck",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_browser",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_did",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_protocol",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_setup",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_store",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "help_sync",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "historical_rate",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "home",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "horseshoe",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "huobi_kline",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ikea_recommend",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "index",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "initialize",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "introduction",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "isotonix_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "job_data_retrieval",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "jobs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "jobstories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "kaggle_data_loading_executor",
+        "func_name": "KaggleDataLoadingExecutor.run"
+    },
+    {
+        "package_name": "*",
+        "module_name": "kaggle_data_loading_executor",
+        "func_name": "KaggleDataLoadingExecutor._search_kaggle"
+    },
+    {
+        "package_name": "*",
+        "module_name": "kaggle_data_loading_executor",
+        "func_name": "KaggleDataLoadingExecutor._get_dataset_meta_info"
+    },
+    {
+        "package_name": "*",
+        "module_name": "kaggle_data_loading_executor",
+        "func_name": "KaggleDataLoadingExecutor._crawl_dataset_cover_image"
+    },
+    {
+        "package_name": "*",
+        "module_name": "keyword_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "klook_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "largest_contracts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "leagues",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "legal",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "legal_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "legal_page",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "lgtm",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "list_all_centers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "list_biden_remarks",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "list_branches",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "list_center_types",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "list_fonts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "llm_api",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "local_superchargers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "locate_inventory_chat_plugin_locate_locate_post",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "logo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "logo_image",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "logo_png",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "main_page",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "map_from_location",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "models_by_make_and_year",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "moving_average",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "music_lyric",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "music_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "new_businesses",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "new_word",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "now__get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "occult_card",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "open_ai_plugin",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "openapi",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "openapi_spec",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "openapi_yaml",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "paraphraser",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "parse_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "pastpresentfuture",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "perform_query",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "personnel",
+        "func_name": "reload_endpoints.call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "personnel",
+        "func_name": "reload_openapi"
+    },
+    {
+        "package_name": "*",
+        "module_name": "photorealistic_prompt_generator",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "play_tictactoe",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "players",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "plugin_logo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "plugins",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "podcast_chatbot",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "podcasts_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "pokemon_card_price",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "popular_episodes",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "popular_podcasts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ppc_assistance",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "preview_a_zap",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "price_change",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "privacy",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "product_list",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "products",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "profile_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "prompt",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "property_details",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "property_details_by_address",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "property_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "protocol_description",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "public_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "purpose_get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "puzzle_qr_code",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "python_evaluator",
+        "func_name": "PythonEvaluator.run_program_local"
+    },
+    {
+        "package_name": "*",
+        "module_name": "python_evaluator",
+        "func_name": "PythonEvaluator._apply_for_kernel"
+    },
+    {
+        "package_name": "*",
+        "module_name": "python_evaluator",
+        "func_name": "PythonEvaluator.run_program_docker"
+    },
+    {
+        "package_name": "*",
+        "module_name": "python_evaluator",
+        "func_name": "PythonEvaluator.run"
+    },
+    {
+        "package_name": "*",
+        "module_name": "qr_generator",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_bigquery",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_cards",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_full",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_get_context",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_git",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_github_repository_file_contents",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_github_repository_structure",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_magic_box",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_main",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "query_rules",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "queue_in_QASM_generation_task",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "queue_times",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "quickstart",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "random",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "random_card",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "random_post",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "ranked_map",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "read_root",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "read_root_legal",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "realtime_rate",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "recent_papers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "recently_completed_service_requests",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "recently_movies",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "recommend_activities",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "related_keywords",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "relationship",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "render_diagram",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "rephrase_prompt",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "resolve_eth_address_or_ens",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "result",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "roll_dice",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "root",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "rsi",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "sales_tax",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "save_citation",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "schema",
+        "func_name": "SQLDatabase.run"
+    },
+    {
+        "package_name": "*",
+        "module_name": "score_hand_show",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "scrape_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "scraper",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "searchPodcast",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_abstracts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_actions",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_articles_roll_call_articles__get",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_arxiv",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_by_id",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_centers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_companies",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_company",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_courses",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_database",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_factor",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_for_repo",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_for_repo_by_topic",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_game_related_content",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_games",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_global",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_items",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_knowledge_base",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_listings",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_map",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_media",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_music",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_news",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_papers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_papers_by_date",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_papers_with_pdf",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_podcast",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_podcasts",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_product",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_products",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_routes",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_sector",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_shows",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_startups",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_teachers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "search_tweets",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "seasons",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "send_message",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "shortcut",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "show_carousel",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "show_recommendations",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "show_startup_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "show_stories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "similar_songs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "song_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "spoken",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "start",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stations",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stats",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stock_ideas",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stock_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stock_summary",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stocks",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "stores",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "streaming",
+        "func_name": "extract_title_and_image_links"
+    },
+    {
+        "package_name": "*",
+        "module_name": "streaming",
+        "func_name": "extract_card_info_from_text"
+    },
+    {
+        "package_name": "*",
+        "module_name": "streaming",
+        "func_name": "extract_card_info_from_links"
+    },
+    {
+        "package_name": "*",
+        "module_name": "submit_answer",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "submit_summary",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "subway_location",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "subway_route",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "suggested_superchargers",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "summaries",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "summarize",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "summarize_pdf",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "summon_monster",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "supercharger_faq",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "symbol_info",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "symbol_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "tagvenue_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "talent_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "teams",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "terms",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "terms_of_use",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "text_count",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "text_to_app",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "three_card_spread",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "timeseries",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "todo_app_helper",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "top_questions",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "top_songs",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "top_songs_country",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "top_songs_country_genre",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "topstories",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "totext",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "translate",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "travel_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "trending",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "trending_music_top_songs_genre",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "trends_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "uniqlo_stylingbook",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "update_to_web5",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "upload_and_search_pdf",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "upload_modified_resume",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "upload_url",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "url_result",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "v2ex_trending",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "validation",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "vehicles_for_sale",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "volatility",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weather",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weather_by_location",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weather_forecast",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weather_now",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weather_summary",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "web_scanner",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "weibo_trending",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "wordcloud",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "write_send_help",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "year_make_model",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "yesno_prompt",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "youdao_fanyi",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "youtube_search",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "youtube_user",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "youtube_video",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "zhihu_trending",
+        "func_name": "call_api"
+    },
+    {
+        "package_name": "*",
+        "module_name": "zone_stats",
+        "func_name": "call_api"
+    }
+]

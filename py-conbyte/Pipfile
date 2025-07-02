@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+coverage = "==4.5.3"
+dis = "==1.0.1"
+func-timeout = "==4.3.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

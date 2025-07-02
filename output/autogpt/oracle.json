@@ -1,0 +1,458 @@
+{
+  "AIShortformVideoCreatorBlock.create_webhook -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.post",
+      "line": 219,
+      "expr": "requests.post(url, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.create_webhook"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.create_video -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.post",
+      "line": 226,
+      "expr": "requests.post(url, json=payload, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.create_video"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.check_video_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.get",
+      "line": 235,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.check_video_status"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.wait_for_video -> AIShortformVideoCreatorBlock.check_video_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.get",
+      "line": 235,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.check_video_status"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.run -> AIShortformVideoCreatorBlock.create_webhook -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.post",
+      "line": 219,
+      "expr": "requests.post(url, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.create_webhook"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.run -> AIShortformVideoCreatorBlock.create_video -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.post",
+      "line": 226,
+      "expr": "requests.post(url, json=payload, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.create_video"
+    }
+  ],
+  "AIShortformVideoCreatorBlock.run -> AIShortformVideoCreatorBlock.wait_for_video -> AIShortformVideoCreatorBlock.check_video_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ai_shortform_video_block.py",
+      "sink": "requests.get",
+      "line": 235,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "AIShortformVideoCreatorBlock.check_video_status"
+    }
+  ],
+  "AgentOutputBlock.run -> jinja.from_string": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/basic.py",
+      "sink": "jinja.from_string",
+      "line": 308,
+      "expr": "jinja.from_string(fmt)",
+      "caller": "AgentOutputBlock.run"
+    }
+  ],
+  "JinaChunkingBlock.run -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/jina/chunking.py",
+      "sink": "requests.post",
+      "line": 58,
+      "expr": "requests.post(url, headers=headers, json=data)",
+      "caller": "JinaChunkingBlock.run"
+    }
+  ],
+  "reddit -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 119,
+      "expr": "requests.post(url, headers=headers, data=data)",
+      "caller": "reddit"
+    }
+  ],
+  "populate_db -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 140,
+      "expr": "requests.post(url, headers=headers, data=data)",
+      "caller": "populate_db"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 148,
+      "expr": "requests.post(execute_url, headers=headers, json=input_data)",
+      "caller": "populate_db"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 156,
+      "expr": "requests.post(schedule_url, headers=headers, json=data)",
+      "caller": "populate_db"
+    }
+  ],
+  "graph -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 174,
+      "expr": "requests.post(url, headers=headers, data=data)",
+      "caller": "graph"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 181,
+      "expr": "requests.post(execute_url, headers=headers, json=input_data)",
+      "caller": "graph"
+    }
+  ],
+  "execute -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/cli.py",
+      "sink": "requests.post",
+      "line": 200,
+      "expr": "requests.post(execute_url, headers=headers, json=content)",
+      "caller": "execute"
+    }
+  ],
+  "ReadDiscordMessagesBlock.run_bot.on_message -> session.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/discord.py",
+      "sink": "session.get",
+      "line": 105,
+      "expr": "session.get(attachment.url)",
+      "caller": "ReadDiscordMessagesBlock.run_bot.on_message"
+    }
+  ],
+  "JinaEmbeddingBlock.run -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/jina/embeddings.py",
+      "sink": "requests.post",
+      "line": 41,
+      "expr": "requests.post(url, headers=headers, json=data)",
+      "caller": "JinaEmbeddingBlock.run"
+    }
+  ],
+  "GitHubOAuthHandler.exchange_code_for_tokens -> GitHubOAuthHandler._request_tokens -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.post",
+      "line": 90,
+      "expr": "requests.post(self.token_url, data=request_body, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_tokens"
+    }
+  ],
+  "GitHubOAuthHandler.exchange_code_for_tokens -> GitHubOAuthHandler._request_tokens -> GitHubOAuthHandler._request_username -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.get",
+      "line": 133,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_username"
+    }
+  ],
+  "GitHubOAuthHandler._refresh_tokens -> GitHubOAuthHandler._request_tokens -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.post",
+      "line": 90,
+      "expr": "requests.post(self.token_url, data=request_body, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_tokens"
+    }
+  ],
+  "GitHubOAuthHandler._refresh_tokens -> GitHubOAuthHandler._request_tokens -> GitHubOAuthHandler._request_username -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.get",
+      "line": 133,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_username"
+    }
+  ],
+  "GitHubOAuthHandler._request_tokens -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.post",
+      "line": 90,
+      "expr": "requests.post(self.token_url, data=request_body, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_tokens"
+    }
+  ],
+  "GitHubOAuthHandler._request_tokens -> GitHubOAuthHandler._request_username -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.get",
+      "line": 133,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_username"
+    }
+  ],
+  "GitHubOAuthHandler._request_username -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/github.py",
+      "sink": "requests.get",
+      "line": 133,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "GitHubOAuthHandler._request_username"
+    }
+  ],
+  "SendWebRequestBlock.run -> requests.request": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/http.py",
+      "sink": "requests.request",
+      "line": 62,
+      "expr": "requests.request(            input_data.method.value,            input_data.url,            headers=input_data.headers,            json=input_data.body if input_data.json_format else None,            data=input_data.body if not input_data.json_format else None,        )",
+      "caller": "SendWebRequestBlock.run"
+    }
+  ],
+  "GetRequest.get_request -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/helpers/http.py",
+      "sink": "requests.get",
+      "line": 13,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "GetRequest.get_request"
+    }
+  ],
+  "IdeogramModelBlock.run -> IdeogramModelBlock.run_model -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.post",
+      "line": 245,
+      "expr": "requests.post(url, json=data, headers=headers)",
+      "caller": "IdeogramModelBlock.run_model"
+    }
+  ],
+  "IdeogramModelBlock.run -> IdeogramModelBlock.upscale_image -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.get",
+      "line": 258,
+      "expr": "requests.get(image_url)",
+      "caller": "IdeogramModelBlock.upscale_image"
+    }
+  ],
+  "IdeogramModelBlock.run -> IdeogramModelBlock.upscale_image -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.post",
+      "line": 265,
+      "expr": "requests.post(                url,                headers=headers,                data={                    \"image_request\": \"{}\",  # Empty JSON object                },                files=files,            )",
+      "caller": "IdeogramModelBlock.upscale_image"
+    }
+  ],
+  "IdeogramModelBlock.run_model -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.post",
+      "line": 245,
+      "expr": "requests.post(url, json=data, headers=headers)",
+      "caller": "IdeogramModelBlock.run_model"
+    }
+  ],
+  "IdeogramModelBlock.upscale_image -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.get",
+      "line": 258,
+      "expr": "requests.get(image_url)",
+      "caller": "IdeogramModelBlock.upscale_image"
+    }
+  ],
+  "IdeogramModelBlock.upscale_image -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/ideogram.py",
+      "sink": "requests.post",
+      "line": 265,
+      "expr": "requests.post(                url,                headers=headers,                data={                    \"image_request\": \"{}\",  # Empty JSON object                },                files=files,            )",
+      "caller": "IdeogramModelBlock.upscale_image"
+    }
+  ],
+  "run -> subprocess.run": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/linter.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    }
+  ],
+  "lint -> run -> subprocess.run": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/linter.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    }
+  ],
+  "format -> run -> subprocess.run": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/linter.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    },
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    }
+  ],
+  "PublishToMediumBlock.create_post -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/medium.py",
+      "sink": "requests.post",
+      "line": 164,
+      "expr": "requests.post(            f\"https://api.medium.com/v1/users/{author_id}/posts\",            headers=headers,            json=data,        )",
+      "caller": "PublishToMediumBlock.create_post"
+    }
+  ],
+  "PublishToMediumBlock.run -> PublishToMediumBlock.create_post -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/medium.py",
+      "sink": "requests.post",
+      "line": 164,
+      "expr": "requests.post(            f\"https://api.medium.com/v1/users/{author_id}/posts\",            headers=headers,            json=data,        )",
+      "caller": "PublishToMediumBlock.create_post"
+    }
+  ],
+  "NotionOAuthHandler.exchange_code_for_tokens -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/integrations/oauth/notion.py",
+      "sink": "requests.post",
+      "line": 52,
+      "expr": "requests.post(self.token_url, json=request_body, headers=headers)",
+      "caller": "NotionOAuthHandler.exchange_code_for_tokens"
+    }
+  ],
+  "populate_database -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "requests.post",
+      "line": 45,
+      "expr": "requests.post(                \"http://localhost:8015/api/v1/market/admin/agent\", json=req.model_dump()            )",
+      "caller": "populate_database"
+    }
+  ],
+  "app -> run -> subprocess.run": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    }
+  ],
+  "setup -> run -> subprocess.run": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/market/scripts.py",
+      "sink": "subprocess.run",
+      "line": 9,
+      "expr": "subprocess.run([\"poetry\", \"run\"] + list(command), cwd=directory, check=True)",
+      "caller": "run"
+    }
+  ],
+  "CreateTalkingAvatarVideoBlock.create_clip -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/talking_head.py",
+      "sink": "requests.post",
+      "line": 120,
+      "expr": "requests.post(url, json=payload, headers=headers)",
+      "caller": "CreateTalkingAvatarVideoBlock.create_clip"
+    }
+  ],
+  "CreateTalkingAvatarVideoBlock.get_clip_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/talking_head.py",
+      "sink": "requests.get",
+      "line": 129,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "CreateTalkingAvatarVideoBlock.get_clip_status"
+    }
+  ],
+  "CreateTalkingAvatarVideoBlock.run -> CreateTalkingAvatarVideoBlock.create_clip -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/talking_head.py",
+      "sink": "requests.post",
+      "line": 120,
+      "expr": "requests.post(url, json=payload, headers=headers)",
+      "caller": "CreateTalkingAvatarVideoBlock.create_clip"
+    }
+  ],
+  "CreateTalkingAvatarVideoBlock.run -> CreateTalkingAvatarVideoBlock.get_clip_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/talking_head.py",
+      "sink": "requests.get",
+      "line": 129,
+      "expr": "requests.get(url, headers=headers)",
+      "caller": "CreateTalkingAvatarVideoBlock.get_clip_status"
+    }
+  ],
+  "FillTextTemplateBlock.run -> jinja.from_string": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/text.py",
+      "sink": "jinja.from_string",
+      "line": 160,
+      "expr": "jinja.from_string(fmt)",
+      "caller": "FillTextTemplateBlock.run"
+    }
+  ],
+  "UnrealTextToSpeechBlock.call_unreal_speech_api -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/text_to_speech_block.py",
+      "sink": "requests.post",
+      "line": 88,
+      "expr": "requests.post(url, headers=headers, json=data)",
+      "caller": "UnrealTextToSpeechBlock.call_unreal_speech_api"
+    }
+  ],
+  "UnrealTextToSpeechBlock.run -> UnrealTextToSpeechBlock.call_unreal_speech_api -> requests.post": [
+    {
+      "file_path": "E:/Codes/AutoGPT/autogpt_platform/backend/backend/blocks/text_to_speech_block.py",
+      "sink": "requests.post",
+      "line": 88,
+      "expr": "requests.post(url, headers=headers, json=data)",
+      "caller": "UnrealTextToSpeechBlock.call_unreal_speech_api"
+    }
+  ]
+}

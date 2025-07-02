@@ -1,0 +1,1835 @@
+{
+    "SQLDatabase._execute -> connection.execute":[
+        {
+            "file_path": "C:/Users/cokebeer/Documents/qltracer/langchain/langchain_community/utilities/sql_database.py",
+            "sink": "connection.execute",
+            "line": 467,
+            "expr": "connection.execute(command,parameters,execution_options=execution_options)",
+            "caller": "SQLDatabase._execute"
+        }
+    ],
+    "LCToolsAgentComponent.to_toolkit -> ComponentToolkit.get_tools -> create_input_schema -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/io/schema.py",
+            "sink": "eval",
+            "line": 41,
+            "expr": "eval(literal_string, {\"Literal\": Literal})",
+            "caller": "create_input_schema"
+        }
+    ],
+    "AgentComponent.message_response -> Component.to_toolkit -> ComponentToolkit.get_tools -> create_input_schema -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/io/schema.py",
+            "sink": "eval",
+            "line": 41,
+            "expr": "eval(literal_string, {\"Literal\": Literal})",
+            "caller": "create_input_schema"
+        }
+    ],
+    "APIRequestComponent.make_request -> client.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/data/api_request.py",
+            "sink": "client.request",
+            "line": 169,
+            "expr": "client.request(                method,                url,                headers=headers,                json=data,                timeout=timeout,                follow_redirects=follow_redirects,            )",
+            "caller": "APIRequestComponent.make_request"
+        }
+    ],
+    "AstraDBCQLToolComponent.astra_rest -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/astradb_cql.py",
+            "sink": "requests.request",
+            "line": 119,
+            "expr": "requests.request(\"GET\", url=url, headers=headers, timeout=10)",
+            "caller": "AstraDBCQLToolComponent.astra_rest"
+        }
+    ],
+    "AstraDBCQLToolComponent.run_model -> AstraDBCQLToolComponent.astra_rest -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/astradb_cql.py",
+            "sink": "requests.request",
+            "line": 119,
+            "expr": "requests.request(\"GET\", url=url, headers=headers, timeout=10)",
+            "caller": "AstraDBCQLToolComponent.astra_rest"
+        }
+    ],
+    "Vertex.instantiate_component -> instantiate_class -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "Vertex.instantiate_component -> instantiate_class -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "BaseComponent.get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "BaseComponent.build_template_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "BaseComponent.build_template_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "CodeParser.parse_functions -> CodeParser.parse_callable_details -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "eval",
+            "line": 164,
+            "expr": "eval(return_type_str, eval_env)",
+            "caller": "CodeParser.parse_callable_details"
+        }
+    ],
+    "CodeParser.parse_functions -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.parse_callable_details -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "eval",
+            "line": 164,
+            "expr": "eval(return_type_str, eval_env)",
+            "caller": "CodeParser.parse_callable_details"
+        }
+    ],
+    "CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "eval",
+            "line": 164,
+            "expr": "eval(return_type_str, eval_env)",
+            "caller": "CodeParser.parse_callable_details"
+        }
+    ],
+    "CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "CodeParser.parse_classes -> CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "eval",
+            "line": 164,
+            "expr": "eval(return_type_str, eval_env)",
+            "caller": "CodeParser.parse_callable_details"
+        }
+    ],
+    "CodeParser.parse_classes -> CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.parse_classes -> CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "CodeParser.parse_classes -> CodeParser.get_base_classes -> CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "eval",
+            "line": 164,
+            "expr": "eval(return_type_str, eval_env)",
+            "caller": "CodeParser.parse_callable_details"
+        }
+    ],
+    "CodeParser.process_class_node -> CodeParser.parse_function_def -> CodeParser.parse_callable_details -> CodeParser.construct_eval_env -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 144,
+            "expr": "exec(f\"import {module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 145,
+            "expr": "exec(f\"from {module} import {name}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/custom/code_parser/code_parser.py",
+            "sink": "exec",
+            "line": 152,
+            "expr": "exec(f\"import {module} as {alias or module}\", eval_env)",
+            "caller": "CodeParser.construct_eval_env"
+        }
+    ],
+    "CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "CodeParser.execute_and_inspect_classes -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "CombinatorialReasonerComponent.build_prompt -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/icosacomputing/combinatorial_reasoner.py",
+            "sink": "requests.post",
+            "line": 65,
+            "expr": "requests.post(            \"https://cr-api.icosacomputing.com/cr/langflow\",            json=params,            auth=creds,            timeout=100,        )",
+            "caller": "CombinatorialReasonerComponent.build_prompt"
+        }
+    ],
+    "Component.to_toolkit -> ComponentToolkit.get_tools -> create_input_schema -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/io/schema.py",
+            "sink": "eval",
+            "line": 41,
+            "expr": "eval(literal_string, {\"Literal\": Literal})",
+            "caller": "create_input_schema"
+        }
+    ],
+    "ComponentToolkit.get_tools -> create_input_schema -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/io/schema.py",
+            "sink": "eval",
+            "line": 41,
+            "expr": "eval(literal_string, {\"Literal\": Literal})",
+            "caller": "create_input_schema"
+        }
+    ],
+    "NotionPageCreator.run_model -> NotionPageCreator._create_notion_page -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/create_page.py",
+            "sink": "requests.post",
+            "line": 84,
+            "expr": "requests.post(\"https://api.notion.com/v1/pages\", headers=headers, json=data, timeout=10)",
+            "caller": "NotionPageCreator._create_notion_page"
+        }
+    ],
+    "NotionPageCreator._create_notion_page -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/create_page.py",
+            "sink": "requests.post",
+            "line": 84,
+            "expr": "requests.post(\"https://api.notion.com/v1/pages\", headers=headers, json=data, timeout=10)",
+            "caller": "NotionPageCreator._create_notion_page"
+        }
+    ],
+    "NotionPageCreator.__call__ -> NotionPageCreator._create_notion_page -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/create_page.py",
+            "sink": "requests.post",
+            "line": 84,
+            "expr": "requests.post(\"https://api.notion.com/v1/pages\", headers=headers, json=data, timeout=10)",
+            "caller": "NotionPageCreator._create_notion_page"
+        }
+    ],
+    "CustomComponent.template_config -> BaseComponent.build_template_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "CustomComponent.template_config -> BaseComponent.build_template_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "CustomComponent.get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "custom_component -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "custom_component -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "custom_component -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "custom_component -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "custom_component_update -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "custom_component_update -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "custom_component_update -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "custom_component_update -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "generate_function_for_flow -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/helpers/flow.py",
+            "sink": "exec",
+            "line": 204,
+            "expr": "exec(compiled_func, globals(), local_scope)",
+            "caller": "generate_function_for_flow"
+        }
+    ],
+    "build_function_and_schema -> generate_function_for_flow -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/helpers/flow.py",
+            "sink": "exec",
+            "line": 204,
+            "expr": "exec(compiled_func, globals(), local_scope)",
+            "caller": "generate_function_for_flow"
+        }
+    ],
+    "GitLoaderComponent.build_gitloader -> GitLoader": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/git/git.py",
+            "sink": "GitLoader",
+            "line": 102,
+            "expr": "GitLoader(            repo_path=self.repo_path,            clone_url=self.clone_url,            branch=self.branch,            file_filter=combined_filter,        )",
+            "caller": "GitLoaderComponent.build_gitloader"
+        }
+    ],
+    "GitLoaderComponent.load_documents -> GitLoaderComponent.build_gitloader -> GitLoader": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/git/git.py",
+            "sink": "GitLoader",
+            "line": 102,
+            "expr": "GitLoader(            repo_path=self.repo_path,            clone_url=self.clone_url,            branch=self.branch,            file_filter=combined_filter,        )",
+            "caller": "GitLoaderComponent.build_gitloader"
+        }
+    ],
+    "GroqModel.get_models -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/models/groq.py",
+            "sink": "requests.get",
+            "line": 72,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "GroqModel.get_models"
+        }
+    ],
+    "GroqModel.update_build_config -> GroqModel.get_models -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/models/groq.py",
+            "sink": "requests.get",
+            "line": 72,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "GroqModel.get_models"
+        }
+    ],
+    "HuggingFaceInferenceAPIEmbeddingsComponent.validate_inference_endpoint -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/embeddings/huggingface_inference_api.py",
+            "sink": "requests.get",
+            "line": 57,
+            "expr": "requests.get(f\"{inference_endpoint}/health\", timeout=5)",
+            "caller": "HuggingFaceInferenceAPIEmbeddingsComponent.validate_inference_endpoint"
+        }
+    ],
+    "HuggingFaceInferenceAPIEmbeddingsComponent.build_embeddings -> HuggingFaceInferenceAPIEmbeddingsComponent.validate_inference_endpoint -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/embeddings/huggingface_inference_api.py",
+            "sink": "requests.get",
+            "line": 57,
+            "expr": "requests.get(f\"{inference_endpoint}/health\", timeout=5)",
+            "caller": "HuggingFaceInferenceAPIEmbeddingsComponent.validate_inference_endpoint"
+        }
+    ],
+    "NotionDatabaseProperties.run_model -> NotionDatabaseProperties._fetch_database_properties -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_database_properties.py",
+            "sink": "requests.get",
+            "line": 58,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "NotionDatabaseProperties._fetch_database_properties"
+        }
+    ],
+    "NotionDatabaseProperties._fetch_database_properties -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_database_properties.py",
+            "sink": "requests.get",
+            "line": 58,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "NotionDatabaseProperties._fetch_database_properties"
+        }
+    ],
+    "NotionListPages.run_model -> NotionListPages._query_notion_database -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_pages.py",
+            "sink": "requests.post",
+            "line": 112,
+            "expr": "requests.post(url, headers=headers, json=query_payload, timeout=10)",
+            "caller": "NotionListPages._query_notion_database"
+        }
+    ],
+    "NotionListPages._query_notion_database -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_pages.py",
+            "sink": "requests.post",
+            "line": 112,
+            "expr": "requests.post(url, headers=headers, json=query_payload, timeout=10)",
+            "caller": "NotionListPages._query_notion_database"
+        }
+    ],
+    "NotionUserList.run_model -> NotionUserList._list_users -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_users.py",
+            "sink": "requests.get",
+            "line": 61,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "NotionUserList._list_users"
+        }
+    ],
+    "NotionUserList._list_users -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/list_users.py",
+            "sink": "requests.get",
+            "line": 61,
+            "expr": "requests.get(url, headers=headers, timeout=10)",
+            "caller": "NotionUserList._list_users"
+        }
+    ],
+    "instantiate_class -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "instantiate_class -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "NotDiamondComponent.model_select -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/notdiamond/notdiamond.py",
+            "sink": "requests.post",
+            "line": 148,
+            "expr": "requests.post(            \"https://api.notdiamond.ai/v2/modelRouter/modelSelect\",            json=payload,            headers=header,            timeout=10,        )",
+            "caller": "NotDiamondComponent.model_select"
+        }
+    ],
+    "NotionPageContent.run_model -> NotionPageContent._retrieve_page_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/page_content_viewer.py",
+            "sink": "requests.get",
+            "line": 58,
+            "expr": "requests.get(blocks_url, headers=headers, timeout=10)",
+            "caller": "NotionPageContent._retrieve_page_content"
+        }
+    ],
+    "NotionPageContent._retrieve_page_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/page_content_viewer.py",
+            "sink": "requests.get",
+            "line": 58,
+            "expr": "requests.get(blocks_url, headers=headers, timeout=10)",
+            "caller": "NotionPageContent._retrieve_page_content"
+        }
+    ],
+    "NotionPageContent.__call__ -> NotionPageContent._retrieve_page_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/page_content_viewer.py",
+            "sink": "requests.get",
+            "line": 58,
+            "expr": "requests.get(blocks_url, headers=headers, timeout=10)",
+            "caller": "NotionPageContent._retrieve_page_content"
+        }
+    ],
+    "get_latest_published_version -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/scripts/ci/pypi_nightly_tag.py",
+            "sink": "requests.get",
+            "line": 30,
+            "expr": "requests.get(url, timeout=10)",
+            "caller": "get_latest_published_version"
+        }
+    ],
+    "create_tag -> get_latest_published_version -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/scripts/ci/pypi_nightly_tag.py",
+            "sink": "requests.get",
+            "line": 30,
+            "expr": "requests.get(url, timeout=10)",
+            "caller": "get_latest_published_version"
+        }
+    ],
+    "PythonCodeStructuredTool.build_tool -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/python_code_structured_tool.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(import_code, globals())",
+            "caller": "PythonCodeStructuredTool.build_tool"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/python_code_structured_tool.py",
+            "sink": "exec",
+            "line": 157,
+            "expr": "exec(self.tool_code, globals(), _local_namespace)",
+            "caller": "PythonCodeStructuredTool.build_tool"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/python_code_structured_tool.py",
+            "sink": "exec",
+            "line": 182,
+            "expr": "exec(\"\\n\".join(class_dict[\"code\"]), _globals)",
+            "caller": "PythonCodeStructuredTool.build_tool"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/python_code_structured_tool.py",
+            "sink": "exec",
+            "line": 202,
+            "expr": "exec(f\"temp_annotation_type = {field_annotation}\", _globals)",
+            "caller": "PythonCodeStructuredTool.build_tool"
+        }
+    ],
+    "PythonFunctionComponent.get_function_callable -> get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "PythonFunctionComponent.execute_function -> get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "PythonFunctionComponent.execute_function_data -> PythonFunctionComponent.execute_function -> get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "PythonFunctionComponent.execute_function_message -> PythonFunctionComponent.execute_function -> get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "PythonREPLToolComponent.build_tool.run_python_code -> python_repl.run": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/python_repl.py",
+            "sink": "python_repl.run",
+            "line": 78,
+            "expr": "python_repl.run(code)",
+            "caller": "PythonREPLToolComponent.build_tool.run_python_code"
+        }
+    ],
+    "create_input_schema -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/io/schema.py",
+            "sink": "eval",
+            "line": 41,
+            "expr": "eval(literal_string, {\"Literal\": Literal})",
+            "caller": "create_input_schema"
+        }
+    ],
+    "NotionSearch.run_model -> NotionSearch._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/search.py",
+            "sink": "requests.post",
+            "line": 107,
+            "expr": "requests.post(url, headers=headers, json=data, timeout=10)",
+            "caller": "NotionSearch._search_notion"
+        }
+    ],
+    "NotionSearch._search_notion -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/Notion/search.py",
+            "sink": "requests.post",
+            "line": 107,
+            "expr": "requests.post(url, headers=headers, json=data, timeout=10)",
+            "caller": "NotionSearch._search_notion"
+        }
+    ],
+    "SearXNGToolComponent.build_tool.SearxSearch.search -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/searxng.py",
+            "sink": "requests.get",
+            "line": 100,
+            "expr": "requests.get(                        url=url,                        headers=headers,                        params={                            \"q\": query,                            \"categories\": \",\".join(all_categories),                            \"language\": SearxSearch._language,                            \"format\": \"json\",                        },                        timeout=10,                    )",
+            "caller": "SearXNGToolComponent.build_tool.SearxSearch.search"
+        }
+    ],
+    "SearXNGToolComponent.update_build_config -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/tools/searxng.py",
+            "sink": "requests.get",
+            "line": 65,
+            "expr": "requests.get(url=url, headers=self.search_headers.copy(), timeout=10)",
+            "caller": "SearXNGToolComponent.update_build_config"
+        }
+    ],
+    "StoreService.check_api_key -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.count_components -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.query_components -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_liked_by_user_components -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_components_in_users_collection -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.download -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_tags -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_user_likes -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_component_likes_count -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "StoreService.get_list_component_response_model -> StoreService.check_api_key -> StoreService.count_components -> StoreService.query_components -> StoreService.get -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/service.py",
+            "sink": "client.get",
+            "line": 134,
+            "expr": "client.get(url, headers=headers, params=params, timeout=self.timeout)",
+            "caller": "StoreService.get"
+        }
+    ],
+    "DatabaseService.__init__ -> DatabaseService.on_connection -> cursor.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/database/service.py",
+            "sink": "cursor.execute",
+            "line": 131,
+            "expr": "cursor.execute(pragma)",
+            "caller": "DatabaseService.on_connection"
+        }
+    ],
+    "DatabaseService.on_connection -> cursor.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/database/service.py",
+            "sink": "cursor.execute",
+            "line": 131,
+            "expr": "cursor.execute(pragma)",
+            "caller": "DatabaseService.on_connection"
+        }
+    ],
+    "share_component -> check_langflow_version -> get_lf_version_from_pypi -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/utils.py",
+            "sink": "client.get",
+            "line": 47,
+            "expr": "client.get(\"https://pypi.org/pypi/langflow/json\")",
+            "caller": "get_lf_version_from_pypi"
+        }
+    ],
+    "update_shared_component -> check_langflow_version -> get_lf_version_from_pypi -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/utils.py",
+            "sink": "client.get",
+            "line": 47,
+            "expr": "client.get(\"https://pypi.org/pypi/langflow/json\")",
+            "caller": "get_lf_version_from_pypi"
+        }
+    ],
+    "URLComponent.fetch_content -> loader.load": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/data/url.py",
+            "sink": "loader.load",
+            "line": 80,
+            "expr": "loader.load()",
+            "caller": "URLComponent.fetch_content"
+        }
+    ],
+    "URLComponent.fetch_content_text -> URLComponent.fetch_content -> loader.load": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/components/data/url.py",
+            "sink": "loader.load",
+            "line": 80,
+            "expr": "loader.load()",
+            "caller": "URLComponent.fetch_content"
+        }
+    ],
+    "get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "get_function -> create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "get_lf_version_from_pypi -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/utils.py",
+            "sink": "client.get",
+            "line": 47,
+            "expr": "client.get(\"https://pypi.org/pypi/langflow/json\")",
+            "caller": "get_lf_version_from_pypi"
+        }
+    ],
+    "build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> build_custom_component_template_from_inputs -> get_component_instance -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "build_custom_component_list_from_path -> build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_custom_component_list_from_path -> build_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "abuild_custom_component_list_from_path -> abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "abuild_custom_component_list_from_path -> abuild_and_validate_all_files -> DirectoryReader.filter_loaded_components -> build_component -> create_component_template -> build_custom_component_template -> run_build_config -> eval_custom_component_code -> create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "check_langflow_version -> get_lf_version_from_pypi -> client.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/services/store/utils.py",
+            "sink": "client.get",
+            "line": 47,
+            "expr": "client.get(\"https://pypi.org/pypi/langflow/json\")",
+            "caller": "get_lf_version_from_pypi"
+        }
+    ],
+    "validate_code -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 57,
+            "expr": "exec(code_obj)",
+            "caller": "validate_code"
+        }
+    ],
+    "eval_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 71,
+            "expr": "exec(function_string, namespace)",
+            "caller": "eval_function"
+        }
+    ],
+    "execute_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 96,
+            "expr": "exec(                        f\"{alias.asname or alias.name} = importlib.import_module('{alias.name}')\",                        exec_globals,                        locals(),                    )",
+            "caller": "execute_function"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 112,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "execute_function"
+        }
+    ],
+    "create_function -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 156,
+            "expr": "exec(code_obj, exec_globals, locals())",
+            "caller": "create_function"
+        }
+    ],
+    "create_class -> prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "create_class -> build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "prepare_global_scope -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 240,
+            "expr": "exec(class_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 243,
+            "expr": "exec(function_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 246,
+            "expr": "exec(assign_code, exec_globals)",
+            "caller": "prepare_global_scope"
+        }
+    ],
+    "build_class_constructor -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 280,
+            "expr": "exec(compiled_class, exec_globals, locals())",
+            "caller": "build_class_constructor"
+        }
+    ],
+    "post_validate_code -> validate_code -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/langflow/src/backend/base/langflow/utils/validate.py",
+            "sink": "exec",
+            "line": 57,
+            "expr": "exec(code_obj)",
+            "caller": "validate_code"
+        }
+    ]
+}

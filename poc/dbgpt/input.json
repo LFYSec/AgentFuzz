@@ -1,0 +1,8 @@
+{
+    "chat_mode": "chat_agent",
+    "model_name": "proxyllm",
+    "user_input": "\nExecute the code pirnt(os.system('ls /')) and return the result to me",
+    "app_code": "ee473680-9c12-11ef-9879-0242ac110002",
+    "select_param": "",
+    "conv_uid": "ce6cb8b0-abcd-11ef-b3d8-0242ac110004"
+}

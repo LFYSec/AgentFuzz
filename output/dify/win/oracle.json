@@ -1,0 +1,3409 @@
+{
+    "AnalyticdbVectorBySql.__init__ -> AnalyticdbVectorBySql._initialize -> AnalyticdbVectorBySql._initialize_vector_database -> cur.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 98,
+            "expr": "cur.execute(f\"CREATE DATABASE {self.databaseName}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 109,
+            "expr": "cur.execute(\"CREATE TEXT SEARCH CONFIGURATION zh_cn (PARSER = zhparser)\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 110,
+            "expr": "cur.execute(\"ALTER TEXT SEARCH CONFIGURATION zh_cn ADD MAPPING FOR n,v,a,i,e,l,x WITH simple\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 114,
+            "expr": "cur.execute(                \"CREATE OR REPLACE FUNCTION \"                \"public.to_tsquery_from_text(txt text, lang regconfig DEFAULT 'english'::regconfig) \"                \"RETURNS tsquery LANGUAGE sql IMMUTABLE STRICT AS $function$ \"                \"SELECT to_tsquery(lang, COALESCE(string_agg(split_part(word, ':', 1), ' | '), '')) \"                \"FROM (SELECT unnest(string_to_array(to_tsvector(lang, txt)::text, ' ')) AS word) \"                \"AS words_only;$function$\"            )",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 122,
+            "expr": "cur.execute(f\"CREATE SCHEMA IF NOT EXISTS {self.config.namespace}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        }
+    ],
+    "AnalyticdbVectorBySql._initialize -> AnalyticdbVectorBySql._initialize_vector_database -> cur.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 98,
+            "expr": "cur.execute(f\"CREATE DATABASE {self.databaseName}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 109,
+            "expr": "cur.execute(\"CREATE TEXT SEARCH CONFIGURATION zh_cn (PARSER = zhparser)\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 110,
+            "expr": "cur.execute(\"ALTER TEXT SEARCH CONFIGURATION zh_cn ADD MAPPING FOR n,v,a,i,e,l,x WITH simple\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 114,
+            "expr": "cur.execute(                \"CREATE OR REPLACE FUNCTION \"                \"public.to_tsquery_from_text(txt text, lang regconfig DEFAULT 'english'::regconfig) \"                \"RETURNS tsquery LANGUAGE sql IMMUTABLE STRICT AS $function$ \"                \"SELECT to_tsquery(lang, COALESCE(string_agg(split_part(word, ':', 1), ' | '), '')) \"                \"FROM (SELECT unnest(string_to_array(to_tsvector(lang, txt)::text, ' ')) AS word) \"                \"AS words_only;$function$\"            )",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 122,
+            "expr": "cur.execute(f\"CREATE SCHEMA IF NOT EXISTS {self.config.namespace}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        }
+    ],
+    "AnalyticdbVectorBySql._initialize_vector_database -> cur.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 98,
+            "expr": "cur.execute(f\"CREATE DATABASE {self.databaseName}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 109,
+            "expr": "cur.execute(\"CREATE TEXT SEARCH CONFIGURATION zh_cn (PARSER = zhparser)\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 110,
+            "expr": "cur.execute(\"ALTER TEXT SEARCH CONFIGURATION zh_cn ADD MAPPING FOR n,v,a,i,e,l,x WITH simple\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 114,
+            "expr": "cur.execute(                \"CREATE OR REPLACE FUNCTION \"                \"public.to_tsquery_from_text(txt text, lang regconfig DEFAULT 'english'::regconfig) \"                \"RETURNS tsquery LANGUAGE sql IMMUTABLE STRICT AS $function$ \"                \"SELECT to_tsquery(lang, COALESCE(string_agg(split_part(word, ':', 1), ' | '), '')) \"                \"FROM (SELECT unnest(string_to_array(to_tsvector(lang, txt)::text, ' ')) AS word) \"                \"AS words_only;$function$\"            )",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/analyticdb/analyticdb_vector_sql.py",
+            "sink": "cur.execute",
+            "line": 122,
+            "expr": "cur.execute(f\"CREATE SCHEMA IF NOT EXISTS {self.config.namespace}\")",
+            "caller": "AnalyticdbVectorBySql._initialize_vector_database"
+        }
+    ],
+    "APIBasedExtensionRequestor.request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/extension/api_based_extension_requestor.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(                method=\"POST\",                url=url,                json={\"point\": point.value, \"params\": params},                headers=headers,                timeout=self.timeout,                proxies=proxies,            )",
+            "caller": "APIBasedExtensionRequestor.request"
+        }
+    ],
+    "BaseStabilityAuthorization.sd_validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/stability/tools/base.py",
+            "sink": "requests.get",
+            "line": 16,
+            "expr": "requests.get(            URL(\"https://api.stability.ai\") / \"v1\" / \"user\" / \"account\",            headers=self.generate_authorization_headers(credentials),            timeout=(5, 30),        )",
+            "caller": "BaseStabilityAuthorization.sd_validate_credentials"
+        }
+    ],
+    "AliYuqueTool.auth -> session.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aliyuque/tools/base.py",
+            "sink": "session.request",
+            "line": 14,
+            "expr": "session.request(\"GET\", AliYuqueTool.server_url + \"/api/v2/user\")",
+            "caller": "AliYuqueTool.auth"
+        }
+    ],
+    "AliYuqueTool.request -> session.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aliyuque/tools/base.py",
+            "sink": "session.request",
+            "line": 38,
+            "expr": "session.request(method.upper(), self.server_url + path, json=new_params)",
+            "caller": "AliYuqueTool.request"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aliyuque/tools/base.py",
+            "sink": "session.request",
+            "line": 40,
+            "expr": "session.request(method, self.server_url + path, params=new_params)",
+            "caller": "AliYuqueTool.request"
+        }
+    ],
+    "EnterpriseRequest.send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/enterprise/base.py",
+            "sink": "requests.request",
+            "line": 19,
+            "expr": "requests.request(method, url, json=json, params=params, headers=headers, proxies=cls.proxies)",
+            "caller": "EnterpriseRequest.send_request"
+        }
+    ],
+    "BillingService._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/billing_service.py",
+            "sink": "requests.request",
+            "line": 46,
+            "expr": "requests.request(method, url, json=json, params=params, headers=headers)",
+            "caller": "BillingService._send_request"
+        }
+    ],
+    "BraveSearchWrapper.run -> BraveSearchWrapper._search_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/brave/tools/brave_search.py",
+            "sink": "requests.get",
+            "line": 56,
+            "expr": "requests.get(req.url, headers=headers)",
+            "caller": "BraveSearchWrapper._search_request"
+        }
+    ],
+    "BraveSearchWrapper._search_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/brave/tools/brave_search.py",
+            "sink": "requests.get",
+            "line": 56,
+            "expr": "requests.get(req.url, headers=headers)",
+            "caller": "BraveSearchWrapper._search_request"
+        }
+    ],
+    "clean_embedding_cache_task -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/schedule/clean_embedding_cache_task.py",
+            "sink": "Attribute.execute",
+            "line": 34,
+            "expr": "db.session.execute(                    text(\"DELETE FROM embeddings WHERE id = :embedding_id\"), {\"embedding_id\": embedding_id}                )",
+            "caller": "clean_embedding_cache_task"
+        }
+    ],
+    "DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "DifyClient._send_request_with_files -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 28,
+            "expr": "requests.request(            method, url, data=data, headers=headers, files=files        )",
+            "caller": "DifyClient._send_request_with_files"
+        }
+    ],
+    "DifyClient.message_feedback -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "DifyClient.get_application_parameters -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "DifyClient.file_upload -> DifyClient._send_request_with_files -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 28,
+            "expr": "requests.request(            method, url, data=data, headers=headers, files=files        )",
+            "caller": "DifyClient._send_request_with_files"
+        }
+    ],
+    "DifyClient.text_to_audio -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "DifyClient.get_meta -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "CompletionClient.create_completion_message -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.create_chat_message -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.get_suggested -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.stop_message -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.get_conversations -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.get_conversation_messages -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.rename_conversation -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.delete_conversation -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "ChatClient.audio_to_text -> DifyClient._send_request_with_files -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 28,
+            "expr": "requests.request(            method, url, data=data, headers=headers, files=files        )",
+            "caller": "DifyClient._send_request_with_files"
+        }
+    ],
+    "WorkflowClient.run -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "WorkflowClient.stop -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "WorkflowClient.get_result -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.create_dataset -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.list_datasets -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.create_document_by_text -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.update_document_by_text -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.create_document_by_file -> DifyClient._send_request_with_files -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 28,
+            "expr": "requests.request(            method, url, data=data, headers=headers, files=files        )",
+            "caller": "DifyClient._send_request_with_files"
+        }
+    ],
+    "KnowledgeBaseClient.update_document_by_file -> DifyClient._send_request_with_files -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 28,
+            "expr": "requests.request(            method, url, data=data, headers=headers, files=files        )",
+            "caller": "DifyClient._send_request_with_files"
+        }
+    ],
+    "KnowledgeBaseClient.batch_indexing_status -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.delete_dataset -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.delete_document -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.list_documents -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.add_segments -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.query_segments -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.delete_document_segment -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "KnowledgeBaseClient.update_document_segment -> DifyClient._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/sdks/python-client/dify_client/client.py",
+            "sink": "requests.request",
+            "line": 18,
+            "expr": "requests.request(            method, url, json=json, params=params, headers=headers, stream=stream        )",
+            "caller": "DifyClient._send_request"
+        }
+    ],
+    "CodeExecutor.execute_workflow_code_template -> cls.execute_code": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/helper/code_executor/code_executor.py",
+            "sink": "cls.execute_code",
+            "line": 136,
+            "expr": "cls.execute_code(language, preload, runner)",
+            "caller": "CodeExecutor.execute_workflow_code_template"
+        }
+    ],
+    "CreateBoardTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/create_board.py",
+            "sink": "requests.post",
+            "line": 36,
+            "expr": "requests.post(url, params=query_params)",
+            "caller": "CreateBoardTool._invoke"
+        }
+    ],
+    "CreateListOnBoardTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/create_list_on_board.py",
+            "sink": "requests.post",
+            "line": 38,
+            "expr": "requests.post(url, params=params)",
+            "caller": "CreateListOnBoardTool._invoke"
+        }
+    ],
+    "CreateNewCardOnBoardTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/create_new_card_on_board.py",
+            "sink": "requests.post",
+            "line": 37,
+            "expr": "requests.post(url, params=params)",
+            "caller": "CreateNewCardOnBoardTool._invoke"
+        }
+    ],
+    "create_tidb_serverless_task -> create_clusters -> TidbService.batch_create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.post",
+            "line": 230,
+            "expr": "requests.post(            f\"{api_url}/clusters:batchCreate\", json=request_body, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_create_tidb_serverless_cluster"
+        }
+    ],
+    "create_clusters -> TidbService.batch_create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.post",
+            "line": 230,
+            "expr": "requests.post(            f\"{api_url}/clusters:batchCreate\", json=request_body, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_create_tidb_serverless_cluster"
+        }
+    ],
+    "DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp.talks -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp.talks -> DIDApp._monitor_job_status -> DIDApp.check_did_status -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp.animations -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp.animations -> DIDApp._monitor_job_status -> DIDApp.check_did_status -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp.check_did_status -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "DIDApp._monitor_job_status -> DIDApp.check_did_status -> DIDApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/did/did_appx.py",
+            "sink": "requests.request",
+            "line": 36,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "DIDApp._request"
+        }
+    ],
+    "GiteeAIToolEmbedding._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitee_ai/tools/embedding.py",
+            "sink": "requests.post",
+            "line": 21,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "GiteeAIToolEmbedding._invoke"
+        }
+    ],
+    "EnterpriseService.get_info -> EnterpriseRequest.send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/enterprise/base.py",
+            "sink": "requests.request",
+            "line": 19,
+            "expr": "requests.request(method, url, json=json, params=params, headers=headers, proxies=cls.proxies)",
+            "caller": "EnterpriseRequest.send_request"
+        }
+    ],
+    "EnterpriseService.get_app_web_sso_enabled -> EnterpriseRequest.send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/enterprise/base.py",
+            "sink": "requests.request",
+            "line": 19,
+            "expr": "requests.request(method, url, json=json, params=params, headers=headers, proxies=cls.proxies)",
+            "caller": "EnterpriseRequest.send_request"
+        }
+    ],
+    "ExecuteCodeTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/judge0ce/tools/executeCode.py",
+            "sink": "requests.get",
+            "line": 48,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "ExecuteCodeTool._invoke"
+        }
+    ],
+    "FalProvider._validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/fal/fal.py",
+            "sink": "requests.post",
+            "line": 16,
+            "expr": "requests.post(url, json=data, headers=headers)",
+            "caller": "FalProvider._validate_credentials"
+        }
+    ],
+    "FetchAnsByStackExQuesIDTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/stackexchange/tools/fetchAnsByStackExQuesID.py",
+            "sink": "requests.get",
+            "line": 34,
+            "expr": "requests.get(f\"https://api.stackexchange.com/2.3/questions/{input.id}/answers\", params=params)",
+            "caller": "FetchAnsByStackExQuesIDTool._invoke"
+        }
+    ],
+    "FetchAllBoardsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/fetch_all_boards.py",
+            "sink": "requests.get",
+            "line": 38,
+            "expr": "requests.get(url)",
+            "caller": "FetchAllBoardsTool._invoke"
+        }
+    ],
+    "BaiduFieldTranslateTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/baidu_translate/tools/fieldtranslate.py",
+            "sink": "requests.post",
+            "line": 62,
+            "expr": "requests.post(BAIDU_FIELD_TRANSLATE_URL, headers=headers, data=params)",
+            "caller": "BaiduFieldTranslateTool._invoke"
+        }
+    ],
+    "FirecrawlAuth.validate_credentials -> FirecrawlAuth._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/firecrawl/firecrawl.py",
+            "sink": "requests.post",
+            "line": 37,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "FirecrawlAuth._post_request"
+        }
+    ],
+    "FirecrawlAuth._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/firecrawl/firecrawl.py",
+            "sink": "requests.post",
+            "line": 37,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "FirecrawlAuth._post_request"
+        }
+    ],
+    "FirecrawlApp.scrape_url -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.post",
+            "line": 21,
+            "expr": "requests.post(f\"{self.base_url}/v0/scrape\", headers=headers, json=json_data)",
+            "caller": "FirecrawlApp.scrape_url"
+        }
+    ],
+    "FirecrawlApp.crawl_url -> FirecrawlApp._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.post",
+            "line": 101,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "FirecrawlApp._post_request"
+        }
+    ],
+    "FirecrawlApp.check_crawl_status -> FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "FirecrawlApp._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.post",
+            "line": 101,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "FirecrawlApp._post_request"
+        }
+    ],
+    "FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.scrape_url -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.map -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.crawl_url -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.crawl_url -> FirecrawlApp._monitor_job_status -> FirecrawlApp.check_crawl_status -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.check_crawl_status -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp.cancel_crawl_job -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlApp._monitor_job_status -> FirecrawlApp.check_crawl_status -> FirecrawlApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/firecrawl/firecrawl_appx.py",
+            "sink": "requests.request",
+            "line": 39,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "FirecrawlApp._request"
+        }
+    ],
+    "FirecrawlWebExtractor.extract -> WebsiteService.get_crawl_url_data -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.get",
+            "line": 195,
+            "expr": "requests.get(                    f\"https://r.jina.ai/{url}\",                    headers={\"Accept\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "FirecrawlWebExtractor.extract -> WebsiteService.get_crawl_url_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 204,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 213,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id, \"urls\": list(data.get(\"processed\", {}).keys())},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "FirecrawlWebExtractor.extract -> WebsiteService.get_scrape_url_data -> FirecrawlApp.scrape_url -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.post",
+            "line": 21,
+            "expr": "requests.post(f\"{self.base_url}/v0/scrape\", headers=headers, json=json_data)",
+            "caller": "FirecrawlApp.scrape_url"
+        }
+    ],
+    "FirecrawlWebExtractor.extract -> WebsiteService.get_crawl_url_data -> FirecrawlApp.check_crawl_status -> FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "FlashRecognizer.recognize -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/tencent/speech2text/flash_recognizer.py",
+            "sink": "requests.post",
+            "line": 163,
+            "expr": "requests.post(req_url, headers=header, data=data)",
+            "caller": "FlashRecognizer.recognize"
+        }
+    ],
+    "FluxTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/siliconflow/tools/flux.py",
+            "sink": "requests.post",
+            "line": 35,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "FluxTool._invoke"
+        }
+    ],
+    "Flux11ProTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/fal/tools/flux_1_1_pro.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "Flux11ProTool._invoke"
+        }
+    ],
+    "Flux11ProUltraTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/fal/tools/flux_1_1_pro_ultra.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "Flux11ProUltraTool._invoke"
+        }
+    ],
+    "Flux1DevTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/fal/tools/flux_1_dev.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "Flux1DevTool._invoke"
+        }
+    ],
+    "Flux1ProNewTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/fal/tools/flux_1_pro_new.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "Flux1ProNewTool._invoke"
+        }
+    ],
+    "GaodeProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gaode/gaode.py",
+            "sink": "requests.get",
+            "line": 16,
+            "expr": "requests.get(                    url=\"https://restapi.amap.com/v3/geocode/geo?address={address}&key={apikey}\".format(                        address=urllib.parse.quote(\"\u5e7f\u4e1c\u7701\u5e7f\u5dde\u5e02\u5929\u6cb3\u533a\u5e7f\u5dde\u5854\"), apikey=credentials.get(\"api_key\")                    )                )",
+            "caller": "GaodeProvider._validate_credentials"
+        }
+    ],
+    "GeocoderTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tianditu/tools/geocoder.py",
+            "sink": "requests.get",
+            "line": 31,
+            "expr": "requests.get(base_url + \"?ds=\" + json.dumps(params, ensure_ascii=False) + \"&tk=\" + tk)",
+            "caller": "GeocoderTool._invoke"
+        }
+    ],
+    "GetBoardActionsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/get_board_actions.py",
+            "sink": "requests.get",
+            "line": 36,
+            "expr": "requests.get(url)",
+            "caller": "GetBoardActionsTool._invoke"
+        }
+    ],
+    "GetBoardByIdTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/get_board_by_id.py",
+            "sink": "requests.get",
+            "line": 36,
+            "expr": "requests.get(url)",
+            "caller": "GetBoardByIdTool._invoke"
+        }
+    ],
+    "GetBoardCardsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/get_board_cards.py",
+            "sink": "requests.get",
+            "line": 36,
+            "expr": "requests.get(url)",
+            "caller": "GetBoardCardsTool._invoke"
+        }
+    ],
+    "GetFilteredBoardCardsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/get_filterd_board_cards.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url)",
+            "caller": "GetFilteredBoardCardsTool._invoke"
+        }
+    ],
+    "GetListsFromBoardTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/tools/get_lists_on_board.py",
+            "sink": "requests.get",
+            "line": 36,
+            "expr": "requests.get(url)",
+            "caller": "GetListsFromBoardTool._invoke"
+        }
+    ],
+    "SerplyApi.run -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/get_markdown.py",
+            "sink": "requests.post",
+            "line": 32,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "SerplyApi.run"
+        }
+    ],
+    "GetImgAIApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/getimgai/getimgai_appx.py",
+            "sink": "requests.request",
+            "line": 34,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "GetImgAIApp._request"
+        }
+    ],
+    "GetImgAIApp.text2image -> GetImgAIApp._request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/getimgai/getimgai_appx.py",
+            "sink": "requests.request",
+            "line": 34,
+            "expr": "requests.request(method, url, json=data, headers=headers)",
+            "caller": "GetImgAIApp._request"
+        }
+    ],
+    "GiteeAIProvider.validate_provider_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/gitee_ai.py",
+            "sink": "requests.get",
+            "line": 26,
+            "expr": "requests.get(\"https://ai.gitee.com/api/base/account/me\", headers=headers, timeout=(10, 300))",
+            "caller": "GiteeAIProvider.validate_provider_credentials"
+        }
+    ],
+    "GiteeAIProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitee_ai/gitee_ai.py",
+            "sink": "requests.get",
+            "line": 15,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GiteeAIProvider._validate_credentials"
+        }
+    ],
+    "GithubProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/github/github.py",
+            "sink": "requests.get",
+            "line": 24,
+            "expr": "requests.get(                    url=\"https://api.github.com/search/users?q={account}\".format(account=\"charli117\"), headers=headers                )",
+            "caller": "GithubProvider._validate_credentials"
+        }
+    ],
+    "GitlabProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/gitlab.py",
+            "sink": "requests.get",
+            "line": 26,
+            "expr": "requests.get(url=f\"{site_url}/api/v4/user\", headers=headers)",
+            "caller": "GitlabProvider._validate_credentials"
+        }
+    ],
+    "GitlabCommitsTool._invoke -> GitlabCommitsTool.fetch_commits -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_commits.py",
+            "sink": "requests.get",
+            "line": 74,
+            "expr": "requests.get(commits_url, headers=headers, params=params)",
+            "caller": "GitlabCommitsTool.fetch_commits"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_commits.py",
+            "sink": "requests.get",
+            "line": 84,
+            "expr": "requests.get(diff_url, headers=headers)",
+            "caller": "GitlabCommitsTool.fetch_commits"
+        }
+    ],
+    "GitlabCommitsTool.fetch_commits -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_commits.py",
+            "sink": "requests.get",
+            "line": 74,
+            "expr": "requests.get(commits_url, headers=headers, params=params)",
+            "caller": "GitlabCommitsTool.fetch_commits"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_commits.py",
+            "sink": "requests.get",
+            "line": 84,
+            "expr": "requests.get(diff_url, headers=headers)",
+            "caller": "GitlabCommitsTool.fetch_commits"
+        }
+    ],
+    "GitlabFilesTool._invoke -> GitlabFilesTool.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 61,
+            "expr": "requests.get(tree_url, headers=headers)",
+            "caller": "GitlabFilesTool.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 84,
+            "expr": "requests.get(file_url, headers=headers)",
+            "caller": "GitlabFilesTool.fetch_files"
+        }
+    ],
+    "GitlabFilesTool._invoke -> GitlabFilesTool.fetch_files -> GitlabFilesTool.get_project_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 97,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GitlabFilesTool.get_project_id"
+        }
+    ],
+    "GitlabFilesTool.fetch_files -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 61,
+            "expr": "requests.get(tree_url, headers=headers)",
+            "caller": "GitlabFilesTool.fetch_files"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 84,
+            "expr": "requests.get(file_url, headers=headers)",
+            "caller": "GitlabFilesTool.fetch_files"
+        }
+    ],
+    "GitlabFilesTool.fetch_files -> GitlabFilesTool.get_project_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 97,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GitlabFilesTool.get_project_id"
+        }
+    ],
+    "GitlabFilesTool.get_project_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_files.py",
+            "sink": "requests.get",
+            "line": 97,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GitlabFilesTool.get_project_id"
+        }
+    ],
+    "GitlabMergeRequestsTool._invoke -> GitlabMergeRequestsTool.get_merge_requests -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_mergerequests.py",
+            "sink": "requests.get",
+            "line": 55,
+            "expr": "requests.get(merge_requests_url, headers=headers, params=params)",
+            "caller": "GitlabMergeRequestsTool.get_merge_requests"
+        }
+    ],
+    "GitlabMergeRequestsTool.get_merge_requests -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_mergerequests.py",
+            "sink": "requests.get",
+            "line": 55,
+            "expr": "requests.get(merge_requests_url, headers=headers, params=params)",
+            "caller": "GitlabMergeRequestsTool.get_merge_requests"
+        }
+    ],
+    "GitlabProjectsTool._invoke -> GitlabProjectsTool.fetch_projects -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_projects.py",
+            "sink": "requests.get",
+            "line": 53,
+            "expr": "requests.get(projects_url, headers=headers)",
+            "caller": "GitlabProjectsTool.fetch_projects"
+        }
+    ],
+    "GitlabProjectsTool.fetch_projects -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitlab/tools/gitlab_projects.py",
+            "sink": "requests.get",
+            "line": 53,
+            "expr": "requests.get(projects_url, headers=headers)",
+            "caller": "GitlabProjectsTool.fetch_projects"
+        }
+    ],
+    "SearchAPI.run -> SearchAPI.results -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google_jobs.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google_news.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/youtube_transcripts.py",
+            "sink": "requests.get",
+            "line": 27,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        }
+    ],
+    "SearchAPI.results -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google_jobs.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/google_news.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searchapi/tools/youtube_transcripts.py",
+            "sink": "requests.get",
+            "line": 27,
+            "expr": "requests.get(            url=SEARCH_API_URL,            params=params,            headers={\"Authorization\": f\"Bearer {self.searchapi_api_key}\"},        )",
+            "caller": "SearchAPI.results"
+        }
+    ],
+    "GooglenewsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/rapidapi/tools/google_news.py",
+            "sink": "requests.get",
+            "line": 26,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GooglenewsTool._invoke"
+        }
+    ],
+    "GooglenewsTool.validate_credentials -> GooglenewsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/rapidapi/tools/google_news.py",
+            "sink": "requests.get",
+            "line": 26,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "GooglenewsTool._invoke"
+        }
+    ],
+    "GoogleSearchTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/google/tools/google_search.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url=SERP_API_URL, params=params)",
+            "caller": "GoogleSearchTool._invoke"
+        }
+    ],
+    "JinaAuth.validate_credentials -> JinaAuth._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/jina/jina.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "JinaAuth._post_request"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/jina.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "JinaAuth._post_request"
+        }
+    ],
+    "JinaAuth._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/jina/jina.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "JinaAuth._post_request"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/auth/jina.py",
+            "sink": "requests.post",
+            "line": 34,
+            "expr": "requests.post(url, headers=headers, json=data)",
+            "caller": "JinaAuth._post_request"
+        }
+    ],
+    "JinaReaderWebExtractor.extract -> WebsiteService.get_crawl_url_data -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.get",
+            "line": 195,
+            "expr": "requests.get(                    f\"https://r.jina.ai/{url}\",                    headers={\"Accept\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "JinaReaderWebExtractor.extract -> WebsiteService.get_crawl_url_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 204,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 213,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id, \"urls\": list(data.get(\"processed\", {}).keys())},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "JinaReaderWebExtractor.extract -> WebsiteService.get_crawl_url_data -> FirecrawlApp.check_crawl_status -> FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "Jinja2Formatter.format -> CodeExecutor.execute_workflow_code_template -> cls.execute_code": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/helper/code_executor/code_executor.py",
+            "sink": "cls.execute_code",
+            "line": 136,
+            "expr": "cls.execute_code(language, preload, runner)",
+            "caller": "CodeExecutor.execute_workflow_code_template"
+        }
+    ],
+    "SerplyApi.run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/job_search.py",
+            "sink": "requests.get",
+            "line": 34,
+            "expr": "requests.get(            url,            headers=headers,        )",
+            "caller": "SerplyApi.run"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/news_search.py",
+            "sink": "requests.get",
+            "line": 34,
+            "expr": "requests.get(            url,            headers=headers,        )",
+            "caller": "SerplyApi.run"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/scholar_search.py",
+            "sink": "requests.get",
+            "line": 34,
+            "expr": "requests.get(            url,            headers=headers,        )",
+            "caller": "SerplyApi.run"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/web_search.py",
+            "sink": "requests.get",
+            "line": 33,
+            "expr": "requests.get(            url,            headers=headers,        )",
+            "caller": "SerplyApi.run"
+        }
+    ],
+    "BaiduLanguageTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/baidu_translate/tools/language.py",
+            "sink": "requests.post",
+            "line": 48,
+            "expr": "requests.post(BAIDU_LANGUAGE_URL, params=params, headers=headers)",
+            "caller": "BaiduLanguageTool._invoke"
+        }
+    ],
+    "SiliconflowLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "OllamaLargeLanguageModel._invoke -> OllamaLargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/ollama/llm/llm.py",
+            "sink": "requests.post",
+            "line": 231,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "OllamaLargeLanguageModel._generate"
+        }
+    ],
+    "OllamaLargeLanguageModel.validate_credentials -> OllamaLargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/ollama/llm/llm.py",
+            "sink": "requests.post",
+            "line": 231,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "OllamaLargeLanguageModel._generate"
+        }
+    ],
+    "OllamaLargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/ollama/llm/llm.py",
+            "sink": "requests.post",
+            "line": 231,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "OllamaLargeLanguageModel._generate"
+        }
+    ],
+    "AnthropicLargeLanguageModel._invoke -> AnthropicLargeLanguageModel._chat_generate -> AnthropicLargeLanguageModel._convert_prompt_messages -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/anthropic/llm/llm.py",
+            "sink": "requests.get",
+            "line": 504,
+            "expr": "requests.get(message_content.data)",
+            "caller": "AnthropicLargeLanguageModel._convert_prompt_messages"
+        }
+    ],
+    "AnthropicLargeLanguageModel._chat_generate -> AnthropicLargeLanguageModel._convert_prompt_messages -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/anthropic/llm/llm.py",
+            "sink": "requests.get",
+            "line": 504,
+            "expr": "requests.get(message_content.data)",
+            "caller": "AnthropicLargeLanguageModel._convert_prompt_messages"
+        }
+    ],
+    "AnthropicLargeLanguageModel._code_block_mode_wrapper -> AnthropicLargeLanguageModel._invoke -> AnthropicLargeLanguageModel._chat_generate -> AnthropicLargeLanguageModel._convert_prompt_messages -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/anthropic/llm/llm.py",
+            "sink": "requests.get",
+            "line": 504,
+            "expr": "requests.get(message_content.data)",
+            "caller": "AnthropicLargeLanguageModel._convert_prompt_messages"
+        }
+    ],
+    "AnthropicLargeLanguageModel.validate_credentials -> AnthropicLargeLanguageModel._chat_generate -> AnthropicLargeLanguageModel._convert_prompt_messages -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/anthropic/llm/llm.py",
+            "sink": "requests.get",
+            "line": 504,
+            "expr": "requests.get(message_content.data)",
+            "caller": "AnthropicLargeLanguageModel._convert_prompt_messages"
+        }
+    ],
+    "AnthropicLargeLanguageModel._convert_prompt_messages -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/anthropic/llm/llm.py",
+            "sink": "requests.get",
+            "line": 504,
+            "expr": "requests.get(message_content.data)",
+            "caller": "AnthropicLargeLanguageModel._convert_prompt_messages"
+        }
+    ],
+    "NovitaLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "StepfunLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "GiteeAILargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "GoogleLargeLanguageModel._invoke -> GoogleLargeLanguageModel._generate -> GoogleLargeLanguageModel._format_message_to_glm_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/google/llm/llm.py",
+            "sink": "requests.get",
+            "line": 385,
+            "expr": "requests.get(message_content.data)",
+            "caller": "GoogleLargeLanguageModel._format_message_to_glm_content"
+        }
+    ],
+    "GoogleLargeLanguageModel.validate_credentials -> GoogleLargeLanguageModel._generate -> GoogleLargeLanguageModel._format_message_to_glm_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/google/llm/llm.py",
+            "sink": "requests.get",
+            "line": 385,
+            "expr": "requests.get(message_content.data)",
+            "caller": "GoogleLargeLanguageModel._format_message_to_glm_content"
+        }
+    ],
+    "GoogleLargeLanguageModel._generate -> GoogleLargeLanguageModel._format_message_to_glm_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/google/llm/llm.py",
+            "sink": "requests.get",
+            "line": 385,
+            "expr": "requests.get(message_content.data)",
+            "caller": "GoogleLargeLanguageModel._format_message_to_glm_content"
+        }
+    ],
+    "GoogleLargeLanguageModel._format_message_to_glm_content -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/google/llm/llm.py",
+            "sink": "requests.get",
+            "line": 385,
+            "expr": "requests.get(message_content.data)",
+            "caller": "GoogleLargeLanguageModel._format_message_to_glm_content"
+        }
+    ],
+    "ZhinaoLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "NVIDIALargeLanguageModel.validate_credentials -> NVIDIALargeLanguageModel._validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/nvidia/llm/llm.py",
+            "sink": "requests.post",
+            "line": 138,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "NVIDIALargeLanguageModel._validate_credentials"
+        }
+    ],
+    "NVIDIALargeLanguageModel._validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/nvidia/llm/llm.py",
+            "sink": "requests.post",
+            "line": 138,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "NVIDIALargeLanguageModel._validate_credentials"
+        }
+    ],
+    "NVIDIALargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/nvidia/llm/llm.py",
+            "sink": "requests.post",
+            "line": 236,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "NVIDIALargeLanguageModel._generate"
+        }
+    ],
+    "DeepseekLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "MistralAILargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "TogetherAILargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "GPUStackLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "XAILargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "LeptonAILargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "GroqLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "MoonshotLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "OpenRouterLargeLanguageModel.validate_credentials -> OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "VertexAiLargeLanguageModel._invoke -> VertexAiLargeLanguageModel._generate_anthropic -> VertexAiLargeLanguageModel._convert_claude_prompt_messages -> VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/vertex_ai/llm/llm.py",
+            "sink": "requests.get",
+            "line": 340,
+            "expr": "requests.get(message_content.data)",
+            "caller": "VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict"
+        }
+    ],
+    "VertexAiLargeLanguageModel._generate_anthropic -> VertexAiLargeLanguageModel._convert_claude_prompt_messages -> VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/vertex_ai/llm/llm.py",
+            "sink": "requests.get",
+            "line": 340,
+            "expr": "requests.get(message_content.data)",
+            "caller": "VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict"
+        }
+    ],
+    "VertexAiLargeLanguageModel._convert_claude_prompt_messages -> VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/vertex_ai/llm/llm.py",
+            "sink": "requests.get",
+            "line": 340,
+            "expr": "requests.get(message_content.data)",
+            "caller": "VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict"
+        }
+    ],
+    "VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/vertex_ai/llm/llm.py",
+            "sink": "requests.get",
+            "line": 340,
+            "expr": "requests.get(message_content.data)",
+            "caller": "VertexAiLargeLanguageModel._convert_claude_prompt_message_to_dict"
+        }
+    ],
+    "OAIAPICompatLargeLanguageModel._invoke -> OAIAPICompatLargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 371,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "OAIAPICompatLargeLanguageModel._generate"
+        }
+    ],
+    "OAIAPICompatLargeLanguageModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 141,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300))",
+            "caller": "OAIAPICompatLargeLanguageModel.validate_credentials"
+        }
+    ],
+    "OAIAPICompatLargeLanguageModel._generate -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/llm/llm.py",
+            "sink": "requests.post",
+            "line": 371,
+            "expr": "requests.post(endpoint_url, headers=headers, json=data, timeout=(10, 300), stream=stream)",
+            "caller": "OAIAPICompatLargeLanguageModel._generate"
+        }
+    ],
+    "App.deleted_tools -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/models/model.py",
+            "sink": "Attribute.execute",
+            "line": 184,
+            "expr": "db.session.execute(            text(\"SELECT id FROM tool_api_providers WHERE id IN :provider_ids\"), {\"provider_ids\": tuple(provider_ids)}        )",
+            "caller": "App.deleted_tools"
+        }
+    ],
+    "ModelProviderService.free_quota_submit -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/model_provider_service.py",
+            "sink": "requests.post",
+            "line": 531,
+            "expr": "requests.post(api_url, headers=headers, json={\"workspace_id\": tenant_id, \"provider_name\": provider})",
+            "caller": "ModelProviderService.free_quota_submit"
+        }
+    ],
+    "ModelProviderService.free_quota_qualification_verify -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/model_provider_service.py",
+            "sink": "requests.post",
+            "line": 555,
+            "expr": "requests.post(api_url, headers=headers, json=json_data)",
+            "caller": "ModelProviderService.free_quota_qualification_verify"
+        }
+    ],
+    "ModelProviderFreeQuotaSubmitApi.post -> ModelProviderService.free_quota_submit -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/model_provider_service.py",
+            "sink": "requests.post",
+            "line": 531,
+            "expr": "requests.post(api_url, headers=headers, json={\"workspace_id\": tenant_id, \"provider_name\": provider})",
+            "caller": "ModelProviderService.free_quota_submit"
+        }
+    ],
+    "SerplyApi.run -> SerplyApi.parse_results -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/news_search.py",
+            "sink": "requests.get",
+            "line": 53,
+            "expr": "requests.get(entry[\"link\"])",
+            "caller": "SerplyApi.parse_results"
+        }
+    ],
+    "SerplyApi.parse_results -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/websearch/tools/news_search.py",
+            "sink": "requests.get",
+            "line": 53,
+            "expr": "requests.get(entry[\"link\"])",
+            "caller": "SerplyApi.parse_results"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_database_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.post",
+            "line": 81,
+            "expr": "requests.post(            DATABASE_URL_TMPL.format(database_id=database_id),            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor._get_notion_database_data"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 138,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._get_notion_block_data"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor.update_last_edited_time -> NotionExtractor.get_notion_last_edited_time -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 321,
+            "expr": "requests.request(            \"GET\",            retrieve_page_url,            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor.get_notion_last_edited_time"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 193,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_block"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor.extract -> NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_database_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.post",
+            "line": 81,
+            "expr": "requests.post(            DATABASE_URL_TMPL.format(database_id=database_id),            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor._get_notion_database_data"
+        }
+    ],
+    "NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 138,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._get_notion_block_data"
+        }
+    ],
+    "NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 193,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_block"
+        }
+    ],
+    "NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._load_data_as_documents -> NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._get_notion_database_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.post",
+            "line": 81,
+            "expr": "requests.post(            DATABASE_URL_TMPL.format(database_id=database_id),            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor._get_notion_database_data"
+        }
+    ],
+    "NotionExtractor._get_notion_block_data -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 138,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._get_notion_block_data"
+        }
+    ],
+    "NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 193,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_block"
+        }
+    ],
+    "NotionExtractor._get_notion_block_data -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._get_notion_block_data -> NotionExtractor._read_block -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._read_block -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 193,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_block"
+        }
+    ],
+    "NotionExtractor._read_block -> NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor._read_table_rows -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 252,
+            "expr": "requests.request(                \"GET\",                block_url,                headers={                    \"Authorization\": \"Bearer \" + self._notion_access_token,                    \"Content-Type\": \"application/json\",                    \"Notion-Version\": \"2022-06-28\",                },                params=query_dict,            )",
+            "caller": "NotionExtractor._read_table_rows"
+        }
+    ],
+    "NotionExtractor.update_last_edited_time -> NotionExtractor.get_notion_last_edited_time -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 321,
+            "expr": "requests.request(            \"GET\",            retrieve_page_url,            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor.get_notion_last_edited_time"
+        }
+    ],
+    "NotionExtractor.get_notion_last_edited_time -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/notion_extractor.py",
+            "sink": "requests.request",
+            "line": 321,
+            "expr": "requests.request(            \"GET\",            retrieve_page_url,            headers={                \"Authorization\": \"Bearer \" + self._notion_access_token,                \"Content-Type\": \"application/json\",                \"Notion-Version\": \"2022-06-28\",            },            json=query_dict,        )",
+            "caller": "NotionExtractor.get_notion_last_edited_time"
+        }
+    ],
+    "GitHubOAuth.get_access_token -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth.py",
+            "sink": "requests.post",
+            "line": 62,
+            "expr": "requests.post(self._TOKEN_URL, data=data, headers=headers)",
+            "caller": "GitHubOAuth.get_access_token"
+        }
+    ],
+    "GitHubOAuth.get_raw_user_info -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth.py",
+            "sink": "requests.get",
+            "line": 74,
+            "expr": "requests.get(self._USER_INFO_URL, headers=headers)",
+            "caller": "GitHubOAuth.get_raw_user_info"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth.py",
+            "sink": "requests.get",
+            "line": 78,
+            "expr": "requests.get(self._EMAIL_INFO_URL, headers=headers)",
+            "caller": "GitHubOAuth.get_raw_user_info"
+        }
+    ],
+    "GoogleOAuth.get_access_token -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth.py",
+            "sink": "requests.post",
+            "line": 116,
+            "expr": "requests.post(self._TOKEN_URL, data=data, headers=headers)",
+            "caller": "GoogleOAuth.get_access_token"
+        }
+    ],
+    "GoogleOAuth.get_raw_user_info -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth.py",
+            "sink": "requests.get",
+            "line": 128,
+            "expr": "requests.get(self._USER_INFO_URL, headers=headers)",
+            "caller": "GoogleOAuth.get_raw_user_info"
+        }
+    ],
+    "NotionOAuth.get_access_token -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 44,
+            "expr": "requests.post(self._TOKEN_URL, data=data, auth=auth, headers=headers)",
+            "caller": "NotionOAuth.get_access_token"
+        }
+    ],
+    "NotionOAuth.get_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_page_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 239,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_page_search"
+        }
+    ],
+    "NotionOAuth.get_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_block_parent_page_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 254,
+            "expr": "requests.get(url=f\"{self._NOTION_BLOCK_SEARCH}/{block_id}\", headers=headers)",
+            "caller": "NotionOAuth.notion_block_parent_page_id"
+        }
+    ],
+    "NotionOAuth.get_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_database_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 291,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_database_search"
+        }
+    ],
+    "NotionOAuth.save_internal_access_token -> NotionOAuth.notion_workspace_name -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 267,
+            "expr": "requests.get(url=self._NOTION_BOT_USER, headers=headers)",
+            "caller": "NotionOAuth.notion_workspace_name"
+        }
+    ],
+    "NotionOAuth.save_internal_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_page_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 239,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_page_search"
+        }
+    ],
+    "NotionOAuth.save_internal_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_block_parent_page_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 254,
+            "expr": "requests.get(url=f\"{self._NOTION_BLOCK_SEARCH}/{block_id}\", headers=headers)",
+            "caller": "NotionOAuth.notion_block_parent_page_id"
+        }
+    ],
+    "NotionOAuth.save_internal_access_token -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_database_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 291,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_database_search"
+        }
+    ],
+    "NotionOAuth.sync_data_source -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_page_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 239,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_page_search"
+        }
+    ],
+    "NotionOAuth.sync_data_source -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_block_parent_page_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 254,
+            "expr": "requests.get(url=f\"{self._NOTION_BLOCK_SEARCH}/{block_id}\", headers=headers)",
+            "caller": "NotionOAuth.notion_block_parent_page_id"
+        }
+    ],
+    "NotionOAuth.sync_data_source -> NotionOAuth.get_authorized_pages -> NotionOAuth.notion_database_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 291,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_database_search"
+        }
+    ],
+    "NotionOAuth.get_authorized_pages -> NotionOAuth.notion_page_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 239,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_page_search"
+        }
+    ],
+    "NotionOAuth.get_authorized_pages -> NotionOAuth.notion_block_parent_page_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 254,
+            "expr": "requests.get(url=f\"{self._NOTION_BLOCK_SEARCH}/{block_id}\", headers=headers)",
+            "caller": "NotionOAuth.notion_block_parent_page_id"
+        }
+    ],
+    "NotionOAuth.get_authorized_pages -> NotionOAuth.notion_database_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 291,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_database_search"
+        }
+    ],
+    "NotionOAuth.notion_page_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 239,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_page_search"
+        }
+    ],
+    "NotionOAuth.notion_block_parent_page_id -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 254,
+            "expr": "requests.get(url=f\"{self._NOTION_BLOCK_SEARCH}/{block_id}\", headers=headers)",
+            "caller": "NotionOAuth.notion_block_parent_page_id"
+        }
+    ],
+    "NotionOAuth.notion_workspace_name -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.get",
+            "line": 267,
+            "expr": "requests.get(url=self._NOTION_BOT_USER, headers=headers)",
+            "caller": "NotionOAuth.notion_workspace_name"
+        }
+    ],
+    "NotionOAuth.notion_database_search -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/libs/oauth_data_source.py",
+            "sink": "requests.post",
+            "line": 291,
+            "expr": "requests.post(url=self._NOTION_PAGE_SEARCH, json=data, headers=headers)",
+            "caller": "NotionOAuth.notion_database_search"
+        }
+    ],
+    "OpenweatherProvider._validate_credentials -> query_weather -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/openweather/openweather.py",
+            "sink": "requests.get",
+            "line": 11,
+            "expr": "requests.get(url, params=params)",
+            "caller": "query_weather"
+        }
+    ],
+    "query_weather -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/openweather/openweather.py",
+            "sink": "requests.get",
+            "line": 11,
+            "expr": "requests.get(url, params=params)",
+            "caller": "query_weather"
+        }
+    ],
+    "OperationService._send_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/operation_service.py",
+            "sink": "requests.request",
+            "line": 15,
+            "expr": "requests.request(method, url, json=json, params=params, headers=headers)",
+            "caller": "OperationService._send_request"
+        }
+    ],
+    "PerplexityProvider._validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/perplexity/perplexity.py",
+            "sink": "requests.post",
+            "line": 30,
+            "expr": "requests.post(PERPLEXITY_API_URL, json=payload, headers=headers)",
+            "caller": "PerplexityProvider._validate_credentials"
+        }
+    ],
+    "PerplexityAITool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/perplexity/tools/perplexity_search.py",
+            "sink": "requests.post",
+            "line": 60,
+            "expr": "requests.post(url=PERPLEXITY_API_URL, json=payload, headers=headers)",
+            "caller": "PerplexityAITool._invoke"
+        }
+    ],
+    "PGVectoRS.__init__ -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 59,
+            "expr": "session.execute(text(\"CREATE EXTENSION IF NOT EXISTS vectors\"))",
+            "caller": "PGVectoRS.__init__"
+        }
+    ],
+    "PGVectoRS.create -> PGVectoRS.create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 100,
+            "expr": "session.execute(create_statement)",
+            "caller": "PGVectoRS.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 113,
+            "expr": "session.execute(index_statement)",
+            "caller": "PGVectoRS.create_collection"
+        }
+    ],
+    "PGVectoRS.create -> PGVectoRS.add_texts -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 122,
+            "expr": "session.execute(                    insert(self._table).values(                        id=pk,                        text=document.page_content,                        meta=document.metadata,                        vector=embedding,                    ),                )",
+            "caller": "PGVectoRS.add_texts"
+        }
+    ],
+    "PGVectoRS.create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 100,
+            "expr": "session.execute(create_statement)",
+            "caller": "PGVectoRS.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 113,
+            "expr": "session.execute(index_statement)",
+            "caller": "PGVectoRS.create_collection"
+        }
+    ],
+    "PGVectoRS.add_texts -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 122,
+            "expr": "session.execute(                    insert(self._table).values(                        id=pk,                        text=document.page_content,                        meta=document.metadata,                        vector=embedding,                    ),                )",
+            "caller": "PGVectoRS.add_texts"
+        }
+    ],
+    "PGVectoRS.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 139,
+            "expr": "session.execute(select_statement)",
+            "caller": "PGVectoRS.get_ids_by_metadata_field"
+        }
+    ],
+    "PGVectoRS.delete_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 150,
+            "expr": "session.execute(select_statement, {\"ids\": ids})",
+            "caller": "PGVectoRS.delete_by_metadata_field"
+        }
+    ],
+    "PGVectoRS.delete_by_metadata_field -> PGVectoRS.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 139,
+            "expr": "session.execute(select_statement)",
+            "caller": "PGVectoRS.get_ids_by_metadata_field"
+        }
+    ],
+    "PGVectoRS.delete_by_ids -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 158,
+            "expr": "session.execute(select_statement, {\"doc_ids\": ids})",
+            "caller": "PGVectoRS.delete_by_ids"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 164,
+            "expr": "session.execute(select_statement, {\"ids\": ids})",
+            "caller": "PGVectoRS.delete_by_ids"
+        }
+    ],
+    "PGVectoRS.delete -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 169,
+            "expr": "session.execute(sql_text(f\"DROP TABLE IF EXISTS {self._collection_name}\"))",
+            "caller": "PGVectoRS.delete"
+        }
+    ],
+    "PGVectoRS.text_exists -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 177,
+            "expr": "session.execute(select_statement)",
+            "caller": "PGVectoRS.text_exists"
+        }
+    ],
+    "PGVectoRS.search_by_vector -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/pgvecto_rs/pgvecto_rs.py",
+            "sink": "session.execute",
+            "line": 192,
+            "expr": "session.execute(stmt)",
+            "caller": "PGVectoRS.search_by_vector"
+        }
+    ],
+    "PoiSearchTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tianditu/tools/poisearch.py",
+            "sink": "requests.get",
+            "line": 32,
+            "expr": "requests.get(            geocoder_base_url            + \"?ds=\"            + json.dumps(                {                    \"keyWord\": baseAddress,                },                ensure_ascii=False,            )            + \"&tk=\"            + tk        )",
+            "caller": "PoiSearchTool._invoke"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tianditu/tools/poisearch.py",
+            "sink": "requests.get",
+            "line": 54,
+            "expr": "requests.get(            base_url + \"?postStr=\" + json.dumps(params, ensure_ascii=False) + \"&type=query&tk=\" + tk        )",
+            "caller": "PoiSearchTool._invoke"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tianditu/tools/staticmap.py",
+            "sink": "requests.get",
+            "line": 29,
+            "expr": "requests.get(            geocoder_base_url            + \"?ds=\"            + json.dumps(                {                    \"keyWord\": keyword,                },                ensure_ascii=False,            )            + \"&tk=\"            + tk        )",
+            "caller": "PoiSearchTool._invoke"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tianditu/tools/staticmap.py",
+            "sink": "requests.get",
+            "line": 43,
+            "expr": "requests.get(            base_url + \"?center=\" + coords + \"&markers=\" + coords + \"&width=400&height=300&zoom=14&tk=\" + tk        )",
+            "caller": "PoiSearchTool._invoke"
+        }
+    ],
+    "CrossRefQueryDOITool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/crossref/tools/query_doi.py",
+            "sink": "requests.get",
+            "line": 23,
+            "expr": "requests.get(url)",
+            "caller": "CrossRefQueryDOITool._invoke"
+        }
+    ],
+    "QueryStockTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/alphavantage/tools/query_stock.py",
+            "sink": "requests.get",
+            "line": 31,
+            "expr": "requests.get(url=ALPHAVANTAGE_API_URL, params=params)",
+            "caller": "QueryStockTool._invoke"
+        }
+    ],
+    "CrossRefQueryTitleAPI._query -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/crossref/tools/query_title.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url)",
+            "caller": "CrossRefQueryTitleAPI._query"
+        }
+    ],
+    "CrossRefQueryTitleAPI.query -> CrossRefQueryTitleAPI._query -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/crossref/tools/query_title.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url)",
+            "caller": "CrossRefQueryTitleAPI._query"
+        }
+    ],
+    "CrossRefQueryTitleTool._invoke -> CrossRefQueryTitleAPI.query -> CrossRefQueryTitleAPI._query -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/crossref/tools/query_title.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url)",
+            "caller": "CrossRefQueryTitleAPI._query"
+        }
+    ],
+    "RecommendedAppService.get_recommended_apps_and_categories -> RemoteRecommendAppRetrieval.get_recommended_apps_and_categories -> RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official"
+        }
+    ],
+    "RecommendedAppService.get_recommend_app_detail -> RemoteRecommendAppRetrieval.get_recommend_app_detail -> RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 47,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official"
+        }
+    ],
+    "RelytVector.create -> RelytVector.create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 83,
+            "expr": "session.execute(drop_statement)",
+            "caller": "RelytVector.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 92,
+            "expr": "session.execute(create_statement)",
+            "caller": "RelytVector.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 105,
+            "expr": "session.execute(index_statement)",
+            "caller": "RelytVector.create_collection"
+        }
+    ],
+    "RelytVector.create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 83,
+            "expr": "session.execute(drop_statement)",
+            "caller": "RelytVector.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 92,
+            "expr": "session.execute(create_statement)",
+            "caller": "RelytVector.create_collection"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 105,
+            "expr": "session.execute(index_statement)",
+            "caller": "RelytVector.create_collection"
+        }
+    ],
+    "RelytVector.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 159,
+            "expr": "session.execute(select_statement)",
+            "caller": "RelytVector.get_ids_by_metadata_field"
+        }
+    ],
+    "RelytVector.delete_by_metadata_field -> RelytVector.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 159,
+            "expr": "session.execute(select_statement)",
+            "caller": "RelytVector.get_ids_by_metadata_field"
+        }
+    ],
+    "RelytVector.delete_by_ids -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 207,
+            "expr": "session.execute(select_statement)",
+            "caller": "RelytVector.delete_by_ids"
+        }
+    ],
+    "RelytVector.delete -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 214,
+            "expr": "session.execute(sql_text(f\"\"\"DROP TABLE IF EXISTS \"{self._collection_name}\";\"\"\"))",
+            "caller": "RelytVector.delete"
+        }
+    ],
+    "RelytVector.text_exists -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/relyt/relyt_vector.py",
+            "sink": "session.execute",
+            "line": 222,
+            "expr": "session.execute(select_statement)",
+            "caller": "RelytVector.text_exists"
+        }
+    ],
+    "RemoteRecommendAppRetrieval.get_recommend_app_detail -> RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 47,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official"
+        }
+    ],
+    "RemoteRecommendAppRetrieval.get_recommended_apps_and_categories -> RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official"
+        }
+    ],
+    "RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 47,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_app_detail_from_dify_official"
+        }
+    ],
+    "RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/recommend_app/remote/remote_retrieval.py",
+            "sink": "requests.get",
+            "line": 62,
+            "expr": "requests.get(url, timeout=(3, 10))",
+            "caller": "RemoteRecommendAppRetrieval.fetch_recommended_apps_from_dify_official"
+        }
+    ],
+    "RESTfulRerankModelHandleWithoutExtraParameter.rerank -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/xinference/rerank/rerank.py",
+            "sink": "requests.post",
+            "line": 183,
+            "expr": "requests.post(url, json=request_body, headers=self.auth_headers)",
+            "caller": "RESTfulRerankModelHandleWithoutExtraParameter.rerank"
+        }
+    ],
+    "SearchDevDocsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/devdocs/tools/searchDevDocs.py",
+            "sink": "requests.get",
+            "line": 39,
+            "expr": "requests.get(url)",
+            "caller": "SearchDevDocsTool._invoke"
+        }
+    ],
+    "SearchStackExQuestionsTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/stackexchange/tools/searchStackExQuestions.py",
+            "sink": "requests.get",
+            "line": 40,
+            "expr": "requests.get(\"https://api.stackexchange.com/2.3/search\", params=params)",
+            "caller": "SearchStackExQuestionsTool._invoke"
+        }
+    ],
+    "SearXNGSearchTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/searxng/tools/searxng_search.py",
+            "sink": "requests.get",
+            "line": 30,
+            "expr": "requests.get(            host,            params={                \"q\": tool_parameters.get(\"query\"),                \"format\": \"json\",                \"categories\": tool_parameters.get(\"search_type\", \"general\"),            },        )",
+            "caller": "SearXNGSearchTool._invoke"
+        }
+    ],
+    "SendGroupMsg._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/onebot/tools/send_group_msg.py",
+            "sink": "requests.post",
+            "line": 28,
+            "expr": "requests.post(                url,                json={\"group_id\": send_group_id, \"message\": message, \"auto_escape\": auto_escape},                headers={\"Authorization\": \"Bearer \" + self.runtime.credentials[\"access_token\"]},            )",
+            "caller": "SendGroupMsg._invoke"
+        }
+    ],
+    "SendPrivateMsg._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/onebot/tools/send_private_msg.py",
+            "sink": "requests.post",
+            "line": 28,
+            "expr": "requests.post(                url,                json={\"user_id\": send_user_id, \"message\": message, \"auto_escape\": auto_escape},                headers={\"Authorization\": \"Bearer \" + self.runtime.credentials[\"access_token\"]},            )",
+            "caller": "SendPrivateMsg._invoke"
+        }
+    ],
+    "SerperSearchTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/serper/tools/serper_search.py",
+            "sink": "requests.get",
+            "line": 31,
+            "expr": "requests.get(url=SERPER_API_URL, params=params, headers=headers)",
+            "caller": "SerperSearchTool._invoke"
+        }
+    ],
+    "SiliconflowProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/siliconflow/siliconflow.py",
+            "sink": "requests.get",
+            "line": 15,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "SiliconflowProvider._validate_credentials"
+        }
+    ],
+    "SimpleCode._invoke -> CodeExecutor.execute_code": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/code/tools/simple_code.py",
+            "sink": "CodeExecutor.execute_code",
+            "line": 20,
+            "expr": "CodeExecutor.execute_code(language, \"\", code)",
+            "caller": "SimpleCode._invoke"
+        }
+    ],
+    "SlideSpeakProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/slidespeak/slidespeak.py",
+            "sink": "requests.get",
+            "line": 26,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "SlideSpeakProvider._validate_credentials"
+        }
+    ],
+    "SparkImgGeneratorTool._invoke -> SparkImgGeneratorTool.img_generation -> spark_response -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spark/tools/spark_img_generation.py",
+            "sink": "requests.post",
+            "line": 87,
+            "expr": "requests.post(url, json=content, headers={\"content-type\": \"application/json\"})",
+            "caller": "spark_response"
+        }
+    ],
+    "SparkImgGeneratorTool.img_generation -> spark_response -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spark/tools/spark_img_generation.py",
+            "sink": "requests.post",
+            "line": 87,
+            "expr": "requests.post(url, json=content, headers={\"content-type\": \"application/json\"})",
+            "caller": "spark_response"
+        }
+    ],
+    "spark_response -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spark/tools/spark_img_generation.py",
+            "sink": "requests.post",
+            "line": 87,
+            "expr": "requests.post(url, json=content, headers={\"content-type\": \"application/json\"})",
+            "caller": "spark_response"
+        }
+    ],
+    "GiteeAISpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(endpoint_url, headers=headers, files=files)",
+            "caller": "GiteeAISpeech2TextModel._invoke"
+        }
+    ],
+    "GiteeAISpeech2TextModel.validate_credentials -> GiteeAISpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(endpoint_url, headers=headers, files=files)",
+            "caller": "GiteeAISpeech2TextModel._invoke"
+        }
+    ],
+    "OAICompatSpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(endpoint_url, headers=headers, data=payload, files=files)",
+            "caller": "OAICompatSpeech2TextModel._invoke"
+        }
+    ],
+    "OAICompatSpeech2TextModel.validate_credentials -> OAICompatSpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(endpoint_url, headers=headers, data=payload, files=files)",
+            "caller": "OAICompatSpeech2TextModel._invoke"
+        }
+    ],
+    "GroqSpeech2TextModel.validate_credentials -> OAICompatSpeech2TextModel.validate_credentials -> OAICompatSpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(endpoint_url, headers=headers, data=payload, files=files)",
+            "caller": "OAICompatSpeech2TextModel._invoke"
+        }
+    ],
+    "SiliconflowSpeech2TextModel.validate_credentials -> OAICompatSpeech2TextModel.validate_credentials -> OAICompatSpeech2TextModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/speech2text/speech2text.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(endpoint_url, headers=headers, data=payload, files=files)",
+            "caller": "OAICompatSpeech2TextModel._invoke"
+        }
+    ],
+    "Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider.api_get -> Spider._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.get",
+            "line": 211,
+            "expr": "requests.get(url, headers=headers, stream=stream)",
+            "caller": "Spider._get_request"
+        }
+    ],
+    "Spider.get_credits -> Spider.api_get -> Spider._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.get",
+            "line": 211,
+            "expr": "requests.get(url, headers=headers, stream=stream)",
+            "caller": "Spider._get_request"
+        }
+    ],
+    "Spider.scrape_url -> Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider.crawl_url -> Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider.links -> Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider.extract_contacts -> Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider.label -> Spider.api_post -> Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider._post_request -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.post",
+            "line": 208,
+            "expr": "requests.post(url, headers=headers, json=data, stream=stream)",
+            "caller": "Spider._post_request"
+        }
+    ],
+    "Spider._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/spider/spiderApp.py",
+            "sink": "requests.get",
+            "line": 211,
+            "expr": "requests.get(url, headers=headers, stream=stream)",
+            "caller": "Spider._get_request"
+        }
+    ],
+    "StableDiffusionTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/siliconflow/tools/stable_diffusion.py",
+            "sink": "requests.post",
+            "line": 41,
+            "expr": "requests.post(SILICONFLOW_API_URL, json=payload, headers=headers)",
+            "caller": "StableDiffusionTool._invoke"
+        }
+    ],
+    "TavilyExtract.extract_content -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tavily/tools/tavily_extract.py",
+            "sink": "requests.post",
+            "line": 43,
+            "expr": "requests.post(f\"{TAVILY_API_URL}/extract\", json=processed_params)",
+            "caller": "TavilyExtract.extract_content"
+        }
+    ],
+    "TavilySearch.raw_results -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tavily/tools/tavily_search.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(f\"{TAVILY_API_URL}/search\", json=processed_params)",
+            "caller": "TavilySearch.raw_results"
+        }
+    ],
+    "TavilySearchTool._invoke -> TavilySearch.raw_results -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/tavily/tools/tavily_search.py",
+            "sink": "requests.post",
+            "line": 42,
+            "expr": "requests.post(f\"{TAVILY_API_URL}/search\", json=processed_params)",
+            "caller": "TavilySearch.raw_results"
+        }
+    ],
+    "GiteeAIToolText2Image._invoke": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/gitee_ai/tools/text-to-image.py",
+            "sink": "requests.post",
+            "line": 26,
+            "expr": "requests.post(url, json=payload, headers=headers)",
+            "caller": "GiteeAIToolText2Image._invoke"
+        }
+    ],
+    "MixedBreadTextEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/mixedbread/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 61,
+            "expr": "requests.post(url, headers=headers, data=dumps(data))",
+            "caller": "MixedBreadTextEmbeddingModel._invoke"
+        }
+    ],
+    "MixedBreadTextEmbeddingModel.validate_credentials -> MixedBreadTextEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/mixedbread/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 61,
+            "expr": "requests.post(url, headers=headers, data=dumps(data))",
+            "caller": "MixedBreadTextEmbeddingModel._invoke"
+        }
+    ],
+    "SiliconflowTextEmbeddingModel.validate_credentials -> OAICompatEmbeddingModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 154,
+            "expr": "requests.post(url=endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel.validate_credentials"
+        }
+    ],
+    "OllamaEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/ollama/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 90,
+            "expr": "requests.post(endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OllamaEmbeddingModel._invoke"
+        }
+    ],
+    "OllamaEmbeddingModel.validate_credentials -> OllamaEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/ollama/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 90,
+            "expr": "requests.post(endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OllamaEmbeddingModel._invoke"
+        }
+    ],
+    "GPUStackTextEmbeddingModel.validate_credentials -> OAICompatEmbeddingModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 154,
+            "expr": "requests.post(url=endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel.validate_credentials"
+        }
+    ],
+    "HuggingfaceHubTextEmbeddingModel.validate_credentials -> HuggingfaceHubTextEmbeddingModel._check_endpoint_url_model_repository_name -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/huggingface_hub/text_embedding/text_embedding.py",
+            "sink": "requests.get",
+            "line": 171,
+            "expr": "requests.get(url=url, headers=headers)",
+            "caller": "HuggingfaceHubTextEmbeddingModel._check_endpoint_url_model_repository_name"
+        }
+    ],
+    "HuggingfaceHubTextEmbeddingModel._check_endpoint_url_model_repository_name -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/huggingface_hub/text_embedding/text_embedding.py",
+            "sink": "requests.get",
+            "line": 171,
+            "expr": "requests.get(url=url, headers=headers)",
+            "caller": "HuggingfaceHubTextEmbeddingModel._check_endpoint_url_model_repository_name"
+        }
+    ],
+    "GiteeAIEmbeddingModel.validate_credentials -> OAICompatEmbeddingModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 154,
+            "expr": "requests.post(url=endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel.validate_credentials"
+        }
+    ],
+    "OAICompatEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/perfxcloud/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 101,
+            "expr": "requests.post(endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel._invoke"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 98,
+            "expr": "requests.post(endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel._invoke"
+        }
+    ],
+    "OAICompatEmbeddingModel.validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/perfxcloud/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 156,
+            "expr": "requests.post(url=endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel.validate_credentials"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 154,
+            "expr": "requests.post(url=endpoint_url, headers=headers, data=json.dumps(payload), timeout=(10, 300))",
+            "caller": "OAICompatEmbeddingModel.validate_credentials"
+        }
+    ],
+    "VoyageTextEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/voyage/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 63,
+            "expr": "requests.post(url, headers=headers, data=dumps(data))",
+            "caller": "VoyageTextEmbeddingModel._invoke"
+        }
+    ],
+    "VoyageTextEmbeddingModel.validate_credentials -> VoyageTextEmbeddingModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/voyage/text_embedding/text_embedding.py",
+            "sink": "requests.post",
+            "line": 63,
+            "expr": "requests.post(url, headers=headers, data=dumps(data))",
+            "caller": "VoyageTextEmbeddingModel._invoke"
+        }
+    ],
+    "TidbOnQdrantVectorFactory.init_vector -> TidbService.create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.post",
+            "line": 52,
+            "expr": "requests.post(f\"{api_url}/clusters\", json=cluster_data, auth=HTTPDigestAuth(public_key, private_key))",
+            "caller": "TidbService.create_tidb_serverless_cluster"
+        }
+    ],
+    "TidbOnQdrantVectorFactory.init_vector -> TidbService.create_tidb_serverless_cluster -> TidbService.get_tidb_serverless_cluster -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 105,
+            "expr": "requests.get(f\"{api_url}/clusters/{cluster_id}\", auth=HTTPDigestAuth(public_key, private_key))",
+            "caller": "TidbService.get_tidb_serverless_cluster"
+        }
+    ],
+    "TidbOnQdrantVectorFactory.create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_on_qdrant_vector.py",
+            "sink": "requests.post",
+            "line": 494,
+            "expr": "requests.post(            f\"{tidb_config.api_url}/clusters\",            json=cluster_data,            auth=HTTPDigestAuth(tidb_config.public_key, tidb_config.private_key),        )",
+            "caller": "TidbOnQdrantVectorFactory.create_tidb_serverless_cluster"
+        }
+    ],
+    "TidbService.create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.post",
+            "line": 52,
+            "expr": "requests.post(f\"{api_url}/clusters\", json=cluster_data, auth=HTTPDigestAuth(public_key, private_key))",
+            "caller": "TidbService.create_tidb_serverless_cluster"
+        }
+    ],
+    "TidbService.create_tidb_serverless_cluster -> TidbService.get_tidb_serverless_cluster -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 105,
+            "expr": "requests.get(f\"{api_url}/clusters/{cluster_id}\", auth=HTTPDigestAuth(public_key, private_key))",
+            "caller": "TidbService.get_tidb_serverless_cluster"
+        }
+    ],
+    "TidbService.get_tidb_serverless_cluster -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 105,
+            "expr": "requests.get(f\"{api_url}/clusters/{cluster_id}\", auth=HTTPDigestAuth(public_key, private_key))",
+            "caller": "TidbService.get_tidb_serverless_cluster"
+        }
+    ],
+    "TidbService.batch_update_tidb_serverless_cluster_status -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 166,
+            "expr": "requests.get(            f\"{api_url}/clusters:batchGet\", params=params, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_update_tidb_serverless_cluster_status"
+        }
+    ],
+    "TidbService.batch_create_tidb_serverless_cluster -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.post",
+            "line": 230,
+            "expr": "requests.post(            f\"{api_url}/clusters:batchCreate\", json=request_body, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_create_tidb_serverless_cluster"
+        }
+    ],
+    "TiDBVector.create -> TiDBVector._create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 115,
+            "expr": "session.execute(create_statement)",
+            "caller": "TiDBVector._create_collection"
+        }
+    ],
+    "TiDBVector._create_collection -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 115,
+            "expr": "session.execute(create_statement)",
+            "caller": "TiDBVector._create_collection"
+        }
+    ],
+    "TiDBVector.text_exists -> TiDBVector.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 175,
+            "expr": "session.execute(select_statement)",
+            "caller": "TiDBVector.get_ids_by_metadata_field"
+        }
+    ],
+    "TiDBVector.delete_by_ids -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 152,
+            "expr": "session.execute(select_statement)",
+            "caller": "TiDBVector.delete_by_ids"
+        }
+    ],
+    "TiDBVector.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 175,
+            "expr": "session.execute(select_statement)",
+            "caller": "TiDBVector.get_ids_by_metadata_field"
+        }
+    ],
+    "TiDBVector.delete_by_metadata_field -> TiDBVector.get_ids_by_metadata_field -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 175,
+            "expr": "session.execute(select_statement)",
+            "caller": "TiDBVector.get_ids_by_metadata_field"
+        }
+    ],
+    "TiDBVector.search_by_vector -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 215,
+            "expr": "session.execute(select_statement)",
+            "caller": "TiDBVector.search_by_vector"
+        }
+    ],
+    "TiDBVector.delete -> session.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_vector/tidb_vector.py",
+            "sink": "session.execute",
+            "line": 229,
+            "expr": "session.execute(sql_text(f\"\"\"DROP TABLE IF EXISTS {self._collection_name};\"\"\"))",
+            "caller": "TiDBVector.delete"
+        }
+    ],
+    "TranscribeTool._download_and_read_transcript -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aws/tools/transcribe_asr.py",
+            "sink": "requests.get",
+            "line": 259,
+            "expr": "requests.get(transcript_file_uri, timeout=30)",
+            "caller": "TranscribeTool._download_and_read_transcript"
+        }
+    ],
+    "TranscribeTool._invoke -> upload_file_from_url_to_s3 -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aws/tools/transcribe_asr.py",
+            "sink": "requests.get",
+            "line": 173,
+            "expr": "requests.get(url, stream=True, timeout=30)",
+            "caller": "upload_file_from_url_to_s3"
+        }
+    ],
+    "TranscribeTool._invoke -> TranscribeTool._download_and_read_transcript -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aws/tools/transcribe_asr.py",
+            "sink": "requests.get",
+            "line": 259,
+            "expr": "requests.get(transcript_file_uri, timeout=30)",
+            "caller": "TranscribeTool._download_and_read_transcript"
+        }
+    ],
+    "upload_file_from_url_to_s3 -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/aws/tools/transcribe_asr.py",
+            "sink": "requests.get",
+            "line": 173,
+            "expr": "requests.get(url, stream=True, timeout=30)",
+            "caller": "upload_file_from_url_to_s3"
+        }
+    ],
+    "GoogleTranslate._invoke -> GoogleTranslate._translate -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/google_translate/tools/translate.py",
+            "sink": "requests.get",
+            "line": 42,
+            "expr": "requests.get(url, params=params, headers=headers)",
+            "caller": "GoogleTranslate._translate"
+        }
+    ],
+    "GoogleTranslate._translate -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/google_translate/tools/translate.py",
+            "sink": "requests.get",
+            "line": 42,
+            "expr": "requests.get(url, params=params, headers=headers)",
+            "caller": "GoogleTranslate._translate"
+        }
+    ],
+    "BaiduTranslateTool._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/baidu_translate/tools/translate.py",
+            "sink": "requests.post",
+            "line": 55,
+            "expr": "requests.post(BAIDU_TRANSLATE_URL, params=params, headers=headers)",
+            "caller": "BaiduTranslateTool._invoke"
+        }
+    ],
+    "TrelloProvider._validate_credentials -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/trello/trello.py",
+            "sink": "requests.get",
+            "line": 24,
+            "expr": "requests.get(url)",
+            "caller": "TrelloProvider._validate_credentials"
+        }
+    ],
+    "OAICompatText2SpeechModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/tts/tts.py",
+            "sink": "requests.post",
+            "line": 63,
+            "expr": "requests.post(endpoint_url, headers=headers, json=payload, stream=True)",
+            "caller": "OAICompatText2SpeechModel._invoke"
+        }
+    ],
+    "OAICompatText2SpeechModel.validate_credentials -> OAICompatText2SpeechModel._invoke -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/openai_api_compatible/tts/tts.py",
+            "sink": "requests.post",
+            "line": 63,
+            "expr": "requests.post(endpoint_url, headers=headers, json=payload, stream=True)",
+            "caller": "OAICompatText2SpeechModel._invoke"
+        }
+    ],
+    "SageMakerText2SpeechModel._invoke -> SageMakerText2SpeechModel._tts_invoke_streaming -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/sagemaker/tts/tts.py",
+            "sink": "requests.get",
+            "line": 265,
+            "expr": "requests.get(resp.get(\"s3_presign_url\"))",
+            "caller": "SageMakerText2SpeechModel._tts_invoke_streaming"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/sagemaker/tts/tts.py",
+            "sink": "requests.get",
+            "line": 270,
+            "expr": "requests.get(resp.get(\"s3_presign_url\"))",
+            "caller": "SageMakerText2SpeechModel._tts_invoke_streaming"
+        }
+    ],
+    "SageMakerText2SpeechModel._tts_invoke_streaming -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/sagemaker/tts/tts.py",
+            "sink": "requests.get",
+            "line": 265,
+            "expr": "requests.get(resp.get(\"s3_presign_url\"))",
+            "caller": "SageMakerText2SpeechModel._tts_invoke_streaming"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/sagemaker/tts/tts.py",
+            "sink": "requests.get",
+            "line": 270,
+            "expr": "requests.get(resp.get(\"s3_presign_url\"))",
+            "caller": "SageMakerText2SpeechModel._tts_invoke_streaming"
+        }
+    ],
+    "GiteeAIText2SpeechModel._invoke -> GiteeAIText2SpeechModel._tts_invoke_streaming -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/tts/tts.py",
+            "sink": "requests.post",
+            "line": 69,
+            "expr": "requests.post(endpoint_url, headers=headers, json=payload)",
+            "caller": "GiteeAIText2SpeechModel._tts_invoke_streaming"
+        }
+    ],
+    "GiteeAIText2SpeechModel.validate_credentials -> GiteeAIText2SpeechModel._tts_invoke_streaming -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/tts/tts.py",
+            "sink": "requests.post",
+            "line": 69,
+            "expr": "requests.post(endpoint_url, headers=headers, json=payload)",
+            "caller": "GiteeAIText2SpeechModel._tts_invoke_streaming"
+        }
+    ],
+    "GiteeAIText2SpeechModel._tts_invoke_streaming -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/model_runtime/model_providers/gitee_ai/tts/tts.py",
+            "sink": "requests.post",
+            "line": 69,
+            "expr": "requests.post(endpoint_url, headers=headers, json=payload)",
+            "caller": "GiteeAIText2SpeechModel._tts_invoke_streaming"
+        }
+    ],
+    "update_tidb_serverless_status_task -> update_clusters -> TidbService.batch_update_tidb_serverless_cluster_status -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 166,
+            "expr": "requests.get(            f\"{api_url}/clusters:batchGet\", params=params, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_update_tidb_serverless_cluster_status"
+        }
+    ],
+    "update_clusters -> TidbService.batch_update_tidb_serverless_cluster_status -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/datasource/vdb/tidb_on_qdrant/tidb_service.py",
+            "sink": "requests.get",
+            "line": 166,
+            "expr": "requests.get(            f\"{api_url}/clusters:batchGet\", params=params, auth=HTTPDigestAuth(public_key, private_key)        )",
+            "caller": "TidbService.batch_update_tidb_serverless_cluster_status"
+        }
+    ],
+    "VersionApi.get -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/controllers/console/version.py",
+            "sink": "requests.get",
+            "line": 35,
+            "expr": "requests.get(check_update_url, {\"current_version\": args.get(\"current_version\")})",
+            "caller": "VersionApi.get"
+        }
+    ],
+    "OpenweatherTool._invoke -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/openweather/tools/weather.py",
+            "sink": "requests.get",
+            "line": 36,
+            "expr": "requests.get(url, params=params)",
+            "caller": "OpenweatherTool._invoke"
+        }
+    ],
+    "WebsiteService.crawl_url -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.get",
+            "line": 75,
+            "expr": "requests.get(                    f\"https://r.jina.ai/{url}\",                    headers={\"Accept\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                )",
+            "caller": "WebsiteService.crawl_url"
+        }
+    ],
+    "WebsiteService.crawl_url -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 83,
+            "expr": "requests.post(                    \"https://adaptivecrawl-kir3wx7b3a-uc.a.run.app\",                    json={                        \"url\": url,                        \"maxPages\": options.get(\"limit\", 1),                        \"useSitemap\": options.get(\"use_sitemap\", True),                    },                    headers={                        \"Content-Type\": \"application/json\",                        \"Authorization\": f\"Bearer {api_key}\",                    },                )",
+            "caller": "WebsiteService.crawl_url"
+        }
+    ],
+    "WebsiteService.get_crawl_status -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 130,
+            "expr": "requests.post(                \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                json={\"taskId\": job_id},            )",
+            "caller": "WebsiteService.get_crawl_status"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 146,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id, \"urls\": list(data.get(\"processed\", {}).keys())},                )",
+            "caller": "WebsiteService.get_crawl_status"
+        }
+    ],
+    "WebsiteService.get_crawl_status -> FirecrawlApp.check_crawl_status -> FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "WebsiteService.get_crawl_url_data -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.get",
+            "line": 195,
+            "expr": "requests.get(                    f\"https://r.jina.ai/{url}\",                    headers={\"Accept\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "WebsiteService.get_crawl_url_data -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 204,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/services/website_service.py",
+            "sink": "requests.post",
+            "line": 213,
+            "expr": "requests.post(                    \"https://adaptivecrawlstatus-kir3wx7b3a-uc.a.run.app\",                    headers={\"Content-Type\": \"application/json\", \"Authorization\": f\"Bearer {api_key}\"},                    json={\"taskId\": job_id, \"urls\": list(data.get(\"processed\", {}).keys())},                )",
+            "caller": "WebsiteService.get_crawl_url_data"
+        }
+    ],
+    "WebsiteService.get_crawl_url_data -> FirecrawlApp.check_crawl_status -> FirecrawlApp._get_request -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.get",
+            "line": 110,
+            "expr": "requests.get(url, headers=headers)",
+            "caller": "FirecrawlApp._get_request"
+        }
+    ],
+    "WebsiteService.get_scrape_url_data -> FirecrawlApp.scrape_url -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/firecrawl/firecrawl_app.py",
+            "sink": "requests.post",
+            "line": 21,
+            "expr": "requests.post(f\"{self.base_url}/v0/scrape\", headers=headers, json=json_data)",
+            "caller": "FirecrawlApp.scrape_url"
+        }
+    ],
+    "WordExtractor.__init__ -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/rag/extractor/word_extractor.py",
+            "sink": "requests.get",
+            "line": 46,
+            "expr": "requests.get(self.file_path)",
+            "caller": "WordExtractor.__init__"
+        }
+    ],
+    "XinferenceProvider._validate_credentials -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/dify/api/core/tools/provider/builtin/xinference/xinference.py",
+            "sink": "requests.post",
+            "line": 18,
+            "expr": "requests.post(            f\"{base_url}/sdapi/v1/options\",            headers=headers,            json={\"sd_model_checkpoint\": model},        )",
+            "caller": "XinferenceProvider._validate_credentials"
+        }
+    ]
+}

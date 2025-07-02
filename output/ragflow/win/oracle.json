@@ -1,0 +1,620 @@
+{
+    "download_img -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/utils/__init__.py",
+            "sink": "requests.get",
+            "line": 352,
+            "expr": "requests.get(url)"
+        }
+    ],
+    "Agent.create_session -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/modules/agent.py",
+            "sink": "requests.post",
+            "line": 54,
+            "expr": "requests.post(f\"{rag.api_url}/agents/{id}/sessions\",headers={\"Authorization\": f\"Bearer {rag.user_key}\"},json={})"
+        }
+    ],
+    "Baidu._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/baidu.py",
+            "sink": "requests.get",
+            "line": 50,
+            "expr": "requests.get(url=url, headers=headers)"
+        }
+    ],
+    "BaiduFanyi._run -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/baidufanyi.py",
+            "sink": "requests.post",
+            "line": 79,
+            "expr": "requests.post(url=url, headers=headers)"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/baidufanyi.py",
+            "sink": "requests.post",
+            "line": 90,
+            "expr": "requests.post(url=url, headers=headers)"
+        }
+    ],
+    "Bing._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/bing.py",
+            "sink": "requests.get",
+            "line": 64,
+            "expr": "requests.get(\"https://api.bing.microsoft.com/v7.0/search\", headers=headers, params=params)"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/bing.py",
+            "sink": "requests.get",
+            "line": 70,
+            "expr": "requests.get(\"https://api.bing.microsoft.com/v7.0/news/search\", headers=headers,                                        params=params)"
+        }
+    ],
+    "MiniMaxChat.chat -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/chat_model.py",
+            "sink": "requests.request",
+            "line": 522,
+            "expr": "requests.request(                \"POST\", url=self.base_url, headers=headers, data=payload            )"
+        }
+    ],
+    "MiniMaxChat.chat_streamly -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/chat_model.py",
+            "sink": "requests.request",
+            "line": 552,
+            "expr": "requests.request(                \"POST\",                url=self.base_url,                headers=headers,                data=payload,            )"
+        }
+    ],
+    "Crawler._run -> Crawler.get_web -> crawler.arun": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/crawler.py",
+            "sink": "crawler.arun",
+            "line": 56,
+            "expr": "crawler.arun(                url=url,                bypass_cache=True            )"
+        }
+    ],
+    "Crawler.get_web -> crawler.arun": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/crawler.py",
+            "sink": "crawler.arun",
+            "line": 56,
+            "expr": "crawler.arun(                url=url,                bypass_cache=True            )"
+        }
+    ],
+    "NvidiaCV.describe -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/cv_model.py",
+            "sink": "requests.post",
+            "line": 593,
+            "expr": "requests.post(            url=self.base_url,            headers={                \"accept\": \"application/json\",                \"content-type\": \"application/json\",                \"Authorization\": f\"Bearer {self.key}\",            },            json={                \"messages\": self.prompt(b64),                \"max_tokens\": max_tokens,            },        )"
+        }
+    ],
+    "on_message -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/svr/discord_svr.py",
+            "sink": "requests.post",
+            "line": 54,
+            "expr": "requests.post(URL, json=JSON_DATA)"
+        }
+    ],
+    "JinaEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 342,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "JinaEmbed.encode_queries -> JinaEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 342,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "NvidiaEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 506,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=payload)"
+        }
+    ],
+    "NvidiaEmbed.encode_queries -> NvidiaEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 506,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=payload)"
+        }
+    ],
+    "SILICONFLOWEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 608,
+            "expr": "requests.post(self.base_url, json=payload, headers=self.headers)"
+        }
+    ],
+    "SILICONFLOWEmbed.encode_queries -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 620,
+            "expr": "requests.post(self.base_url, json=payload, headers=self.headers)"
+        }
+    ],
+    "HuggingFaceEmbed.encode -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 697,
+            "expr": "requests.post(                f\"{self.base_url}/embed\",                json={\"inputs\": text},                headers={'Content-Type': 'application/json'}            )"
+        }
+    ],
+    "HuggingFaceEmbed.encode_queries -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/embedding_model.py",
+            "sink": "requests.post",
+            "line": 710,
+            "expr": "requests.post(            f\"{self.base_url}/embed\",            json={\"inputs\": text},            headers={'Content-Type': 'application/json'}        )"
+        }
+    ],
+    "ExeSQL._run -> cursor.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/exesql.py",
+            "sink": "cursor.execute",
+            "line": 88,
+            "expr": "cursor.execute(single_sql)"
+        }
+    ],
+    "GitHub._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/github.py",
+            "sink": "requests.get",
+            "line": 49,
+            "expr": "requests.get(url=url, headers=headers)"
+        }
+    ],
+    "Invoke._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/invoke.py",
+            "sink": "requests.get",
+            "line": 75,
+            "expr": "requests.get(url=url,                                    params=args,                                    headers=headers,                                    proxies=proxies,                                    timeout=self._param.timeout)"
+        }
+    ],
+    "Invoke._run -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/invoke.py",
+            "sink": "requests.post",
+            "line": 98,
+            "expr": "requests.post(url=url,                                    json=args,                                    headers=headers,                                    proxies=proxies,                                    timeout=self._param.timeout)"
+        }
+    ],
+    "Jin10._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/jin10.py",
+            "sink": "requests.get",
+            "line": 67,
+            "expr": "requests.get(                    url='https://open-data-api.jin10.com/data-api/flash?category=' + self._param.flash_type,                    headers=headers, data=json.dumps(params))"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/jin10.py",
+            "sink": "requests.get",
+            "line": 77,
+            "expr": "requests.get(                    url='https://open-data-api.jin10.com/data-api/calendar/' + self._param.calendar_datatype + '?category=' + self._param.calendar_type,                    headers=headers, data=json.dumps(params))"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/jin10.py",
+            "sink": "requests.get",
+            "line": 89,
+            "expr": "requests.get(                    url='https://open-data-api.jin10.com/data-api/' + self._param.symbols_datatype + '?type=' + self._param.symbols_type,                    headers=headers, data=json.dumps(params))"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/jin10.py",
+            "sink": "requests.get",
+            "line": 119,
+            "expr": "requests.get(                    url='https://open-data-api.jin10.com/data-api/news',                    headers=headers, data=json.dumps(params))"
+        }
+    ],
+    "LayoutRecognizer.__call__ -> Recognizer.__call__ -> Recognizer.preprocess -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/recognizer.py",
+            "sink": "eval",
+            "line": 316,
+            "expr": "eval(op_type)"
+        }
+    ],
+    "add_llm -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/llm_app.py",
+            "sink": "requests.get",
+            "line": 262,
+            "expr": "requests.get(img_url)"
+        }
+    ],
+    "TextRecognizer.__init__ -> build_post_process -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/postprocess.py",
+            "sink": "eval",
+            "line": 33,
+            "expr": "eval(module_name)"
+        }
+    ],
+    "TextDetector.__init__ -> create_operators -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/ocr.py",
+            "sink": "eval",
+            "line": 56,
+            "expr": "eval(op_name)"
+        }
+    ],
+    "TextDetector.__init__ -> build_post_process -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/postprocess.py",
+            "sink": "eval",
+            "line": 33,
+            "expr": "eval(module_name)"
+        }
+    ],
+    "create_operators -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/ocr.py",
+            "sink": "eval",
+            "line": 56,
+            "expr": "eval(op_name)"
+        }
+    ],
+    "NormalizeImage.__init__ -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/operators.py",
+            "sink": "eval",
+            "line": 111,
+            "expr": "eval(scale)"
+        }
+    ],
+    "build_post_process -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/postprocess.py",
+            "sink": "eval",
+            "line": 33,
+            "expr": "eval(module_name)"
+        }
+    ],
+    "QWeather._run -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/qweather.py",
+            "sink": "requests.get",
+            "line": 67,
+            "expr": "requests.get(                url=\"https://geoapi.qweather.com/v2/city/lookup?location=\" + ans + \"&key=\" + self._param.web_apikey)"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/qweather.py",
+            "sink": "requests.get",
+            "line": 78,
+            "expr": "requests.get(url=url)"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/qweather.py",
+            "sink": "requests.get",
+            "line": 94,
+            "expr": "requests.get(url=url)"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/qweather.py",
+            "sink": "requests.get",
+            "line": 105,
+            "expr": "requests.get(url=url)"
+        }
+    ],
+    "RAGFlow.post -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(url=self.api_url + path, json=json, headers=self.authorization_header, stream=stream,files=files)"
+        }
+    ],
+    "RAGFlow.get -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url=self.api_url + path, params=params, headers=self.authorization_header,json=json)"
+        }
+    ],
+    "RAGFlow.create_dataset -> RAGFlow.post -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(url=self.api_url + path, json=json, headers=self.authorization_header, stream=stream,files=files)"
+        }
+    ],
+    "RAGFlow.get_dataset -> RAGFlow.list_datasets -> RAGFlow.get -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url=self.api_url + path, params=params, headers=self.authorization_header,json=json)"
+        }
+    ],
+    "RAGFlow.list_datasets -> RAGFlow.get -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url=self.api_url + path, params=params, headers=self.authorization_header,json=json)"
+        }
+    ],
+    "RAGFlow.create_chat -> RAGFlow.post -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(url=self.api_url + path, json=json, headers=self.authorization_header, stream=stream,files=files)"
+        }
+    ],
+    "RAGFlow.list_chats -> RAGFlow.get -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.get",
+            "line": 37,
+            "expr": "requests.get(url=self.api_url + path, params=params, headers=self.authorization_header,json=json)"
+        }
+    ],
+    "RAGFlow.retrieve -> RAGFlow.post -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/sdk/python/ragflow_sdk/ragflow.py",
+            "sink": "requests.post",
+            "line": 33,
+            "expr": "requests.post(url=self.api_url + path, json=json, headers=self.authorization_header, stream=stream,files=files)"
+        }
+    ],
+    "RAGFlowChat.on_handle_context -> RAGFlowChat.get_ragflow_reply -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/intergrations/chatgpt-on-wechat/plugins/ragflow_chat.py",
+            "sink": "requests.get",
+            "line": 65,
+            "expr": "requests.get(url_new_conversation, headers=headers, params=params_new_conversation)"
+        }
+    ],
+    "RAGFlowChat.on_handle_context -> RAGFlowChat.get_ragflow_reply -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/intergrations/chatgpt-on-wechat/plugins/ragflow_chat.py",
+            "sink": "requests.post",
+            "line": 97,
+            "expr": "requests.post(url_completion, headers=headers, json=payload_completion)"
+        }
+    ],
+    "RAGFlowChat.get_ragflow_reply -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/intergrations/chatgpt-on-wechat/plugins/ragflow_chat.py",
+            "sink": "requests.get",
+            "line": 65,
+            "expr": "requests.get(url_new_conversation, headers=headers, params=params_new_conversation)"
+        }
+    ],
+    "RAGFlowChat.get_ragflow_reply -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/intergrations/chatgpt-on-wechat/plugins/ragflow_chat.py",
+            "sink": "requests.post",
+            "line": 97,
+            "expr": "requests.post(url_completion, headers=headers, json=payload_completion)"
+        }
+    ],
+    "Recognizer.preprocess -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/recognizer.py",
+            "sink": "eval",
+            "line": 316,
+            "expr": "eval(op_type)"
+        }
+    ],
+    "Recognizer.__call__ -> Recognizer.preprocess -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/recognizer.py",
+            "sink": "eval",
+            "line": 316,
+            "expr": "eval(op_type)"
+        }
+    ],
+    "JinaRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 112,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "XInferenceRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 181,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "LocalAIRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 212,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "NvidiaRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 265,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "OpenAI_APIRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 304,
+            "expr": "requests.post(self.base_url, headers=self.headers, json=data)"
+        }
+    ],
+    "SILICONFLOWRerank.similarity -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/rerank_model.py",
+            "sink": "requests.post",
+            "line": 380,
+            "expr": "requests.post(            self.base_url, json=payload, headers=self.headers        )"
+        }
+    ],
+    "remote_call -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/app/resume.py",
+            "sink": "requests.post",
+            "line": 52,
+            "expr": "requests.post(                \"http://127.0.0.1:61670/tog\",                data=json.dumps(q))"
+        }
+    ],
+    "RuntimeConfig.init_env -> get_ragflow_version -> get_closest_tag_and_count -> subprocess.Popen": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/versions.py",
+            "sink": "subprocess.Popen",
+            "line": 57,
+            "expr": "subprocess.Popen(            [\"git\", \"rev-list\", \"--count\", f\"{closest_tag}..HEAD\"],            stdout=subprocess.PIPE,        )"
+        }
+    ],
+    "XinferenceSeq2txt.transcription -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/sequence2txt_model.py",
+            "sink": "requests.post",
+            "line": 117,
+            "expr": "requests.post(                f\"{self.base_url}/v1/audio/transcriptions\",                files=files,                data=payload            )"
+        }
+    ],
+    "version -> get_ragflow_version -> get_closest_tag_and_count -> subprocess.Popen": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/versions.py",
+            "sink": "subprocess.Popen",
+            "line": 57,
+            "expr": "subprocess.Popen(            [\"git\", \"rev-list\", \"--count\", f\"{closest_tag}..HEAD\"],            stdout=subprocess.PIPE,        )"
+        }
+    ],
+    "TableStructureRecognizer.__call__ -> Recognizer.__call__ -> Recognizer.preprocess -> eval": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/deepdoc/vision/recognizer.py",
+            "sink": "eval",
+            "line": 316,
+            "expr": "eval(op_type)"
+        }
+    ],
+    "OpenAITTS.tts -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/tts_model.py",
+            "sink": "requests.post",
+            "line": 195,
+            "expr": "requests.post(f\"{self.base_url}/audio/speech\", headers=self.headers, json=payload, stream=True)"
+        }
+    ],
+    "XinferenceTTS.tts -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/rag/llm/tts_model.py",
+            "sink": "requests.post",
+            "line": 320,
+            "expr": "requests.post(            f\"{self.base_url}/v1/audio/speech\",            headers=self.headers,            json=payload,            stream=stream        )"
+        }
+    ],
+    "TuShare._run -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/agent/component/tushare.py",
+            "sink": "requests.post",
+            "line": 59,
+            "expr": "requests.post(url=\"http://api.tushare.pro\", data=json.dumps(params).encode('utf-8'))"
+        }
+    ],
+    "github_callback -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.post",
+            "line": 139,
+            "expr": "requests.post(        settings.GITHUB_OAUTH.get(\"url\"),        data={            \"client_id\": settings.GITHUB_OAUTH.get(\"client_id\"),            \"client_secret\": settings.GITHUB_OAUTH.get(\"secret_key\"),            \"code\": request.args.get(\"code\"),        },        headers={\"Accept\": \"application/json\"},    )"
+        }
+    ],
+    "github_callback -> user_info_from_github -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 324,
+            "expr": "requests.get(        f\"https://api.github.com/user?access_token={access_token}\", headers=headers    )"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 328,
+            "expr": "requests.get(        f\"https://api.github.com/user/emails?access_token={access_token}\",        headers=headers,    )"
+        }
+    ],
+    "feishu_callback -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.post",
+            "line": 224,
+            "expr": "requests.post(        settings.FEISHU_OAUTH.get(\"app_access_token_url\"),        data=json.dumps(            {                \"app_id\": settings.FEISHU_OAUTH.get(\"app_id\"),                \"app_secret\": settings.FEISHU_OAUTH.get(\"app_secret\"),            }        ),        headers={\"Content-Type\": \"application/json; charset=utf-8\"},    )"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.post",
+            "line": 238,
+            "expr": "requests.post(        settings.FEISHU_OAUTH.get(\"user_access_token_url\"),        data=json.dumps(            {                \"grant_type\": settings.FEISHU_OAUTH.get(\"grant_type\"),                \"code\": request.args.get(\"code\"),            }        ),        headers={            \"Content-Type\": \"application/json; charset=utf-8\",            \"Authorization\": f\"Bearer {app_access_token_res['app_access_token']}\",        },    )"
+        }
+    ],
+    "feishu_callback -> user_info_from_feishu -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 312,
+            "expr": "requests.get(        \"https://open.feishu.cn/open-apis/authen/v1/user_info\", headers=headers    )"
+        }
+    ],
+    "user_info_from_feishu -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 312,
+            "expr": "requests.get(        \"https://open.feishu.cn/open-apis/authen/v1/user_info\", headers=headers    )"
+        }
+    ],
+    "user_info_from_github -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 324,
+            "expr": "requests.get(        f\"https://api.github.com/user?access_token={access_token}\", headers=headers    )"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/apps/user_app.py",
+            "sink": "requests.get",
+            "line": 328,
+            "expr": "requests.get(        f\"https://api.github.com/user/emails?access_token={access_token}\",        headers=headers,    )"
+        }
+    ],
+    "get_ragflow_version -> get_closest_tag_and_count -> subprocess.Popen": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/versions.py",
+            "sink": "subprocess.Popen",
+            "line": 57,
+            "expr": "subprocess.Popen(            [\"git\", \"rev-list\", \"--count\", f\"{closest_tag}..HEAD\"],            stdout=subprocess.PIPE,        )"
+        }
+    ],
+    "get_closest_tag_and_count -> subprocess.Popen": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/ragflow/api/versions.py",
+            "sink": "subprocess.Popen",
+            "line": 57,
+            "expr": "subprocess.Popen(            [\"git\", \"rev-list\", \"--count\", f\"{closest_tag}..HEAD\"],            stdout=subprocess.PIPE,        )"
+        }
+    ]
+}

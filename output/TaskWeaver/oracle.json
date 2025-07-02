@@ -1,0 +1,178 @@
+{
+  "is_link_clickable -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "sink": "get",
+      "line": 120,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "main -> is_link_clickable -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/playground/UI/app.py",
+      "sink": "get",
+      "line": 120,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "CodeExecutor.execute_code -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_executor.py",
+      "sink": "execute_code",
+      "line": 81,
+      "expr": "self.exec_client.execute_code(exec_id, code)"
+    }
+  ],
+  "CodeInterpreter.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter/code_interpreter.py",
+      "sink": "execute_code",
+      "line": 234,
+      "expr": "self.executor.execute_code(            exec_id=post_proxy.post.id,            code=code.content,        )"
+    }
+  ],
+  "CodeInterpreterCLIOnly.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_cli_only/code_interpreter_cli_only.py",
+      "sink": "execute_code",
+      "line": 66,
+      "expr": "self.executor.execute_code(            exec_id=post_proxy.post.id,            code=code_to_exec,        )"
+    }
+  ],
+  "CodeInterpreterPluginOnly.reply -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/code_interpreter/code_interpreter_plugin_only/code_interpreter_plugin_only.py",
+      "sink": "execute_code",
+      "line": 120,
+      "expr": "self.executor.execute_code(                    exec_id=post_proxy.post.id,                    code=code_to_exec,                )"
+    }
+  ],
+  "Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "sink": "exec",
+      "line": 187,
+      "expr": "exec(func_code, None, local_vars)"
+    }
+  ],
+  "Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "sink": "exec",
+      "line": 187,
+      "expr": "exec(func_code, None, local_vars)"
+    }
+  ],
+  "KlarnaSearch.__call__ -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/project/plugins/klarna_search.py",
+      "sink": "get",
+      "line": 21,
+      "expr": "requests.get(base_url, params=params)"
+    }
+  ],
+  "VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "sink": "post",
+      "line": 87,
+      "expr": "requests.post(self.gpt4v_endpoint, headers=self.headers, json=payload)"
+    }
+  ],
+  "VisionPlanner.get_objective_done -> VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "sink": "post",
+      "line": 87,
+      "expr": "requests.post(self.gpt4v_endpoint, headers=self.headers, json=payload)"
+    }
+  ],
+  "SubProcessClient.execute_code -> execute_code": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ces/manager/sub_proc.py",
+      "sink": "execute_code",
+      "line": 52,
+      "expr": "self.mgr.env.execute_code(self.session_id, code=code, exec_id=exec_id)"
+    }
+  ],
+  "auto_evaluate_for_taskweaver -> Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "sink": "exec",
+      "line": 187,
+      "expr": "exec(func_code, None, local_vars)"
+    }
+  ],
+  "batch_auto_evaluate_for_taskweaver -> auto_evaluate_for_taskweaver -> Evaluator.evaluate -> Evaluator.score -> exec": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/auto_eval/evaluator.py",
+      "sink": "exec",
+      "line": 187,
+      "expr": "exec(func_code, None, local_vars)"
+    }
+  ],
+  "make_api_call -> request": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/plugin/utils.py",
+      "sink": "request",
+      "line": 51,
+      "expr": "requests.request(method=method, url=url, headers=headers, json=body, timeout=timeout_secs)"
+    }
+  ],
+  "WebExplorer.reply -> VisionPlanner.get_objective_done -> VisionPlanner.get_actions -> post": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_explorer/planner.py",
+      "sink": "post",
+      "line": 87,
+      "expr": "requests.post(self.gpt4v_endpoint, headers=self.headers, json=payload)"
+    }
+  ],
+  "WebSearch.search_query -> WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 212,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "WebSearch.search_query -> WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 222,
+      "expr": "requests.get(url, headers={\"Ocp-Apim-Subscription-Key\": self.bing_api_key})"
+    }
+  ],
+  "WebSearch.reply -> WebSearch.search_query -> WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 212,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "WebSearch.reply -> WebSearch.search_query -> WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 222,
+      "expr": "requests.get(url, headers={\"Ocp-Apim-Subscription-Key\": self.bing_api_key})"
+    }
+  ],
+  "WebSearch._search_google_custom_search -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 212,
+      "expr": "requests.get(url)"
+    }
+  ],
+  "WebSearch._search_bing -> get": [
+    {
+      "file_path": "/home/ylt/TaskWeaver/taskweaver/ext_role/web_search/web_search.py",
+      "sink": "get",
+      "line": 222,
+      "expr": "requests.get(url, headers={\"Ocp-Apim-Subscription-Key\": self.bing_api_key})"
+    }
+  ]
+}

@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+.history/
+.DS_Store
+
 # C extensions
 *.so
 

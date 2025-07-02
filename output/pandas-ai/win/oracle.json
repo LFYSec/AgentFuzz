@@ -1,0 +1,492 @@
+{
+    "SemanticAgent.query -> self.execute_code": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/ee/agents/semantic_agent/__init__.py",
+            "sink": "self.execute_code",
+            "line": 130,
+            "expr": "self.execute_code(code)",
+            "caller": "SemanticAgent.query"
+        }
+    ],
+    "AirtableConnector.execute -> AirtableConnector._fetch_data -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector._fetch_data -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector.head -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector.rows_count -> AirtableConnector.execute -> AirtableConnector._fetch_data -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector.columns_count -> AirtableConnector.head -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "AirtableConnector.column_hash -> AirtableConnector.execute -> AirtableConnector._fetch_data -> AirtableConnector._request_api -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/connectors/airtable.py",
+            "sink": "requests.get",
+            "line": 184,
+            "expr": "requests.get(            url=url,            headers={\"Authorization\": f\"Bearer {self.config.api_key}\"},            params=params,        )",
+            "caller": "AirtableConnector._request_api"
+        }
+    ],
+    "BambooVectorStore.add_question_answer -> Session.post -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "BambooVectorStore.add_docs -> Session.post -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "BambooVectorStore.get_relevant_qa_documents -> Session.get -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "BambooVectorStore.get_relevant_docs_documents -> Session.get -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "BaseRepository.get_all -> BaseRepository._all_unique -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/core/repository/base.py",
+            "sink": "Attribute.execute",
+            "line": 124,
+            "expr": "self.session.execute(query)",
+            "caller": "BaseRepository._all_unique"
+        }
+    ],
+    "BaseRepository.get_by -> BaseRepository._all_unique -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/core/repository/base.py",
+            "sink": "Attribute.execute",
+            "line": 124,
+            "expr": "self.session.execute(query)",
+            "caller": "BaseRepository._all_unique"
+        }
+    ],
+    "BaseRepository.get_by_id -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/core/repository/base.py",
+            "sink": "Attribute.execute",
+            "line": 83,
+            "expr": "self.session.execute(query)",
+            "caller": "BaseRepository.get_by_id"
+        }
+    ],
+    "BaseRepository._all_unique -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/core/repository/base.py",
+            "sink": "Attribute.execute",
+            "line": 124,
+            "expr": "self.session.execute(query)",
+            "caller": "BaseRepository._all_unique"
+        }
+    ],
+    "CodeCleaning.execute -> CodeCleaning.get_code_to_run -> CodeCleaning._clean_code -> CodeCleaning._extract_fix_dataframe_redeclarations -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_cleaning.py",
+            "sink": "exec",
+            "line": 482,
+            "expr": "exec(code, env)",
+            "caller": "CodeCleaning._extract_fix_dataframe_redeclarations"
+        }
+    ],
+    "CodeCleaning.get_code_to_run -> CodeCleaning._clean_code -> CodeCleaning._extract_fix_dataframe_redeclarations -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_cleaning.py",
+            "sink": "exec",
+            "line": 482,
+            "expr": "exec(code, env)",
+            "caller": "CodeCleaning._extract_fix_dataframe_redeclarations"
+        }
+    ],
+    "CodeCleaning._extract_fix_dataframe_redeclarations -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_cleaning.py",
+            "sink": "exec",
+            "line": 482,
+            "expr": "exec(code, env)",
+            "caller": "CodeCleaning._extract_fix_dataframe_redeclarations"
+        }
+    ],
+    "CodeCleaning._clean_code -> CodeCleaning._extract_fix_dataframe_redeclarations -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_cleaning.py",
+            "sink": "exec",
+            "line": 482,
+            "expr": "exec(code, env)",
+            "caller": "CodeCleaning._extract_fix_dataframe_redeclarations"
+        }
+    ],
+    "CodeExecution.execute -> self.execute_code": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_execution.py",
+            "sink": "self.execute_code",
+            "line": 85,
+            "expr": "self.execute_code(code_to_run, code_context)",
+            "caller": "CodeExecution.execute"
+        }
+    ],
+    "CodeExecution.execute -> CodeExecution.execute_code -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_execution.py",
+            "sink": "exec",
+            "line": 171,
+            "expr": "exec(code, environment)",
+            "caller": "CodeExecution.execute_code"
+        }
+    ],
+    "CodeExecution.execute_code -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/chat/code_execution.py",
+            "sink": "exec",
+            "line": 171,
+            "expr": "exec(code, environment)",
+            "caller": "CodeExecution.execute_code"
+        }
+    ],
+    "BaseCodeExecutor.execute -> exec": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/pipelines/logic_units/code_executor.py",
+            "sink": "exec",
+            "line": 16,
+            "expr": "exec(input, namespace)",
+            "caller": "BaseCodeExecutor.execute"
+        }
+    ],
+    "ConversationRepository.get_conversation_messages -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/conversation.py",
+            "sink": "Attribute.execute",
+            "line": 52,
+            "expr": "self.session.execute(query)",
+            "caller": "ConversationRepository.get_conversation_messages"
+        }
+    ],
+    "ConversationRepository.get_conversations -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/conversation.py",
+            "sink": "Attribute.execute",
+            "line": 79,
+            "expr": "self.session.execute(query)",
+            "caller": "ConversationRepository.get_conversations"
+        }
+    ],
+    "ConversationRepository.get_count -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/conversation.py",
+            "sink": "Attribute.execute",
+            "line": 98,
+            "expr": "self.session.execute(query)",
+            "caller": "ConversationRepository.get_count"
+        }
+    ],
+    "ConversationRepository.get_messages_count -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/conversation.py",
+            "sink": "Attribute.execute",
+            "line": 106,
+            "expr": "self.session.execute(query)",
+            "caller": "ConversationRepository.get_messages_count"
+        }
+    ],
+    "DatasetRepository.get_all_by_workspace_id -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/dataset.py",
+            "sink": "Attribute.execute",
+            "line": 41,
+            "expr": "self.session.execute(            select(Dataset).join(DatasetSpace).where(DatasetSpace.workspace_id == workspace_id)        )",
+            "caller": "DatasetRepository.get_all_by_workspace_id"
+        }
+    ],
+    "get_google_sheet -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/from_google_sheets.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(src)",
+            "caller": "get_google_sheet"
+        }
+    ],
+    "from_google_sheets -> get_google_sheet -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/from_google_sheets.py",
+            "sink": "requests.get",
+            "line": 28,
+            "expr": "requests.get(src)",
+            "caller": "get_google_sheet"
+        }
+    ],
+    "LogsRepository.get_user_logs -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/ee/app/repositories/logs.py",
+            "sink": "Attribute.execute",
+            "line": 33,
+            "expr": "self.session.execute(query)",
+            "caller": "LogsRepository.get_user_logs"
+        }
+    ],
+    "LogsRepository.get_logs_count -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/ee/app/repositories/logs.py",
+            "sink": "Attribute.execute",
+            "line": 41,
+            "expr": "self.session.execute(query)",
+            "caller": "LogsRepository.get_logs_count"
+        }
+    ],
+    "QueryExecTracker.publish -> requests.post": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/query_exec_tracker.py",
+            "sink": "requests.post",
+            "line": 269,
+            "expr": "requests.post(                f\"{server_url}/api/log/add\",                json=json.loads(ecoded_json_str),                headers=headers,            )",
+            "caller": "QueryExecTracker.publish"
+        }
+    ],
+    "Session.get -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "Session.post -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "Session.patch -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "Session.put -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "Session.delete -> Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "Session.make_request -> requests.request": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/request.py",
+            "sink": "requests.request",
+            "line": 59,
+            "expr": "requests.request(                method,                url,                headers=headers,                params=params,                data=data,                json=json,                timeout=timeout,            )",
+            "caller": "Session.make_request"
+        }
+    ],
+    "scarf_analytics -> requests.get": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/pandasai/helpers/telemetry.py",
+            "sink": "requests.get",
+            "line": 15,
+            "expr": "requests.get(                \"https://package.pandabi.ai/pandasai-telemetry?version=\"                + __version__                + \"&platform=\"                + platform.system()            )",
+            "caller": "scarf_analytics"
+        }
+    ],
+    "WorkspaceRepository.delete_space_datasets -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 43,
+            "expr": "self.session.execute(query)",
+            "caller": "WorkspaceRepository.delete_space_datasets"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 57,
+            "expr": "self.session.execute(datasets_query)",
+            "caller": "WorkspaceRepository.delete_space_datasets"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 68,
+            "expr": "self.session.execute(delete_dataset_space_query)",
+            "caller": "WorkspaceRepository.delete_space_datasets"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 71,
+            "expr": "self.session.execute(delete_dataset_query)",
+            "caller": "WorkspaceRepository.delete_space_datasets"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 78,
+            "expr": "self.session.execute(delete_connector_query)",
+            "caller": "WorkspaceRepository.delete_space_datasets"
+        }
+    ],
+    "WorkspaceRepository.get_space_datasets -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 92,
+            "expr": "self.session.execute(            select(Dataset)            .join(DatasetSpace)            .options(joinedload(Dataset.dataset_spaces))            .filter(DatasetSpace.workspace_id == workspace_id)        )",
+            "caller": "WorkspaceRepository.get_space_datasets"
+        }
+    ],
+    "WorkspaceRepository.get_users_by_workspace_id -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 101,
+            "expr": "self.session.execute(            select(                User.id,                User.first_name,                User.last_name,                User.email            ).join(UserSpace).filter(UserSpace.workspace_id == workspace_id)        )",
+            "caller": "WorkspaceRepository.get_users_by_workspace_id"
+        }
+    ],
+    "WorkspaceRepository.delete_datasetspace -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 113,
+            "expr": "self.session.execute(            delete(DatasetSpace).where(                DatasetSpace.dataset_id == dataset_id,                DatasetSpace.workspace_id == workspace_id            )        )",
+            "caller": "WorkspaceRepository.delete_datasetspace"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 121,
+            "expr": "self.session.execute(            delete(Dataset).where(Dataset.id == dataset_id)        )",
+            "caller": "WorkspaceRepository.delete_datasetspace"
+        }
+    ],
+    "WorkspaceRepository.get_user_workspaces -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 126,
+            "expr": "self.session.execute(            select(Workspace).filter(Workspace.user_id == user.id)        )",
+            "caller": "WorkspaceRepository.get_user_workspaces"
+        }
+    ],
+    "WorkspaceRepository.get_workspace_datails -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 136,
+            "expr": "self.session.execute(            select(Workspace)            .options(                joinedload(Workspace.dataset_spaces)                .joinedload(DatasetSpace.dataset)                .joinedload(Dataset.connector)            )            .where(Workspace.id == workspace_id)        )",
+            "caller": "WorkspaceRepository.get_workspace_datails"
+        }
+    ],
+    "WorkspaceRepository.delete_workspace -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 154,
+            "expr": "self.session.execute(                select(Workspace)                .options(                    joinedload(Workspace.dataset_spaces),                    joinedload(Workspace.user_spaces)                )                .where(Workspace.id == workspace_id)            )",
+            "caller": "WorkspaceRepository.delete_workspace"
+        }
+    ],
+    "WorkspaceRepository.edit_workspace -> Attribute.execute": [
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 203,
+            "expr": "self.session.execute(                select(Workspace)                .options(                    joinedload(Workspace.dataset_spaces),                )                .where(Workspace.id == workspace_id)            )",
+            "caller": "WorkspaceRepository.edit_workspace"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 215,
+            "expr": "self.session.execute(                delete(DatasetSpace).where(DatasetSpace.workspace_id == workspace_id)            )",
+            "caller": "WorkspaceRepository.edit_workspace"
+        },
+        {
+            "file_path": "C:/Users/cokebeer/Documents/llm/pandas-ai/server/app/repositories/workspace.py",
+            "sink": "Attribute.execute",
+            "line": 223,
+            "expr": "self.session.execute(                update(Workspace)                .where(Workspace.id == workspace_id)                .values(update_data)            )",
+            "caller": "WorkspaceRepository.edit_workspace"
+        }
+    ]
+}

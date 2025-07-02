@@ -1,0 +1,1 @@
+{"ExeSQL._run -> cursor.execute": ["re.split(r';', ans.replace(r\"\\n\", \" \")):"]}

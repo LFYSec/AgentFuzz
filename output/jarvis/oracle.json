@@ -1,0 +1,542 @@
+{
+  "server.tasks -> chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "server.results -> chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "server.chat -> chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "chitchat -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "parse_task -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "choose_model -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "huggingface_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 425,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, json=json_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 433,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 499,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data, proxies=PROXY)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "huggingface_model_inference -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 515,
+      "expr": "requests.get(audio_url, timeout=10)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "local_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 539,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 546,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 553,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 561,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 564,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 570,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 577,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 583,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 589,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 596,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 622,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 627,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 634,
+      "expr": "requests.post(task_url, json={\"audio_url\": audio_url})",
+      "caller": "local_model_inference"
+    }
+  ],
+  "model_inference -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 641,
+      "expr": "requests.get(localStatusUrl)",
+      "caller": "model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 647,
+      "expr": "requests.get(huggingfaceStatusUrl, headers=HUGGINGFACE_HEADERS, proxies=PROXY)",
+      "caller": "model_inference"
+    }
+  ],
+  "model_inference -> huggingface_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 425,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, json=json_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 433,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 499,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data, proxies=PROXY)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "model_inference -> huggingface_model_inference -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 515,
+      "expr": "requests.get(audio_url, timeout=10)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "model_inference -> local_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 539,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 546,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 553,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 561,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 564,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 570,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 577,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 583,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 589,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 596,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 622,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 627,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 634,
+      "expr": "requests.post(task_url, json={\"audio_url\": audio_url})",
+      "caller": "local_model_inference"
+    }
+  ],
+  "get_model_status -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 666,
+      "expr": "requests.get(url, headers=headers, proxies=PROXY)",
+      "caller": "get_model_status"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 668,
+      "expr": "requests.get(url)",
+      "caller": "get_model_status"
+    }
+  ],
+  "run_task -> model_inference -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 641,
+      "expr": "requests.get(localStatusUrl)",
+      "caller": "model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 647,
+      "expr": "requests.get(huggingfaceStatusUrl, headers=HUGGINGFACE_HEADERS, proxies=PROXY)",
+      "caller": "model_inference"
+    }
+  ],
+  "run_task -> chitchat -> choose_model -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "run_task -> model_inference -> huggingface_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 425,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, json=json_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 433,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data)",
+      "caller": "huggingface_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 499,
+      "expr": "requests.post(task_url, headers=HUGGINGFACE_HEADERS, data=img_data, proxies=PROXY)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "run_task -> model_inference -> huggingface_model_inference -> requests.get": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.get",
+      "line": 515,
+      "expr": "requests.get(audio_url, timeout=10)",
+      "caller": "huggingface_model_inference"
+    }
+  ],
+  "run_task -> model_inference -> local_model_inference -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 539,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 546,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 553,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 561,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 564,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 570,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 577,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 583,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 589,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 596,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 622,
+      "expr": "requests.post(task_url, json={\"img_url\": img_url, \"text\": text})",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 627,
+      "expr": "requests.post(task_url, json=data)",
+      "caller": "local_model_inference"
+    },
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 634,
+      "expr": "requests.post(task_url, json={\"audio_url\": audio_url})",
+      "caller": "local_model_inference"
+    }
+  ],
+  "chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "test -> chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "cli -> chat_huggingface -> chitchat -> parse_task -> response_results -> send_request -> requests.post": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/awesome_chat.py",
+      "sink": "requests.post",
+      "line": 206,
+      "expr": "requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)",
+      "caller": "send_request"
+    }
+  ],
+  "models -> os.system": [
+    {
+      "file_path": "E:/Codes/JARVIS/hugginggpt/server/models_server.py",
+      "sink": "os.system",
+      "line": 393,
+      "expr": "os.system(f\"LD_LIBRARY_PATH=/usr/local/lib /usr/local/bin/ffmpeg -i {video_path} -vcodec libx264 public/videos/{file_name}.mp4\")",
+      "caller": "models"
+    }
+  ]
+}
