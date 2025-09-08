@@ -1,13 +1,17 @@
 # AgentFuzz
 
-[TOC]
-
 ## Description
 
 The source code of *Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents*
 
 ```
-citation
+@inproceedings{liu2025make,
+  title={Make Agent Defeat Agent: Automatic Detection of $\{$Taint-Style$\}$ Vulnerabilities in $\{$LLM-based$\}$ Agents},
+  author={Liu, Fengyu and Zhang, Yuan and Luo, Jiaqi and Dai, Jiarun and Chen, Tian and Yuan, Letian and Yu, Zhengmin and Shi, Youkun and Li, Ke and Zhou, Chengyuan and others},
+  booktitle={34th USENIX Security Symposium (USENIX Security 25)},
+  pages={3767--3786},
+  year={2025}
+}
 ```
 
 ## Step 1. Static analysis
@@ -253,4 +257,5 @@ If you see the following output, it means we have triggered the callchain and it
 ```text
 **********exploration successful**********
 True
+
 ```
