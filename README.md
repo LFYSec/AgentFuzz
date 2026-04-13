@@ -18,7 +18,7 @@ The source code of *Make Agent Defeat Agent: Automatic Detection of Taint-Style 
 
 ### Preparation
 
-Before Static Analysis, you should install [CodeQL-CLI](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/setting-up-the-codeql-cli), and [Miniconda](https://docs.conda.io/en/latest/miniconda.html). 
+Before Static Analysis, you should install [CodeQL-CLI v2.19.2](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/setting-up-the-codeql-cli), and [Miniconda](https://docs.conda.io/en/latest/miniconda.html). 
 
 Then, run the following command to create a Python 3.10.12 environment:
 ```shell
